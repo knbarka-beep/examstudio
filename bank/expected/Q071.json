@@ -1,0 +1,17 @@
+{
+ "id": "Q071",
+ "columns": [
+  "month",
+  "above_average"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   5,
+   40394.81
+  ]
+ ],
+ "sha256": "9cd4ad45b555587868445b48d854511b2581bf9fecb125a01553de57bee25c42",
+ "note": "Computed independently with pandas from the raw file."
+}

@@ -1,0 +1,15 @@
+{
+ "id": "Q005",
+ "columns": [
+  "column"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "EventAgency"
+  ]
+ ],
+ "sha256": "d181e769e0ebf5865c4072744e363378acab725f7e308e3ab9bc36eb2b98dba6",
+ "note": "Computed independently with pandas from the raw file."
+}

@@ -1,0 +1,176 @@
+{
+ "id": "Q162",
+ "columns": [
+  "Year",
+  "Name",
+  "Description",
+  "Vendor",
+  "Amount",
+  "RiskRanking"
+ ],
+ "row_count": 3791,
+ "ordered": true,
+ "rows": [
+  [
+   2014,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "FREEMAN AV CHICAGO",
+   -6266.53,
+   "High"
+  ],
+  [
+   2014,
+   "P Mulder",
+   "GENERAL PURCHASE",
+   "TIFFIN SYSTEMS",
+   -4999,
+   "High"
+  ],
+  [
+   2014,
+   "J Biggs",
+   "GENERAL PURCHASE",
+   "FREDDIE PAULS STEAKHOUSE",
+   -4781.59,
+   "High"
+  ],
+  [
+   2014,
+   "M Tornakian",
+   "GENERAL PURCHASE",
+   "INTL COLD STORAGE",
+   -4232,
+   "High"
+  ],
+  [
+   2014,
+   "J Ward",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/AIR CANADA  014",
+   -4139.96,
+   "High"
+  ],
+  [
+   2014,
+   "J Heusel",
+   "GENERAL PURCHASE",
+   "ANIXTER-115687",
+   -3858.03,
+   "High"
+  ],
+  [
+   2014,
+   "R Bowers",
+   "GENERAL PURCHASE",
+   "P & K EQUIPMENT",
+   -3855.6,
+   "High"
+  ],
+  [
+   2014,
+   "K Dunne",
+   "GENERAL PURCHASE",
+   "HOTARD COACHES INC",
+   -3812.62,
+   "High"
+  ],
+  [
+   2014,
+   "S Bilbeisi",
+   "ROOM CHARGES",
+   "LE MERIDIEN ARLINGTON",
+   -3750,
+   "High"
+  ],
+  [
+   2014,
+   "S Rains",
+   "GENERAL PURCHASE",
+   "KINNUNEN SALES & RENT",
+   -3653.05,
+   "High"
+  ],
+  [
+   2014,
+   "R Revankar",
+   "GENERAL PURCHASE",
+   "ASHRAE",
+   -3335,
+   "High"
+  ],
+  [
+   2014,
+   "L LeMaster",
+   "GENERAL PURCHASE",
+   "SYM SECURE SITE SSL",
+   -3090,
+   "High"
+  ],
+  [
+   2014,
+   "M Pataki",
+   "GENERAL PURCHASE",
+   "EBK EBOOKERS",
+   -3038.49,
+   "High"
+  ],
+  [
+   2014,
+   "G Chowdhary",
+   "GENERAL PURCHASE",
+   "Amazon.com",
+   -2899.99,
+   "High"
+  ],
+  [
+   2014,
+   "J Tivis",
+   "GENERAL PURCHASE",
+   "SQ  SPRING CREEK WELDING",
+   -2735,
+   "High"
+  ],
+  [
+   2014,
+   "J Heusel",
+   "DisposerWaste EA",
+   "WW GRAINGER",
+   -2676.6,
+   "High"
+  ],
+  [
+   2014,
+   "S Marshall",
+   "GENERAL PURCHASE",
+   "FEDEXOFFICE   00001248",
+   -2665.08,
+   "High"
+  ],
+  [
+   2014,
+   "S Marshall",
+   "GENERAL PURCHASE",
+   "FEDEXOFFICE   00001248",
+   -2665.08,
+   "High"
+  ],
+  [
+   2014,
+   "D Buck",
+   "GENERAL PURCHASE",
+   "JORGENSEN LABORATORIES IN",
+   -2589.45,
+   "High"
+  ],
+  [
+   2014,
+   "J Ward",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/AIR CANADA  014",
+   -2570.99,
+   "High"
+  ]
+ ],
+ "sha256": "ec302139e3738e87fe87d6d41db0103f266f1e4f3ecd5c23a35f7e96f577543a"
+}

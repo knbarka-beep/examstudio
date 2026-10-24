@@ -1,0 +1,14 @@
+{
+ "id": "Q084",
+ "columns": [
+  "Country"
+ ],
+ "row_count": 1,
+ "ordered": true,
+ "rows": [
+  [
+   "Czech Republic"
+  ]
+ ],
+ "sha256": "c8f09ce2b60787d0282fa4b5047c5375ac15b865cdcfcf1d74b9366d4a680463"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "Q135",
+ "columns": [
+  "AVG(energy)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   0.49
+  ]
+ ],
+ "sha256": "d3ba164500f24b0a7499deaa09ea7c12f31bc849506342ad10626f0209f3fd21"
+}

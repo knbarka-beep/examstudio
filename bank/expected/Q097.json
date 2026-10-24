@@ -1,0 +1,14 @@
+{
+ "id": "Q097",
+ "columns": [
+  "MAX(LENGTH(LastName))"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   8
+  ]
+ ],
+ "sha256": "7dc5b799328d5b44410bd075ec34243122dfac808e7c44a8081997619b3f2d98"
+}

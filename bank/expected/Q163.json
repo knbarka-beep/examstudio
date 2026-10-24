@@ -1,0 +1,14 @@
+{
+ "id": "Q163",
+ "columns": [
+  "AmazonEarnings"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   2632.8
+  ]
+ ],
+ "sha256": "b9571e2ee18446d6fb479e8c214a4dafc93542c490012a958a3ee977e5b6ead5"
+}

@@ -1,0 +1,197 @@
+{
+ "id": "Q156",
+ "columns": [
+  "Month",
+  "Year",
+  "Name",
+  "Description",
+  "Vendor",
+  "Amount",
+  "SalesTax"
+ ],
+ "row_count": 6907,
+ "ordered": true,
+ "rows": [
+  [
+   12,
+   2014,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "COCKRELL EYECARE CENTER",
+   19233.28,
+   865.5
+  ],
+  [
+   12,
+   2014,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "SMC-PATIENT FINANCIAL SRV",
+   5758.35,
+   259.13
+  ],
+  [
+   12,
+   2014,
+   "C Wood",
+   "GENERAL PURCHASE",
+   "MEDLEY MATERIAL HANDLING",
+   5000,
+   225
+  ],
+  [
+   12,
+   2014,
+   "J Reed",
+   "GENERAL PURCHASE",
+   "AIR SYSTEM AND PUMP SOLUT",
+   5000,
+   225
+  ],
+  [
+   12,
+   2014,
+   "H Forquer",
+   "GENERAL PURCHASE",
+   "MURRY WOMBLE INC",
+   4998,
+   224.91
+  ],
+  [
+   12,
+   2014,
+   "H Forquer",
+   "PARTS SET",
+   "MEAD O'BRIEN",
+   4978,
+   224.01
+  ],
+  [
+   12,
+   2014,
+   "M Tornakian",
+   "GENERAL PURCHASE",
+   "OKLAHOMA CITY WINNELSO",
+   4973.85,
+   223.82
+  ],
+  [
+   12,
+   2014,
+   "M Tornakian",
+   "GENERAL PURCHASE",
+   "PROFICIENCY ANALY TESTIN",
+   4940,
+   222.3
+  ],
+  [
+   12,
+   2014,
+   "W Edwards",
+   "GENERAL PURCHASE",
+   "IN  MAVERICK JACKETS INC",
+   4930,
+   221.85
+  ],
+  [
+   12,
+   2014,
+   "R Allen",
+   "GENERAL PURCHASE",
+   "NUGEN TECHNOLOGIES, INC.",
+   4890,
+   220.05
+  ],
+  [
+   12,
+   2014,
+   "M Tornakian",
+   "GENERAL PURCHASE",
+   "WWW.NEWEGGBUSINESS.COM",
+   4867.18,
+   219.02
+  ],
+  [
+   12,
+   2014,
+   "B Ritthaler",
+   "GENERAL PURCHASE",
+   "ELECTRONIX EXPRESS",
+   4824.85,
+   217.12
+  ],
+  [
+   12,
+   2014,
+   "M Chapman",
+   "CHARTER BUS RENTAL EAC",
+   "RED CARPET CHARTERS",
+   4814,
+   216.63
+  ],
+  [
+   12,
+   2014,
+   "S Knott",
+   "GENERAL PURCHASE",
+   "ARTICULATE GLOBAL INC",
+   4788,
+   215.46
+  ],
+  [
+   12,
+   2014,
+   "C Cowell",
+   "GENERAL PURCHASE",
+   "LIVESTOCK FOREMAN",
+   4782.5,
+   215.21
+  ],
+  [
+   12,
+   2014,
+   "D Whitefield",
+   "GENERAL PURCHASE",
+   "WILSON COMPANY - ADDIS",
+   4734.41,
+   213.05
+  ],
+  [
+   12,
+   2014,
+   "R Heinemann",
+   "HF BLOWGUN EA|3/8 X 30 R EA|AW CABINETS EA|AW CABI",
+   "THE HOME DEPOT 6566",
+   4733.02,
+   212.99
+  ],
+  [
+   12,
+   2014,
+   "J Kindschi",
+   "GENERAL PURCHASE",
+   "VETERANS AFFRS DMC",
+   4686.25,
+   210.88
+  ],
+  [
+   12,
+   2014,
+   "A Wayadande",
+   "GENERAL PURCHASE",
+   "COFACTOR GENOMICS",
+   4645,
+   209.03
+  ],
+  [
+   12,
+   2014,
+   "M Pataki",
+   "GENERAL PURCHASE",
+   "SQ  GRANNY HAD ONE, INC.",
+   4625,
+   208.13
+  ]
+ ],
+ "sha256": "bba9eee28be1dacef584d0e1185cd33d49a04447cc81762b758cad14e63ea220"
+}

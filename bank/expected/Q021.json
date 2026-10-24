@@ -1,0 +1,15 @@
+{
+ "id": "Q021",
+ "columns": [
+  "minutes"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   1
+  ]
+ ],
+ "sha256": "d5ab7cc0c3d7668f2e615586557beddb46e11e0f72368519945375f268bdb35d",
+ "note": "Computed independently with pandas from the raw file."
+}

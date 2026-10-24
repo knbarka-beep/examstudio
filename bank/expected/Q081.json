@@ -1,0 +1,15 @@
+{
+ "id": "Q081",
+ "columns": [
+  "average"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   3191.08
+  ]
+ ],
+ "sha256": "4b8d6c922946bbc3d3182acdbbe1799fa03dbce1c998c08b95949854abdfbe2a",
+ "note": "Computed independently with pandas from the raw file."
+}

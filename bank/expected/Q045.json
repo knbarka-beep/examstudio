@@ -1,0 +1,15 @@
+{
+ "id": "Q045",
+ "columns": [
+  "GLAccountName"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Sales - Other"
+  ]
+ ],
+ "sha256": "fd46f657bbbfc1a994dc00c7f7921573bb0e0b3188b2304f28f278f8c3a1a6ab",
+ "note": "Computed independently with pandas from the raw file."
+}

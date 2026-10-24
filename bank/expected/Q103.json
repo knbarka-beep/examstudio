@@ -1,0 +1,14 @@
+{
+ "id": "Q103",
+ "columns": [
+  "COUNT(DISTINCT UnitPrice)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   2
+  ]
+ ],
+ "sha256": "7c9597b0e8214b48d6575452a0b267f0de03f360aaca4e5e619cfe4c0a0c8ee0"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "Q070",
+ "columns": [
+  "percent"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   100
+  ]
+ ],
+ "sha256": "28cb32be007e6de67cab26bb9e35d2567f7a4090fe1fc11c675ff5bb1b321abd",
+ "note": "Computed independently with pandas from the raw file."
+}

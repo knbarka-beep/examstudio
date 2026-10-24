@@ -1,0 +1,15 @@
+{
+ "id": "Q010",
+ "columns": [
+  "Category"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Television"
+  ]
+ ],
+ "sha256": "3d6571cafd0eac499b62931ed07defaa5f02512d65e3a3b8d51b2416c4a323d6",
+ "note": "Computed independently with pandas from the raw file."
+}

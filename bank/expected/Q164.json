@@ -1,0 +1,155 @@
+{
+ "id": "Q164",
+ "columns": [
+  "Year",
+  "Month",
+  "Name",
+  "Amount",
+  "Vendor"
+ ],
+ "row_count": 29640,
+ "ordered": true,
+ "rows": [
+  [
+   2014,
+   8,
+   "C Clark",
+   29731.61,
+   "OEC OTIS ELEVATOR CO"
+  ],
+  [
+   2014,
+   5,
+   "A Ropers",
+   27657.55,
+   "WINGATE MANHATTAN"
+  ],
+  [
+   2014,
+   5,
+   "A Ropers",
+   22764.84,
+   "HAMPTON INN & SUITES CRN"
+  ],
+  [
+   2014,
+   9,
+   "A Ropers",
+   21243.93,
+   "MAGDALENE COLLEGE"
+  ],
+  [
+   2014,
+   12,
+   "C Stover",
+   19233.28,
+   "COCKRELL EYECARE CENTER"
+  ],
+  [
+   2014,
+   8,
+   "A Ropers",
+   16517.2,
+   "SOUTHWES    5262393866444"
+  ],
+  [
+   2014,
+   9,
+   "J Williams",
+   15327.36,
+   "HILTON BOSTON DOWNTOWN"
+  ],
+  [
+   2014,
+   8,
+   "S Bilbeisi",
+   13186.64,
+   "ROWN NYC FD"
+  ],
+  [
+   2014,
+   1,
+   "C Clark",
+   12600,
+   "TLC PAINTING"
+  ],
+  [
+   2014,
+   4,
+   "C Clark",
+   12380,
+   "AABB-AMER. ASSO. BLOOD"
+  ],
+  [
+   2014,
+   7,
+   "A Ropers",
+   11944.42,
+   "NASA CATERING 10550515"
+  ],
+  [
+   2014,
+   4,
+   "C Stover",
+   11643.75,
+   "EMBASSY SUITES CENTRAL"
+  ],
+  [
+   2014,
+   4,
+   "C Stover",
+   10299.66,
+   "WATERFRONT PLACE HOTEL"
+  ],
+  [
+   2014,
+   3,
+   "C Stover",
+   10153.35,
+   "COURTYARD BY MARRIOTT ARL"
+  ],
+  [
+   2014,
+   2,
+   "A Ropers",
+   9770.4,
+   "TOPGOLF COLONY F&B"
+  ],
+  [
+   2014,
+   3,
+   "C Stover",
+   7951,
+   "HOLIDAY INN EXPRESS & SU"
+  ],
+  [
+   2014,
+   11,
+   "C Stover",
+   7189.81,
+   "SHERATON DALLAS"
+  ],
+  [
+   2014,
+   10,
+   "A Ropers",
+   7013.02,
+   "MAGDALENE COLLEGE"
+  ],
+  [
+   2014,
+   4,
+   "A Ropers",
+   6980,
+   "ASSETWORKS INC."
+  ],
+  [
+   2014,
+   2,
+   "C Stover",
+   6923.32,
+   "COURTYARD BY MARRIOTT-LKU"
+  ]
+ ],
+ "sha256": "6a514872eb4457ccab7cee8758ee7e464dd56b3ad189f8204ae7e9fcd8fa867f"
+}

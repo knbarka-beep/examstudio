@@ -1,0 +1,14 @@
+{
+ "id": "Q131",
+ "columns": [
+  "AVG(tempo)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   119.9
+  ]
+ ],
+ "sha256": "716258b6849be710e549ae9017565cd1ea1763f0d38c2a7963e5b188fee036c4"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "Q098",
+ "columns": [
+  "COUNT(*)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   2
+  ]
+ ],
+ "sha256": "5136b8b6431a4c5cf6ba83629877f3228b5edee13e51308721d3c0c544c555d0"
+}

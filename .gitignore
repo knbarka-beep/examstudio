@@ -1,0 +1,9 @@
+materials/
+release-assets/
+__pycache__/
+*.pyc
+.env
+.env.*
+runs/
+.venv/
+bank/inventory.json

@@ -1,0 +1,92 @@
+{
+ "id": "Q178",
+ "columns": [
+  "Name",
+  "DuplicateGroups"
+ ],
+ "row_count": 577,
+ "ordered": true,
+ "rows": [
+  [
+   "J Bailey",
+   78
+  ],
+  [
+   "G Gebhart",
+   65
+  ],
+  [
+   "S Knott",
+   44
+  ],
+  [
+   "G Hines",
+   36
+  ],
+  [
+   "D Sisney",
+   33
+  ],
+  [
+   "M Tornakian",
+   33
+  ],
+  [
+   "S Robinson",
+   28
+  ],
+  [
+   "E Davis",
+   27
+  ],
+  [
+   "K Roaseau",
+   26
+  ],
+  [
+   "M Bryans",
+   25
+  ],
+  [
+   "A Kindred",
+   23
+  ],
+  [
+   "R Bowers",
+   18
+  ],
+  [
+   "C Wood",
+   17
+  ],
+  [
+   "J Heusel",
+   17
+  ],
+  [
+   "M Chapman",
+   17
+  ],
+  [
+   "B Brinker",
+   14
+  ],
+  [
+   "D George",
+   14
+  ],
+  [
+   "A Morey",
+   13
+  ],
+  [
+   "D Dollins",
+   13
+  ],
+  [
+   "T Burch",
+   13
+  ]
+ ],
+ "sha256": "ab282c3c2811c3e2299d5a76c0d3121d95913d444f7a6bb2352200ed84856e5a"
+}

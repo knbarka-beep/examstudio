@@ -1,0 +1,14 @@
+{
+ "id": "Q100",
+ "columns": [
+  "AgeAtHire"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   55.6
+  ]
+ ],
+ "sha256": "c6d02eab70c0f6ada07a4ccd9f05439bcdf743268ac3f01e2d9b106fdccefcc6"
+}

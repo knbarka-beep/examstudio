@@ -1,0 +1,14 @@
+{
+ "id": "Q150",
+ "columns": [
+  "TotalReturns2013Q1"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   -247593.47
+  ]
+ ],
+ "sha256": "d0ace5115fcf56f3356b8a2e6f3625d89f69d0ebbd968fa141f29e6f6c3691ba"
+}

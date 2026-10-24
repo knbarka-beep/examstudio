@@ -1,0 +1,5290 @@
+{
+ "version": "23.10.2026-db6b8ee",
+ "seed": 2026,
+ "exams": [
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q027",
+    "Q029",
+    "Q089",
+    "Q094"
+   ],
+   "id": "E001"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q030",
+    "Q029",
+    "Q027",
+    "Q102",
+    "Q095"
+   ],
+   "id": "E002"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q029",
+    "Q028",
+    "Q031",
+    "Q083",
+    "Q103"
+   ],
+   "id": "E003"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q030",
+    "Q029",
+    "Q092",
+    "Q105"
+   ],
+   "id": "E004"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q026",
+    "Q032",
+    "Q103",
+    "Q083"
+   ],
+   "id": "E005"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q028",
+    "Q027",
+    "Q084",
+    "Q106"
+   ],
+   "id": "E006"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q026",
+    "Q030",
+    "Q029",
+    "Q102",
+    "Q089"
+   ],
+   "id": "E007"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q029",
+    "Q031",
+    "Q027",
+    "Q098",
+    "Q106"
+   ],
+   "id": "E008"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q026",
+    "Q031",
+    "Q093",
+    "Q086"
+   ],
+   "id": "E009"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q030",
+    "Q028",
+    "Q029",
+    "Q090",
+    "Q088"
+   ],
+   "id": "E010"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q030",
+    "Q032",
+    "Q029",
+    "Q117",
+    "Q122"
+   ],
+   "id": "E011"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q030",
+    "Q029",
+    "Q110",
+    "Q119"
+   ],
+   "id": "E012"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q032",
+    "Q029",
+    "Q116",
+    "Q115"
+   ],
+   "id": "E013"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q029",
+    "Q031",
+    "Q118",
+    "Q124"
+   ],
+   "id": "E014"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q028",
+    "Q029",
+    "Q111",
+    "Q123"
+   ],
+   "id": "E015"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q030",
+    "Q029",
+    "Q026",
+    "Q110",
+    "Q119"
+   ],
+   "id": "E016"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q031",
+    "Q026",
+    "Q116",
+    "Q110"
+   ],
+   "id": "E017"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q027",
+    "Q029",
+    "Q124",
+    "Q112"
+   ],
+   "id": "E018"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q030",
+    "Q032",
+    "Q111",
+    "Q122"
+   ],
+   "id": "E019"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q029",
+    "Q032",
+    "Q114",
+    "Q116"
+   ],
+   "id": "E020"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q029",
+    "Q032",
+    "Q026",
+    "Q128",
+    "Q131"
+   ],
+   "id": "E021"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q026",
+    "Q028",
+    "Q029",
+    "Q127",
+    "Q133"
+   ],
+   "id": "E022"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q030",
+    "Q032",
+    "Q135",
+    "Q127"
+   ],
+   "id": "E023"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q027",
+    "Q028",
+    "Q135",
+    "Q133"
+   ],
+   "id": "E024"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q026",
+    "Q032",
+    "Q131",
+    "Q134"
+   ],
+   "id": "E025"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q031",
+    "Q026",
+    "Q134",
+    "Q127"
+   ],
+   "id": "E026"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q029",
+    "Q028",
+    "Q130",
+    "Q133"
+   ],
+   "id": "E027"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q029",
+    "Q030",
+    "Q028",
+    "Q132",
+    "Q135"
+   ],
+   "id": "E028"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q026",
+    "Q030",
+    "Q131",
+    "Q128"
+   ],
+   "id": "E029"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q029",
+    "Q031",
+    "Q134",
+    "Q127"
+   ],
+   "id": "E030"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q026",
+    "Q031",
+    "Q029",
+    "Q147",
+    "Q153"
+   ],
+   "id": "E031"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q030",
+    "Q031",
+    "Q027",
+    "Q154",
+    "Q155"
+   ],
+   "id": "E032"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q029",
+    "Q031",
+    "Q169",
+    "Q147"
+   ],
+   "id": "E033"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q028",
+    "Q029",
+    "Q030",
+    "Q149",
+    "Q152"
+   ],
+   "id": "E034"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q030",
+    "Q028",
+    "Q151",
+    "Q152"
+   ],
+   "id": "E035"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q030",
+    "Q031",
+    "Q154",
+    "Q151"
+   ],
+   "id": "E036"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q032",
+    "Q030",
+    "Q029",
+    "Q151",
+    "Q150"
+   ],
+   "id": "E037"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q031",
+    "Q030",
+    "Q027",
+    "Q150",
+    "Q144"
+   ],
+   "id": "E038"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q030",
+    "Q029",
+    "Q149",
+    "Q147"
+   ],
+   "id": "E039"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case1",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q027",
+    "Q030",
+    "Q031",
+    "Q151",
+    "Q155"
+   ],
+   "id": "E040"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q036",
+    "Q038",
+    "Q093",
+    "Q086"
+   ],
+   "id": "E041"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q036",
+    "Q039",
+    "Q096",
+    "Q083"
+   ],
+   "id": "E042"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q037",
+    "Q034",
+    "Q089",
+    "Q083"
+   ],
+   "id": "E043"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q038",
+    "Q039",
+    "Q087",
+    "Q097"
+   ],
+   "id": "E044"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q039",
+    "Q038",
+    "Q093",
+    "Q109"
+   ],
+   "id": "E045"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q034",
+    "Q037",
+    "Q094",
+    "Q090"
+   ],
+   "id": "E046"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q037",
+    "Q036",
+    "Q095",
+    "Q098"
+   ],
+   "id": "E047"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q039",
+    "Q036",
+    "Q034",
+    "Q104",
+    "Q093"
+   ],
+   "id": "E048"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q037",
+    "Q036",
+    "Q038",
+    "Q106",
+    "Q084"
+   ],
+   "id": "E049"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q035",
+    "Q036",
+    "Q090",
+    "Q109"
+   ],
+   "id": "E050"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q034",
+    "Q039",
+    "Q123",
+    "Q116"
+   ],
+   "id": "E051"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q037",
+    "Q038",
+    "Q113",
+    "Q120"
+   ],
+   "id": "E052"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q037",
+    "Q038",
+    "Q119",
+    "Q116"
+   ],
+   "id": "E053"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q039",
+    "Q037",
+    "Q110",
+    "Q115"
+   ],
+   "id": "E054"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q037",
+    "Q034",
+    "Q039",
+    "Q111",
+    "Q115"
+   ],
+   "id": "E055"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q038",
+    "Q036",
+    "Q111",
+    "Q121"
+   ],
+   "id": "E056"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q037",
+    "Q038",
+    "Q035",
+    "Q119",
+    "Q113"
+   ],
+   "id": "E057"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q039",
+    "Q037",
+    "Q116",
+    "Q112"
+   ],
+   "id": "E058"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q036",
+    "Q037",
+    "Q123",
+    "Q115"
+   ],
+   "id": "E059"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q039",
+    "Q034",
+    "Q117",
+    "Q111"
+   ],
+   "id": "E060"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q033",
+    "Q036",
+    "Q133",
+    "Q130"
+   ],
+   "id": "E061"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q033",
+    "Q039",
+    "Q130",
+    "Q129"
+   ],
+   "id": "E062"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q037",
+    "Q036",
+    "Q136",
+    "Q134"
+   ],
+   "id": "E063"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q035",
+    "Q038",
+    "Q130",
+    "Q135"
+   ],
+   "id": "E064"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q036",
+    "Q039",
+    "Q132",
+    "Q136"
+   ],
+   "id": "E065"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q036",
+    "Q038",
+    "Q133",
+    "Q128"
+   ],
+   "id": "E066"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q033",
+    "Q039",
+    "Q131",
+    "Q133"
+   ],
+   "id": "E067"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q038",
+    "Q037",
+    "Q136",
+    "Q128"
+   ],
+   "id": "E068"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q039",
+    "Q036",
+    "Q035",
+    "Q127",
+    "Q136"
+   ],
+   "id": "E069"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q039",
+    "Q037",
+    "Q033",
+    "Q129",
+    "Q128"
+   ],
+   "id": "E070"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q036",
+    "Q039",
+    "Q147",
+    "Q171"
+   ],
+   "id": "E071"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q035",
+    "Q037",
+    "Q150",
+    "Q147"
+   ],
+   "id": "E072"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q033",
+    "Q038",
+    "Q148",
+    "Q150"
+   ],
+   "id": "E073"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q036",
+    "Q037",
+    "Q038",
+    "Q148",
+    "Q147"
+   ],
+   "id": "E074"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q034",
+    "Q036",
+    "Q148",
+    "Q154"
+   ],
+   "id": "E075"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q039",
+    "Q038",
+    "Q171",
+    "Q149"
+   ],
+   "id": "E076"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q035",
+    "Q037",
+    "Q038",
+    "Q171",
+    "Q152"
+   ],
+   "id": "E077"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q038",
+    "Q035",
+    "Q036",
+    "Q148",
+    "Q174"
+   ],
+   "id": "E078"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q033",
+    "Q039",
+    "Q036",
+    "Q171",
+    "Q148"
+   ],
+   "id": "E079"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case2",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q034",
+    "Q037",
+    "Q036",
+    "Q171",
+    "Q148"
+   ],
+   "id": "E080"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q040",
+    "Q042",
+    "Q043",
+    "Q089",
+    "Q083"
+   ],
+   "id": "E081"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q041",
+    "Q043",
+    "Q087",
+    "Q086"
+   ],
+   "id": "E082"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q041",
+    "Q085",
+    "Q102"
+   ],
+   "id": "E083"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q044",
+    "Q095",
+    "Q084"
+   ],
+   "id": "E084"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q041",
+    "Q042",
+    "Q043",
+    "Q095",
+    "Q086"
+   ],
+   "id": "E085"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q040",
+    "Q104",
+    "Q102"
+   ],
+   "id": "E086"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q044",
+    "Q042",
+    "Q102",
+    "Q090"
+   ],
+   "id": "E087"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q040",
+    "Q042",
+    "Q103",
+    "Q095"
+   ],
+   "id": "E088"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q044",
+    "Q042",
+    "Q043",
+    "Q086",
+    "Q085"
+   ],
+   "id": "E089"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q041",
+    "Q042",
+    "Q089",
+    "Q102"
+   ],
+   "id": "E090"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q044",
+    "Q112",
+    "Q110"
+   ],
+   "id": "E091"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q040",
+    "Q111",
+    "Q113"
+   ],
+   "id": "E092"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q041",
+    "Q043",
+    "Q042",
+    "Q114",
+    "Q118"
+   ],
+   "id": "E093"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q044",
+    "Q041",
+    "Q043",
+    "Q112",
+    "Q110"
+   ],
+   "id": "E094"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q040",
+    "Q042",
+    "Q114",
+    "Q119"
+   ],
+   "id": "E095"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q040",
+    "Q042",
+    "Q116",
+    "Q111"
+   ],
+   "id": "E096"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q041",
+    "Q044",
+    "Q114",
+    "Q110"
+   ],
+   "id": "E097"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q040",
+    "Q044",
+    "Q042",
+    "Q110",
+    "Q112"
+   ],
+   "id": "E098"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q041",
+    "Q042",
+    "Q112",
+    "Q118"
+   ],
+   "id": "E099"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q044",
+    "Q042",
+    "Q115",
+    "Q110"
+   ],
+   "id": "E100"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q040",
+    "Q044",
+    "Q043",
+    "Q127",
+    "Q131"
+   ],
+   "id": "E101"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q043",
+    "Q042",
+    "Q040",
+    "Q132",
+    "Q136"
+   ],
+   "id": "E102"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q040",
+    "Q042",
+    "Q043",
+    "Q133",
+    "Q131"
+   ],
+   "id": "E103"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q043",
+    "Q044",
+    "Q136",
+    "Q131"
+   ],
+   "id": "E104"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q041",
+    "Q042",
+    "Q044",
+    "Q131",
+    "Q136"
+   ],
+   "id": "E105"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q044",
+    "Q043",
+    "Q131",
+    "Q134"
+   ],
+   "id": "E106"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q044",
+    "Q041",
+    "Q128",
+    "Q127"
+   ],
+   "id": "E107"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q041",
+    "Q044",
+    "Q128",
+    "Q131"
+   ],
+   "id": "E108"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q042",
+    "Q040",
+    "Q043",
+    "Q128",
+    "Q135"
+   ],
+   "id": "E109"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case3",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q044",
+    "Q043",
+    "Q042",
+    "Q135",
+    "Q131"
+   ],
+   "id": "E110"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q052",
+    "Q048",
+    "Q089",
+    "Q095"
+   ],
+   "id": "E111"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q046",
+    "Q045",
+    "Q097",
+    "Q095"
+   ],
+   "id": "E112"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q049",
+    "Q047",
+    "Q099",
+    "Q096"
+   ],
+   "id": "E113"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q045",
+    "Q050",
+    "Q083",
+    "Q103"
+   ],
+   "id": "E114"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q047",
+    "Q050",
+    "Q052",
+    "Q089",
+    "Q085"
+   ],
+   "id": "E115"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q052",
+    "Q047",
+    "Q051",
+    "Q102",
+    "Q106"
+   ],
+   "id": "E116"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q051",
+    "Q048",
+    "Q090",
+    "Q102"
+   ],
+   "id": "E117"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q047",
+    "Q052",
+    "Q103",
+    "Q101"
+   ],
+   "id": "E118"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q047",
+    "Q052",
+    "Q048",
+    "Q097",
+    "Q091"
+   ],
+   "id": "E119"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q051",
+    "Q046",
+    "Q098",
+    "Q096"
+   ],
+   "id": "E120"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q049",
+    "Q047",
+    "Q120",
+    "Q117"
+   ],
+   "id": "E121"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q051",
+    "Q046",
+    "Q116",
+    "Q115"
+   ],
+   "id": "E122"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q050",
+    "Q052",
+    "Q122",
+    "Q115"
+   ],
+   "id": "E123"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q047",
+    "Q051",
+    "Q049",
+    "Q119",
+    "Q125"
+   ],
+   "id": "E124"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q045",
+    "Q051",
+    "Q120",
+    "Q123"
+   ],
+   "id": "E125"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q046",
+    "Q048",
+    "Q119",
+    "Q113"
+   ],
+   "id": "E126"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q048",
+    "Q051",
+    "Q115",
+    "Q118"
+   ],
+   "id": "E127"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q050",
+    "Q045",
+    "Q122",
+    "Q113"
+   ],
+   "id": "E128"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q051",
+    "Q046",
+    "Q045",
+    "Q122",
+    "Q115"
+   ],
+   "id": "E129"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q045",
+    "Q051",
+    "Q124",
+    "Q119"
+   ],
+   "id": "E130"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q047",
+    "Q051",
+    "Q045",
+    "Q133",
+    "Q127"
+   ],
+   "id": "E131"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q051",
+    "Q050",
+    "Q129",
+    "Q134"
+   ],
+   "id": "E132"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q045",
+    "Q047",
+    "Q129",
+    "Q135"
+   ],
+   "id": "E133"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q052",
+    "Q048",
+    "Q050",
+    "Q129",
+    "Q134"
+   ],
+   "id": "E134"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q048",
+    "Q049",
+    "Q129",
+    "Q134"
+   ],
+   "id": "E135"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q052",
+    "Q050",
+    "Q131",
+    "Q130"
+   ],
+   "id": "E136"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q050",
+    "Q048",
+    "Q129",
+    "Q136"
+   ],
+   "id": "E137"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q050",
+    "Q047",
+    "Q129",
+    "Q135"
+   ],
+   "id": "E138"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q052",
+    "Q047",
+    "Q050",
+    "Q136",
+    "Q135"
+   ],
+   "id": "E139"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q045",
+    "Q049",
+    "Q136",
+    "Q128"
+   ],
+   "id": "E140"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q047",
+    "Q051",
+    "Q052",
+    "Q152",
+    "Q151"
+   ],
+   "id": "E141"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q048",
+    "Q045",
+    "Q046",
+    "Q171",
+    "Q150"
+   ],
+   "id": "E142"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q046",
+    "Q049",
+    "Q051",
+    "Q151",
+    "Q147"
+   ],
+   "id": "E143"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q051",
+    "Q050",
+    "Q146",
+    "Q169"
+   ],
+   "id": "E144"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q045",
+    "Q047",
+    "Q050",
+    "Q149",
+    "Q152"
+   ],
+   "id": "E145"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q052",
+    "Q051",
+    "Q147",
+    "Q168"
+   ],
+   "id": "E146"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q052",
+    "Q049",
+    "Q051",
+    "Q144",
+    "Q152"
+   ],
+   "id": "E147"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q051",
+    "Q048",
+    "Q045",
+    "Q147",
+    "Q168"
+   ],
+   "id": "E148"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q049",
+    "Q052",
+    "Q045",
+    "Q154",
+    "Q144"
+   ],
+   "id": "E149"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "etl_case4",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q052",
+    "Q050",
+    "Q051",
+    "Q171",
+    "Q151"
+   ],
+   "id": "E150"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q065",
+    "Q056",
+    "Q053",
+    "Q092",
+    "Q104"
+   ],
+   "id": "E151"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q056",
+    "Q063",
+    "Q098",
+    "Q086"
+   ],
+   "id": "E152"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q056",
+    "Q063",
+    "Q085",
+    "Q083"
+   ],
+   "id": "E153"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q063",
+    "Q055",
+    "Q074",
+    "Q093",
+    "Q091"
+   ],
+   "id": "E154"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q063",
+    "Q053",
+    "Q093",
+    "Q102"
+   ],
+   "id": "E155"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q053",
+    "Q063",
+    "Q089",
+    "Q088"
+   ],
+   "id": "E156"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q063",
+    "Q074",
+    "Q053",
+    "Q092",
+    "Q102"
+   ],
+   "id": "E157"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q053",
+    "Q055",
+    "Q074",
+    "Q100",
+    "Q092"
+   ],
+   "id": "E158"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q063",
+    "Q053",
+    "Q109",
+    "Q102"
+   ],
+   "id": "E159"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q053",
+    "Q055",
+    "Q071",
+    "Q090",
+    "Q097"
+   ],
+   "id": "E160"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q056",
+    "Q062",
+    "Q113",
+    "Q121"
+   ],
+   "id": "E161"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q053",
+    "Q055",
+    "Q123",
+    "Q116"
+   ],
+   "id": "E162"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q057",
+    "Q063",
+    "Q074",
+    "Q115",
+    "Q110"
+   ],
+   "id": "E163"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q063",
+    "Q074",
+    "Q057",
+    "Q119",
+    "Q111"
+   ],
+   "id": "E164"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q056",
+    "Q053",
+    "Q055",
+    "Q118",
+    "Q117"
+   ],
+   "id": "E165"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q058",
+    "Q061",
+    "Q055",
+    "Q111",
+    "Q114"
+   ],
+   "id": "E166"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q058",
+    "Q062",
+    "Q110",
+    "Q119"
+   ],
+   "id": "E167"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q056",
+    "Q053",
+    "Q117",
+    "Q119"
+   ],
+   "id": "E168"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q063",
+    "Q058",
+    "Q110",
+    "Q115"
+   ],
+   "id": "E169"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q055",
+    "Q074",
+    "Q057",
+    "Q116",
+    "Q119"
+   ],
+   "id": "E170"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q061",
+    "Q053",
+    "Q057",
+    "Q132",
+    "Q135"
+   ],
+   "id": "E171"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q058",
+    "Q056",
+    "Q132",
+    "Q127"
+   ],
+   "id": "E172"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q058",
+    "Q056",
+    "Q062",
+    "Q128",
+    "Q129"
+   ],
+   "id": "E173"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q062",
+    "Q074",
+    "Q053",
+    "Q134",
+    "Q129"
+   ],
+   "id": "E174"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q055",
+    "Q062",
+    "Q057",
+    "Q133",
+    "Q128"
+   ],
+   "id": "E175"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q061",
+    "Q056",
+    "Q053",
+    "Q128",
+    "Q133"
+   ],
+   "id": "E176"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q058",
+    "Q074",
+    "Q062",
+    "Q131",
+    "Q130"
+   ],
+   "id": "E177"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q053",
+    "Q074",
+    "Q071",
+    "Q134",
+    "Q129"
+   ],
+   "id": "E178"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q061",
+    "Q053",
+    "Q055",
+    "Q134",
+    "Q132"
+   ],
+   "id": "E179"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q053",
+    "Q057",
+    "Q130",
+    "Q134"
+   ],
+   "id": "E180"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q063",
+    "Q074",
+    "Q062",
+    "Q147",
+    "Q148"
+   ],
+   "id": "E181"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q053",
+    "Q055",
+    "Q063",
+    "Q150",
+    "Q148"
+   ],
+   "id": "E182"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q053",
+    "Q062",
+    "Q144",
+    "Q143"
+   ],
+   "id": "E183"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2015_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q074",
+    "Q053",
+    "Q062",
+    "Q145",
+    "Q150"
+   ],
+   "id": "E184"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q054",
+    "Q059",
+    "Q088",
+    "Q100"
+   ],
+   "id": "E185"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q070",
+    "Q059",
+    "Q066",
+    "Q102",
+    "Q086"
+   ],
+   "id": "E186"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q064",
+    "Q089",
+    "Q088"
+   ],
+   "id": "E187"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q066",
+    "Q070",
+    "Q091",
+    "Q095"
+   ],
+   "id": "E188"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q059",
+    "Q054",
+    "Q064",
+    "Q089",
+    "Q104"
+   ],
+   "id": "E189"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q070",
+    "Q064",
+    "Q083",
+    "Q098"
+   ],
+   "id": "E190"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q070",
+    "Q054",
+    "Q095",
+    "Q086"
+   ],
+   "id": "E191"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q070",
+    "Q059",
+    "Q083",
+    "Q094"
+   ],
+   "id": "E192"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q066",
+    "Q089",
+    "Q109"
+   ],
+   "id": "E193"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q070",
+    "Q054",
+    "Q066",
+    "Q083",
+    "Q102"
+   ],
+   "id": "E194"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q066",
+    "Q059",
+    "Q112",
+    "Q115"
+   ],
+   "id": "E195"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q066",
+    "Q054",
+    "Q125",
+    "Q112"
+   ],
+   "id": "E196"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q066",
+    "Q110",
+    "Q119"
+   ],
+   "id": "E197"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q059",
+    "Q122",
+    "Q110"
+   ],
+   "id": "E198"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q070",
+    "Q114",
+    "Q110"
+   ],
+   "id": "E199"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q070",
+    "Q110",
+    "Q120"
+   ],
+   "id": "E200"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q070",
+    "Q064",
+    "Q059",
+    "Q115",
+    "Q111"
+   ],
+   "id": "E201"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q070",
+    "Q120",
+    "Q114"
+   ],
+   "id": "E202"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q064",
+    "Q066",
+    "Q118",
+    "Q115"
+   ],
+   "id": "E203"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q059",
+    "Q066",
+    "Q114",
+    "Q120"
+   ],
+   "id": "E204"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q059",
+    "Q066",
+    "Q070",
+    "Q136",
+    "Q128"
+   ],
+   "id": "E205"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q070",
+    "Q064",
+    "Q133",
+    "Q131"
+   ],
+   "id": "E206"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q070",
+    "Q134",
+    "Q128"
+   ],
+   "id": "E207"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q059",
+    "Q054",
+    "Q064",
+    "Q128",
+    "Q134"
+   ],
+   "id": "E208"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q064",
+    "Q059",
+    "Q127",
+    "Q133"
+   ],
+   "id": "E209"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q070",
+    "Q129",
+    "Q134"
+   ],
+   "id": "E210"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q066",
+    "Q059",
+    "Q128",
+    "Q134"
+   ],
+   "id": "E211"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q064",
+    "Q059",
+    "Q136",
+    "Q133"
+   ],
+   "id": "E212"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q064",
+    "Q054",
+    "Q135",
+    "Q127"
+   ],
+   "id": "E213"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q070",
+    "Q129",
+    "Q134"
+   ],
+   "id": "E214"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q064",
+    "Q151",
+    "Q148"
+   ],
+   "id": "E215"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q066",
+    "Q070",
+    "Q152",
+    "Q151"
+   ],
+   "id": "E216"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q064",
+    "Q054",
+    "Q144",
+    "Q152"
+   ],
+   "id": "E217"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q054",
+    "Q059",
+    "Q147",
+    "Q148"
+   ],
+   "id": "E218"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q064",
+    "Q066",
+    "Q144",
+    "Q150"
+   ],
+   "id": "E219"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q066",
+    "Q064",
+    "Q054",
+    "Q145",
+    "Q149"
+   ],
+   "id": "E220"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q070",
+    "Q171",
+    "Q148"
+   ],
+   "id": "E221"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q059",
+    "Q054",
+    "Q066",
+    "Q169",
+    "Q147"
+   ],
+   "id": "E222"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q054",
+    "Q059",
+    "Q066",
+    "Q147",
+    "Q149"
+   ],
+   "id": "E223"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "ic_payroll2016_csv",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q064",
+    "Q054",
+    "Q066",
+    "Q148",
+    "Q147"
+   ],
+   "id": "E224"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q005",
+    "Q014",
+    "Q019",
+    "Q092",
+    "Q084"
+   ],
+   "id": "E225"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q007",
+    "Q006",
+    "Q001",
+    "Q103",
+    "Q097"
+   ],
+   "id": "E226"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q021",
+    "Q010",
+    "Q003",
+    "Q095",
+    "Q105"
+   ],
+   "id": "E227"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q023",
+    "Q002",
+    "Q004",
+    "Q105",
+    "Q084"
+   ],
+   "id": "E228"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q006",
+    "Q005",
+    "Q018",
+    "Q100",
+    "Q095"
+   ],
+   "id": "E229"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q008",
+    "Q010",
+    "Q023",
+    "Q092",
+    "Q087"
+   ],
+   "id": "E230"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q006",
+    "Q009",
+    "Q021",
+    "Q087",
+    "Q086"
+   ],
+   "id": "E231"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q011",
+    "Q009",
+    "Q003",
+    "Q084",
+    "Q094"
+   ],
+   "id": "E232"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q012",
+    "Q009",
+    "Q022",
+    "Q102",
+    "Q103"
+   ],
+   "id": "E233"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q020",
+    "Q005",
+    "Q011",
+    "Q089",
+    "Q098"
+   ],
+   "id": "E234"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q009",
+    "Q003",
+    "Q001",
+    "Q123",
+    "Q124"
+   ],
+   "id": "E235"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q023",
+    "Q014",
+    "Q013",
+    "Q122",
+    "Q119"
+   ],
+   "id": "E236"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q004",
+    "Q017",
+    "Q002",
+    "Q110",
+    "Q115"
+   ],
+   "id": "E237"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q023",
+    "Q018",
+    "Q006",
+    "Q115",
+    "Q116"
+   ],
+   "id": "E238"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q002",
+    "Q025",
+    "Q018",
+    "Q114",
+    "Q124"
+   ],
+   "id": "E239"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q019",
+    "Q005",
+    "Q001",
+    "Q118",
+    "Q114"
+   ],
+   "id": "E240"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q025",
+    "Q014",
+    "Q011",
+    "Q115",
+    "Q112"
+   ],
+   "id": "E241"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q022",
+    "Q003",
+    "Q009",
+    "Q113",
+    "Q114"
+   ],
+   "id": "E242"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q005",
+    "Q021",
+    "Q007",
+    "Q121",
+    "Q115"
+   ],
+   "id": "E243"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q019",
+    "Q009",
+    "Q004",
+    "Q115",
+    "Q123"
+   ],
+   "id": "E244"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q024",
+    "Q016",
+    "Q008",
+    "Q127",
+    "Q135"
+   ],
+   "id": "E245"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q004",
+    "Q016",
+    "Q011",
+    "Q128",
+    "Q130"
+   ],
+   "id": "E246"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q004",
+    "Q016",
+    "Q002",
+    "Q130",
+    "Q131"
+   ],
+   "id": "E247"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q009",
+    "Q006",
+    "Q013",
+    "Q131",
+    "Q132"
+   ],
+   "id": "E248"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q012",
+    "Q019",
+    "Q016",
+    "Q134",
+    "Q129"
+   ],
+   "id": "E249"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q004",
+    "Q008",
+    "Q003",
+    "Q130",
+    "Q134"
+   ],
+   "id": "E250"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q023",
+    "Q025",
+    "Q011",
+    "Q128",
+    "Q132"
+   ],
+   "id": "E251"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q001",
+    "Q020",
+    "Q014",
+    "Q132",
+    "Q127"
+   ],
+   "id": "E252"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q013",
+    "Q020",
+    "Q016",
+    "Q127",
+    "Q132"
+   ],
+   "id": "E253"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q021",
+    "Q011",
+    "Q004",
+    "Q133",
+    "Q135"
+   ],
+   "id": "E254"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q021",
+    "Q008",
+    "Q010",
+    "Q175",
+    "Q148"
+   ],
+   "id": "E255"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q018",
+    "Q008",
+    "Q010",
+    "Q152",
+    "Q169"
+   ],
+   "id": "E256"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q009",
+    "Q001",
+    "Q002",
+    "Q148",
+    "Q143"
+   ],
+   "id": "E257"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q003",
+    "Q014",
+    "Q012",
+    "Q151",
+    "Q148"
+   ],
+   "id": "E258"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q013",
+    "Q023",
+    "Q017",
+    "Q152",
+    "Q143"
+   ],
+   "id": "E259"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q009",
+    "Q011",
+    "Q020",
+    "Q171",
+    "Q146"
+   ],
+   "id": "E260"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q016",
+    "Q007",
+    "Q011",
+    "Q168",
+    "Q146"
+   ],
+   "id": "E261"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q010",
+    "Q001",
+    "Q020",
+    "Q145",
+    "Q152"
+   ],
+   "id": "E262"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q007",
+    "Q013",
+    "Q004",
+    "Q150",
+    "Q155"
+   ],
+   "id": "E263"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "nyc_film_permits_xlsx",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q010",
+    "Q022",
+    "Q006",
+    "Q171",
+    "Q168"
+   ],
+   "id": "E264"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q076",
+    "Q080",
+    "Q092",
+    "Q101"
+   ],
+   "id": "E265"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q077",
+    "Q082",
+    "Q099",
+    "Q091"
+   ],
+   "id": "E266"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q080",
+    "Q078",
+    "Q083",
+    "Q092"
+   ],
+   "id": "E267"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q078",
+    "Q077",
+    "Q104",
+    "Q103"
+   ],
+   "id": "E268"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q079",
+    "Q076",
+    "Q080",
+    "Q103",
+    "Q091"
+   ],
+   "id": "E269"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q079",
+    "Q080",
+    "Q104",
+    "Q088"
+   ],
+   "id": "E270"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q079",
+    "Q082",
+    "Q096",
+    "Q091"
+   ],
+   "id": "E271"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q082",
+    "Q078",
+    "Q076",
+    "Q109",
+    "Q086"
+   ],
+   "id": "E272"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q081",
+    "Q082",
+    "Q091",
+    "Q086"
+   ],
+   "id": "E273"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "chinook"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q081",
+    "Q077",
+    "Q087",
+    "Q091"
+   ],
+   "id": "E274"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q080",
+    "Q076",
+    "Q078",
+    "Q112",
+    "Q118"
+   ],
+   "id": "E275"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q077",
+    "Q075",
+    "Q113",
+    "Q112"
+   ],
+   "id": "E276"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q080",
+    "Q075",
+    "Q078",
+    "Q114",
+    "Q123"
+   ],
+   "id": "E277"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q075",
+    "Q081",
+    "Q119",
+    "Q114"
+   ],
+   "id": "E278"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q080",
+    "Q082",
+    "Q119",
+    "Q114"
+   ],
+   "id": "E279"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q079",
+    "Q081",
+    "Q111",
+    "Q119"
+   ],
+   "id": "E280"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q081",
+    "Q077",
+    "Q076",
+    "Q110",
+    "Q118"
+   ],
+   "id": "E281"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q079",
+    "Q075",
+    "Q080",
+    "Q114",
+    "Q120"
+   ],
+   "id": "E282"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q075",
+    "Q080",
+    "Q121",
+    "Q117"
+   ],
+   "id": "E283"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_movies"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q079",
+    "Q076",
+    "Q082",
+    "Q116",
+    "Q124"
+   ],
+   "id": "E284"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q080",
+    "Q075",
+    "Q133",
+    "Q131"
+   ],
+   "id": "E285"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q076",
+    "Q082",
+    "Q130",
+    "Q131"
+   ],
+   "id": "E286"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q080",
+    "Q075",
+    "Q077",
+    "Q135",
+    "Q129"
+   ],
+   "id": "E287"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q075",
+    "Q079",
+    "Q128",
+    "Q134"
+   ],
+   "id": "E288"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q080",
+    "Q078",
+    "Q135",
+    "Q132"
+   ],
+   "id": "E289"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q082",
+    "Q081",
+    "Q131",
+    "Q133"
+   ],
+   "id": "E290"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q081",
+    "Q075",
+    "Q129",
+    "Q131"
+   ],
+   "id": "E291"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q079",
+    "Q080",
+    "Q077",
+    "Q128",
+    "Q130"
+   ],
+   "id": "E292"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q076",
+    "Q079",
+    "Q136",
+    "Q135"
+   ],
+   "id": "E293"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "cs50_songs"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q082",
+    "Q075",
+    "Q077",
+    "Q127",
+    "Q130"
+   ],
+   "id": "E294"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q076",
+    "Q077",
+    "Q078",
+    "Q150",
+    "Q152"
+   ],
+   "id": "E295"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q079",
+    "Q076",
+    "Q082",
+    "Q147",
+    "Q146"
+   ],
+   "id": "E296"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q078",
+    "Q075",
+    "Q143",
+    "Q147"
+   ],
+   "id": "E297"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q082",
+    "Q078",
+    "Q076",
+    "Q143",
+    "Q150"
+   ],
+   "id": "E298"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q076",
+    "Q082",
+    "Q153",
+    "Q151"
+   ],
+   "id": "E299"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q076",
+    "Q081",
+    "Q082",
+    "Q148",
+    "Q152"
+   ],
+   "id": "E300"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q082",
+    "Q077",
+    "Q079",
+    "Q171",
+    "Q147"
+   ],
+   "id": "E301"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q078",
+    "Q082",
+    "Q075",
+    "Q168",
+    "Q143"
+   ],
+   "id": "E302"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q075",
+    "Q078",
+    "Q080",
+    "Q151",
+    "Q147"
+   ],
+   "id": "E303"
+  },
+  {
+   "type": "manipulation",
+   "files": [
+    "restaurant_data",
+    "pcards"
+   ],
+   "time_limit_minutes": 8,
+   "question_ids": [
+    "Q077",
+    "Q078",
+    "Q079",
+    "Q147",
+    "Q150"
+   ],
+   "id": "E304"
+  },
+  {
+   "id": "R001",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I001",
+    "I019",
+    "I038",
+    "I049"
+   ]
+  },
+  {
+   "id": "R002",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I041",
+    "I005",
+    "I014",
+    "I031"
+   ]
+  },
+  {
+   "id": "R003",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I009",
+    "I005",
+    "I020",
+    "I043"
+   ]
+  },
+  {
+   "id": "R004",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I003",
+    "I039",
+    "I048",
+    "I015"
+   ]
+  },
+  {
+   "id": "R005",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I002",
+    "I011",
+    "I030",
+    "I043"
+   ]
+  },
+  {
+   "id": "R006",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I001",
+    "I037",
+    "I042",
+    "I023"
+   ]
+  },
+  {
+   "id": "R007",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I017",
+    "I035",
+    "I028",
+    "I015"
+   ]
+  },
+  {
+   "id": "R008",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I012",
+    "I039",
+    "I046",
+    "I031"
+   ]
+  },
+  {
+   "id": "R009",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I016",
+    "I039",
+    "I004",
+    "I031"
+   ]
+  },
+  {
+   "id": "R010",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I017",
+    "I037",
+    "I028",
+    "I043"
+   ]
+  },
+  {
+   "id": "R011",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I003",
+    "I039",
+    "I042",
+    "I023"
+   ]
+  },
+  {
+   "id": "R012",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I033",
+    "I007",
+    "I048",
+    "I031"
+   ]
+  },
+  {
+   "id": "R013",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I045",
+    "I029",
+    "I034",
+    "I021"
+   ]
+  },
+  {
+   "id": "R014",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I025",
+    "I005",
+    "I034",
+    "I023"
+   ]
+  },
+  {
+   "id": "R015",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I016",
+    "I027",
+    "I004",
+    "I049"
+   ]
+  },
+  {
+   "id": "R016",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I044",
+    "I007",
+    "I026",
+    "I021"
+   ]
+  },
+  {
+   "id": "R017",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I040",
+    "I027",
+    "I034",
+    "I023"
+   ]
+  },
+  {
+   "id": "R018",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I001",
+    "I037",
+    "I014",
+    "I049"
+   ]
+  },
+  {
+   "id": "R019",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I003",
+    "I029",
+    "I038",
+    "I043"
+   ]
+  },
+  {
+   "id": "R020",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I045",
+    "I019",
+    "I042",
+    "I015"
+   ]
+  },
+  {
+   "id": "R021",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I008",
+    "I027",
+    "I034",
+    "I049"
+   ]
+  },
+  {
+   "id": "R022",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I024",
+    "I005",
+    "I018",
+    "I049"
+   ]
+  },
+  {
+   "id": "R023",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I012",
+    "I019",
+    "I048",
+    "I031"
+   ]
+  },
+  {
+   "id": "R024",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I013",
+    "I037",
+    "I042",
+    "I021"
+   ]
+  },
+  {
+   "id": "R025",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I045",
+    "I039",
+    "I020",
+    "I015"
+   ]
+  },
+  {
+   "id": "R026",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I040",
+    "I039",
+    "I010",
+    "I031"
+   ]
+  },
+  {
+   "id": "R027",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I009",
+    "I039",
+    "I026",
+    "I023"
+   ]
+  },
+  {
+   "id": "R028",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I016",
+    "I035",
+    "I042",
+    "I015"
+   ]
+  },
+  {
+   "id": "R029",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I045",
+    "I035",
+    "I020",
+    "I031"
+   ]
+  },
+  {
+   "id": "R030",
+   "type": "interpretation",
+   "files": [
+    "restaurant_data"
+   ],
+   "time_limit_minutes": 5,
+   "question_ids": [
+    "I044",
+    "I019",
+    "I010",
+    "I043"
+   ]
+  }
+ ]
+}

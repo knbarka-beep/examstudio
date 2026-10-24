@@ -1,0 +1,20 @@
+{
+ "1. Excel Part 1/PWC Excel Assignment/NYC_Film_Permits.xlsx": {"id": "nyc_film_permits_xlsx", "label": "NYC film permits (Excel)"},
+ "1. Excel Part 1/PWC Excel Assignment/NYC_Film_Permits.txt": {"id": "nyc_film_permits_txt", "label": "NYC film permits (text export)"},
+ "1. Excel part 2/ETL Assignment/data/case 1/Analytics_mindset_case_studies_ETL_Case1.csv": {"id": "etl_case1", "label": "ETL case 1 data"},
+ "1. Excel part 2/ETL Assignment/data/case 2/Analytics_mindset_case_studies_ETL_Case2_Excel.xlsx": {"id": "etl_case2", "label": "ETL case 2 data"},
+ "1. Excel part 2/ETL Assignment/data/case 3/Analytics_mindset_case_studies_ETL_Case3_Excel.xlsx": {"id": "etl_case3", "label": "ETL case 3 data"},
+ "1. Excel part 2/ETL Assignment/data/case 4/Analytics_mindset_case_studies_ETL_Case4_Excel.xlsx": {"id": "etl_case4", "label": "ETL case 4 data"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_2015payroll.csv": {"id": "ic_payroll2015_csv", "label": "IntegrateCo payroll 2015 (CSV)"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_2015payroll.xlsx": {"id": "ic_payroll2015_xlsx", "label": "IntegrateCo payroll 2015 (Excel)"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_2016payroll.csv": {"id": "ic_payroll2016_csv", "label": "IntegrateCo payroll 2016 (CSV)"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_2016payroll.xlsx": {"id": "ic_payroll2016_xlsx", "label": "IntegrateCo payroll 2016 (Excel)"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_locations.csv": {"id": "ic_locations", "label": "IntegrateCo locations"},
+ "1. Excel part 3/IntegrateCo Assignment/Analytics_mindset_case_studies_IntegrateCo_jobcodes.csv": {"id": "ic_jobcodes", "label": "IntegrateCo job codes"},
+ "1. Excel part 4/Regression Assignment/Restaurant/data.xlsm": {"id": "restaurant_data", "label": "Restaurant regression data"},
+ "2. SQL part 1/Assignments/cs50 assignment/movies/movies.db": {"id": "cs50_movies", "label": "CS50 movies database"},
+ "2. SQL part 1/Assignments/cs50 assignment/songs/songs.db": {"id": "cs50_songs", "label": "CS50 songs database"},
+ "2. SQL part 1/Assignments/cs50 assignment/mystery (OPTIONAL)/fiftyville.db": {"id": "cs50_fiftyville", "label": "CS50 Fiftyville database (optional)"},
+ "2. SQL part 1/Assignments/pwc assignment/Chinook_Sqlite.sqlite": {"id": "chinook", "label": "Chinook music store database"},
+ "2. SQL part 2/Pcards Assignment/pcards.db": {"id": "pcards", "label": "Oklahoma P-card transactions"}
+}

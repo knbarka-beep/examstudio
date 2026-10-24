@@ -1,0 +1,15 @@
+{
+ "id": "Q079",
+ "columns": [
+  "tmax"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   84.02
+  ]
+ ],
+ "sha256": "b89f5ca3e76ac0a0ef73db7ce44668dc379cf66eb16bd8588b23198bc4432ccb",
+ "note": "Computed independently with pandas from the raw file."
+}

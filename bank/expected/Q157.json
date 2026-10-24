@@ -1,0 +1,197 @@
+{
+ "id": "Q157",
+ "columns": [
+  "Month",
+  "Year",
+  "Name",
+  "Description",
+  "Vendor",
+  "Amount",
+  "SalesTax"
+ ],
+ "row_count": 6306,
+ "ordered": true,
+ "rows": [
+  [
+   12,
+   2013,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "INTERCONTINENTAL HOTEL SA",
+   15931.16,
+   716.9
+  ],
+  [
+   12,
+   2013,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "NIKE.COM",
+   8161.2,
+   367.25
+  ],
+  [
+   12,
+   2013,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "COCKRELL EYECARE CENTER",
+   7651.78,
+   344.33
+  ],
+  [
+   12,
+   2013,
+   "J Roark",
+   "GENERAL PURCHASE",
+   "NATIONAL COLLEGIATE HONO",
+   5000,
+   225
+  ],
+  [
+   12,
+   2013,
+   "A Bowman",
+   "GENERAL PURCHASE",
+   "QUALTRICS",
+   5000,
+   225
+  ],
+  [
+   12,
+   2013,
+   "D Whitmore",
+   "GENERAL PURCHASE",
+   "HERITAGE",
+   4999.49,
+   224.98
+  ],
+  [
+   12,
+   2013,
+   "J Heusel",
+   "GENERAL PURCHASE",
+   "INTERMOUNTAIN LOCK AND SE",
+   4998,
+   224.91
+  ],
+  [
+   12,
+   2013,
+   "R Farris",
+   "GENERAL PURCHASE",
+   "DIXON FARM SUPPLY",
+   4912.25,
+   221.05
+  ],
+  [
+   12,
+   2013,
+   "J Teel",
+   "GENERAL PURCHASE",
+   "CHEMGLASS LIFE SCIENCES",
+   4902.86,
+   220.63
+  ],
+  [
+   12,
+   2013,
+   "K Casey",
+   "47926 EACH",
+   "SURVEY SAMPLING",
+   4900.44,
+   220.52
+  ],
+  [
+   12,
+   2013,
+   "D Vashaee",
+   "GENERAL PURCHASE",
+   "TOYO TANSO USA INC",
+   4882.12,
+   219.7
+  ],
+  [
+   12,
+   2013,
+   "D Whitmore",
+   "GENERAL PURCHASE",
+   "STILLWATER SCREENPRINTING",
+   4857.16,
+   218.57
+  ],
+  [
+   12,
+   2013,
+   "G Mourer",
+   "188463 EA",
+   "MWI VETERINARY SUPPLY CO",
+   4850,
+   218.25
+  ],
+  [
+   12,
+   2013,
+   "M Tobler",
+   "00000000000000000000000074 125|1 CHNL FREE RADICAL",
+   "WORLD PRECISION INSTRUMEN",
+   4840,
+   217.8
+  ],
+  [
+   12,
+   2013,
+   "J Heusel",
+   "GENERAL PURCHASE",
+   "BIOTECH PRODUCTS HARDWARE",
+   4822,
+   216.99
+  ],
+  [
+   12,
+   2013,
+   "M Al-Harake",
+   "GENERAL PURCHASE",
+   "SQ  COX CUSTOM CREATIONS",
+   4800,
+   216
+  ],
+  [
+   12,
+   2013,
+   "D Whitefield",
+   "GENERAL PURCHASE",
+   "SAIC ENVIRONMENTAL EQUIPM",
+   4797.54,
+   215.89
+  ],
+  [
+   12,
+   2013,
+   "K Dallen",
+   "GENERAL PURCHASE",
+   "CAMPBELL SCIENTIFIC INC",
+   4782.54,
+   215.21
+  ],
+  [
+   12,
+   2013,
+   "K Brock",
+   "GENERAL PURCHASE",
+   "SQ  NOLAN SCHMIDT",
+   4774,
+   214.83
+  ],
+  [
+   12,
+   2013,
+   "C Cowell",
+   "GENERAL PURCHASE",
+   "JAILHOUSE FEED  FARM",
+   4753.98,
+   213.93
+  ]
+ ],
+ "sha256": "3a9605f6ff0d5c3e10c72822dd8c135f4455d1a798f7a61f6012cd1268f43390"
+}

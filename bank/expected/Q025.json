@@ -1,0 +1,15 @@
+{
+ "id": "Q025",
+ "columns": [
+  "share"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   0.12
+  ]
+ ],
+ "sha256": "8fa0102cbd2a9f26dfdf955304c00999cda3e13284e6ff22fab2d41757a64e5a",
+ "note": "Computed independently with pandas from the raw file."
+}

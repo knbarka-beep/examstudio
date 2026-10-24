@@ -1,0 +1,15 @@
+{
+ "id": "Q046",
+ "columns": [
+  "debit"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   439054.18
+  ]
+ ],
+ "sha256": "e8906adeee306e31866c2ef16f5dba924582b34e810eb5b9d5a4d28e6d422e65",
+ "note": "Computed independently with pandas from the raw file."
+}

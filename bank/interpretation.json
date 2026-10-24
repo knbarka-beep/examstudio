@@ -1,0 +1,543 @@
+[
+ {
+  "id": "I001",
+  "kind": "predict",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). Bob wants sales for 07.01.2019, 7 days after the last day of data (31.12.2018). Sales on 31.12.2018 were 3,252.00 dollars and sales on 08.01.2018 (364 days before the target) were 2,841.00 dollars. Predict daily sales for sales_364 = 2841 dollars, sales_7 = 3252 dollars. (sales_364 observed from 0 to 7557; sales_7 observed from 0 to 7033.)",
+  "worked_answer": "sales = 704.3618 + 0.2452 x sales_7 + 0.4969 x sales_364. Predicted sales = 704.3618 + 0.2452 x 3252 + 0.4969 x 2841 = 2,913.45 dollars.",
+  "inputs": {
+   "sales_7": 3252.0,
+   "sales_364": 2841.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I002",
+  "kind": "predict",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). Predict daily sales for sales_364 = 2743 dollars, sales_7 = 2524 dollars. (sales_364 observed from 0 to 7557; sales_7 observed from 0 to 7033.)",
+  "worked_answer": "sales = 704.3618 + 0.2452 x sales_7 + 0.4969 x sales_364. Predicted sales = 704.3618 + 0.2452 x 2524 + 0.4969 x 2743 = 2,686.24 dollars.",
+  "inputs": {
+   "sales_364": 2743.0,
+   "sales_7": 2524.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I003",
+  "kind": "predict",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). Predict daily sales for sales_364 = 4321 dollars, sales_7 = 3967 dollars. (sales_364 observed from 0 to 7557; sales_7 observed from 0 to 7033.)",
+  "worked_answer": "sales = 704.3618 + 0.2452 x sales_7 + 0.4969 x sales_364. Predicted sales = 704.3618 + 0.2452 x 3967 + 0.4969 x 4321 = 3,824.18 dollars.",
+  "inputs": {
+   "sales_364": 4321.0,
+   "sales_7": 3967.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I004",
+  "kind": "significance",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). The coefficient on sales_7 is 0.2452 with standard error 0.046 and p-value 1.851e-07. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 1.851e-07 is below 0.05, so the coefficient on sales_7 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I005",
+  "kind": "coefficient",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). Interpret the coefficient on sales_7 (0.2452) in words, with units.",
+  "worked_answer": "sales_7 is the total net sales 7 days earlier (sum of netTotal_7 over items). Holding the other variables in the model constant, each additional dollar of sales_7 goes with predicted daily sales that are 0.2452 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I006",
+  "kind": "significance",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). The coefficient on sales_364 is 0.4969 with standard error 0.0424 and p-value 1.74e-26. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 1.74e-26 is below 0.05, so the coefficient on sales_364 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I007",
+  "kind": "coefficient",
+  "model_id": "M1",
+  "prompt": "Model M1: sales ~ sales_7 + sales_364 (OLS, n = 312, R squared = 0.5691). Interpret the coefficient on sales_364 (0.4969) in words, with units.",
+  "worked_answer": "sales_364 is the total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items). Holding the other variables in the model constant, each additional dollar of sales_364 goes with predicted daily sales that are 0.4969 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I008",
+  "kind": "predict",
+  "model_id": "M2",
+  "prompt": "Model M2: sales ~ tmax (OLS, n = 312, R squared = 0.0227). Predict daily sales for tmax = 52 degrees Fahrenheit. (tmax observed from 28.94 to 104.)",
+  "worked_answer": "sales = 2725.2924 + 7.5797 x tmax. Predicted sales = 2725.2924 + 7.5797 x 52 = 3,119.44 dollars.",
+  "inputs": {
+   "tmax": 52.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I009",
+  "kind": "predict",
+  "model_id": "M2",
+  "prompt": "Model M2: sales ~ tmax (OLS, n = 312, R squared = 0.0227). Predict daily sales for tmax = 89 degrees Fahrenheit. (tmax observed from 28.94 to 104.)",
+  "worked_answer": "sales = 2725.2924 + 7.5797 x tmax. Predicted sales = 2725.2924 + 7.5797 x 89 = 3,399.89 dollars.",
+  "inputs": {
+   "tmax": 89.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I010",
+  "kind": "significance",
+  "model_id": "M2",
+  "prompt": "Model M2: sales ~ tmax (OLS, n = 312, R squared = 0.0227). The coefficient on tmax is 7.5797 with standard error 2.824 and p-value 0.007666. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.007666 is below 0.05, so the coefficient on tmax is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I011",
+  "kind": "coefficient",
+  "model_id": "M2",
+  "prompt": "Model M2: sales ~ tmax (OLS, n = 312, R squared = 0.0227). Interpret the coefficient on tmax (7.5797) in words, with units.",
+  "worked_answer": "tmax is the maximum temperature during the day. Each additional degree Fahrenheit of tmax goes with predicted daily sales that are 7.5797 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I012",
+  "kind": "predict",
+  "model_id": "M3",
+  "prompt": "Model M3: sales ~ gameDay (OLS, n = 312, R squared = 0.0748). Predict daily sales for gameDay = 1. (gameDay observed from 0 to 1.)",
+  "worked_answer": "sales = 3191.0803 + 1436.3043 x gameDay. Predicted sales = 3191.0803 + 1436.3043 x 1 = 4,627.38 dollars.",
+  "inputs": {
+   "gameDay": 1
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I013",
+  "kind": "predict",
+  "model_id": "M3",
+  "prompt": "Model M3: sales ~ gameDay (OLS, n = 312, R squared = 0.0748). Predict daily sales for gameDay = 0. (gameDay observed from 0 to 1.)",
+  "worked_answer": "sales = 3191.0803 + 1436.3043 x gameDay. Predicted sales = 3191.0803 + 1436.3043 x 0 = 3,191.08 dollars.",
+  "inputs": {
+   "gameDay": 0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I014",
+  "kind": "significance",
+  "model_id": "M3",
+  "prompt": "Model M3: sales ~ gameDay (OLS, n = 312, R squared = 0.0748). The coefficient on gameDay is 1436.3043 with standard error 286.9742 and p-value 9.383e-07. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 9.383e-07 is below 0.05, so the coefficient on gameDay is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I015",
+  "kind": "dummy",
+  "model_id": "M3",
+  "prompt": "Model M3: sales ~ gameDay (OLS, n = 312, R squared = 0.0748). Explain the coefficient on gameDay (1436.3043) against its reference group.",
+  "worked_answer": "gameDay is 1 on game days and 0 on days without a game, the reference group. Predicted daily sales on game days are 1,436.30 dollars higher than on days without a game.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I016",
+  "kind": "predict",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). Predict daily sales for gameDay = 0, sales_364 = 2743 dollars. (gameDay observed from 0 to 1; sales_364 observed from 0 to 7557.)",
+  "worked_answer": "sales = 1044.4155 + 0.6196 x sales_364 + 387.0296 x gameDay + 0.0107 x sales_364:gameDay. Predicted sales = 1044.4155 + 0.6196 x 2743 + 387.0296 x 0 + 0.0107 x 0 = 2,743.98 dollars.",
+  "inputs": {
+   "sales_364": 2743.0,
+   "gameDay": 0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I017",
+  "kind": "predict",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). Predict daily sales for gameDay = 1, sales_364 = 4321 dollars. (gameDay observed from 0 to 1; sales_364 observed from 0 to 7557.)",
+  "worked_answer": "sales = 1044.4155 + 0.6196 x sales_364 + 387.0296 x gameDay + 0.0107 x sales_364:gameDay. Predicted sales = 1044.4155 + 0.6196 x 4321 + 387.0296 x 1 + 0.0107 x 4321 = 4,154.97 dollars.",
+  "inputs": {
+   "sales_364": 4321.0,
+   "gameDay": 1
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I018",
+  "kind": "significance",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). The coefficient on sales_364 is 0.6196 with standard error 0.0364 and p-value 3.331e-46. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 3.331e-46 is below 0.05, so the coefficient on sales_364 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I019",
+  "kind": "coefficient",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). Interpret the coefficient on sales_364 (0.6196) in words, with units.",
+  "worked_answer": "sales_364 is the total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items). On days without a game (gameDay = 0), because the model has an interaction, each additional dollar of sales_364 goes with predicted daily sales that are 0.6196 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I020",
+  "kind": "significance",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). The coefficient on gameDay is 387.0296 with standard error 813.7023 and p-value 0.6347. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.6347 is not below 0.05, so the coefficient on gameDay is not significant at the 5 % level: we cannot reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "not significant",
+  "status": "validated"
+ },
+ {
+  "id": "I021",
+  "kind": "dummy",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). Explain the coefficient on gameDay (387.0296) against its reference group.",
+  "worked_answer": "gameDay is 1 on game days and 0 on days without a game, the reference group. When sales_364 is 0, predicted daily sales on game days are 387.03 dollars higher than on days without a game. Because of the interaction, the gap at other values of sales_364 is 387.0296 + 0.0107 x sales_364.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I022",
+  "kind": "significance",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). The coefficient on sales_364:gameDay is 0.0107 with standard error 0.1576 and p-value 0.9457. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.9457 is not below 0.05, so the coefficient on sales_364:gameDay is not significant at the 5 % level: we cannot reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "not significant",
+  "status": "validated"
+ },
+ {
+  "id": "I023",
+  "kind": "dummy",
+  "model_id": "M4",
+  "prompt": "Model M4: sales ~ sales_364 x gameDay (OLS, n = 312, R squared = 0.536). Explain what the interaction sales_364:gameDay means, and give the difference in predicted sales between game days and days without a game when sales_364 = 3257 dollars (sales_364 observed from 0 to 7557).",
+  "worked_answer": "The effect of a gameDay depends on sales_364: on game days each extra dollar of sales_364 changes predicted sales by 0.6196 + 0.0107 = 0.6303 dollars instead of 0.6196. Difference at sales_364 = 3257: 387.0296 + 0.0107 x 3257 = 421.88 dollars.",
+  "inputs": {
+   "sales_364": 3257.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I024",
+  "kind": "predict",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). Predict daily sales for gameDay = 0, prcp = 0 inches, tmax = 51 degrees Fahrenheit. (gameDay observed from 0 to 1; prcp observed from 0 to 12.0079; tmax observed from 28.94 to 104.)",
+  "worked_answer": "sales = 2637.0401 + 7.873 x tmax + 33.3363 x prcp + 1397.8348 x gameDay. Predicted sales = 2637.0401 + 7.873 x 51 + 33.3363 x 0 + 1397.8348 x 0 = 3,038.56 dollars.",
+  "inputs": {
+   "prcp": 0.0,
+   "tmax": 51.0,
+   "gameDay": 0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I025",
+  "kind": "predict",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). Predict daily sales for gameDay = 1, prcp = 0 inches, tmax = 89 degrees Fahrenheit. (gameDay observed from 0 to 1; prcp observed from 0 to 12.0079; tmax observed from 28.94 to 104.)",
+  "worked_answer": "sales = 2637.0401 + 7.873 x tmax + 33.3363 x prcp + 1397.8348 x gameDay. Predicted sales = 2637.0401 + 7.873 x 89 + 33.3363 x 0 + 1397.8348 x 1 = 4,735.57 dollars.",
+  "inputs": {
+   "prcp": 0.0,
+   "tmax": 89.0,
+   "gameDay": 1
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I026",
+  "kind": "significance",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). The coefficient on tmax is 7.873 with standard error 2.7868 and p-value 0.005038. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.005038 is below 0.05, so the coefficient on tmax is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I027",
+  "kind": "coefficient",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). Interpret the coefficient on tmax (7.873) in words, with units.",
+  "worked_answer": "tmax is the maximum temperature during the day. Holding the other variables in the model constant, each additional degree Fahrenheit of tmax goes with predicted daily sales that are 7.873 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I028",
+  "kind": "significance",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). The coefficient on prcp is 33.3363 with standard error 45.7198 and p-value 0.4665. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.4665 is not below 0.05, so the coefficient on prcp is not significant at the 5 % level: we cannot reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "not significant",
+  "status": "validated"
+ },
+ {
+  "id": "I029",
+  "kind": "coefficient",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). Interpret the coefficient on prcp (33.3363) in words, with units.",
+  "worked_answer": "prcp is the total precipitation during the day. Holding the other variables in the model constant, each additional inch of prcp goes with predicted daily sales that are 33.3363 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I030",
+  "kind": "significance",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). The coefficient on gameDay is 1397.8348 with standard error 285.731 and p-value 1.618e-06. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 1.618e-06 is below 0.05, so the coefficient on gameDay is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I031",
+  "kind": "dummy",
+  "model_id": "M5",
+  "prompt": "Model M5: sales ~ tmax + prcp + gameDay (OLS, n = 309, R squared = 0.099). Explain the coefficient on gameDay (1397.8348) against its reference group.",
+  "worked_answer": "gameDay is 1 on game days and 0 on days without a game, the reference group. Holding the other variables in the model constant, predicted daily sales on game days are 1,397.83 dollars higher than on days without a game.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I032",
+  "kind": "predict",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). Predict daily sales for sales_28 = 2574 dollars, sales_364 = 2743 dollars, sales_7 = 2524 dollars. (sales_28 observed from 0 to 7033; sales_364 observed from 0 to 7557; sales_7 observed from 0 to 7033.)",
+  "worked_answer": "sales = 513.0793 + 0.1638 x sales_7 + 0.2107 x sales_28 + 0.4299 x sales_364. Predicted sales = 513.0793 + 0.1638 x 2524 + 0.2107 x 2574 + 0.4299 x 2743 = 2,648.07 dollars.",
+  "inputs": {
+   "sales_28": 2574.0,
+   "sales_364": 2743.0,
+   "sales_7": 2524.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I033",
+  "kind": "predict",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). Predict daily sales for sales_28 = 3982 dollars, sales_364 = 4321 dollars, sales_7 = 3967 dollars. (sales_28 observed from 0 to 7033; sales_364 observed from 0 to 7557; sales_7 observed from 0 to 7033.)",
+  "worked_answer": "sales = 513.0793 + 0.1638 x sales_7 + 0.2107 x sales_28 + 0.4299 x sales_364. Predicted sales = 513.0793 + 0.1638 x 3967 + 0.2107 x 3982 + 0.4299 x 4321 = 3,859.48 dollars.",
+  "inputs": {
+   "sales_28": 3982.0,
+   "sales_364": 4321.0,
+   "sales_7": 3967.0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I034",
+  "kind": "significance",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). The coefficient on sales_7 is 0.1638 with standard error 0.0477 and p-value 0.0006852. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.0006852 is below 0.05, so the coefficient on sales_7 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I035",
+  "kind": "coefficient",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). Interpret the coefficient on sales_7 (0.1638) in words, with units.",
+  "worked_answer": "sales_7 is the total net sales 7 days earlier (sum of netTotal_7 over items). Holding the other variables in the model constant, each additional dollar of sales_7 goes with predicted daily sales that are 0.1638 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I036",
+  "kind": "significance",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). The coefficient on sales_28 is 0.2107 with standard error 0.045 and p-value 4.164e-06. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 4.164e-06 is below 0.05, so the coefficient on sales_28 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I037",
+  "kind": "coefficient",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). Interpret the coefficient on sales_28 (0.2107) in words, with units.",
+  "worked_answer": "sales_28 is the total net sales 28 days earlier (sum of netTotal_28 over items). Holding the other variables in the model constant, each additional dollar of sales_28 goes with predicted daily sales that are 0.2107 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I038",
+  "kind": "significance",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). The coefficient on sales_364 is 0.4299 with standard error 0.0435 and p-value 3.236e-20. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 3.236e-20 is below 0.05, so the coefficient on sales_364 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I039",
+  "kind": "coefficient",
+  "model_id": "M6",
+  "prompt": "Model M6: sales ~ sales_7 + sales_28 + sales_364 (OLS, n = 312, R squared = 0.5978). Interpret the coefficient on sales_364 (0.4299) in words, with units.",
+  "worked_answer": "sales_364 is the total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items). Holding the other variables in the model constant, each additional dollar of sales_364 goes with predicted daily sales that are 0.4299 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I040",
+  "kind": "predict",
+  "model_id": "M7",
+  "prompt": "Model M7: sales ~ homeGame (OLS, n = 312, R squared = 0.11). Predict daily sales for homeGame = 1. (homeGame observed from 0 to 1.)",
+  "worked_answer": "sales = 3202.1699 + 2535.3301 x homeGame. Predicted sales = 3202.1699 + 2535.3301 x 1 = 5,737.50 dollars.",
+  "inputs": {
+   "homeGame": 1
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I041",
+  "kind": "predict",
+  "model_id": "M7",
+  "prompt": "Model M7: sales ~ homeGame (OLS, n = 312, R squared = 0.11). Predict daily sales for homeGame = 0. (homeGame observed from 0 to 1.)",
+  "worked_answer": "sales = 3202.1699 + 2535.3301 x homeGame. Predicted sales = 3202.1699 + 2535.3301 x 0 = 3,202.17 dollars.",
+  "inputs": {
+   "homeGame": 0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I042",
+  "kind": "significance",
+  "model_id": "M7",
+  "prompt": "Model M7: sales ~ homeGame (OLS, n = 312, R squared = 0.11). The coefficient on homeGame is 2535.3301 with standard error 409.5191 and p-value 1.894e-09. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 1.894e-09 is below 0.05, so the coefficient on homeGame is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I043",
+  "kind": "dummy",
+  "model_id": "M7",
+  "prompt": "Model M7: sales ~ homeGame (OLS, n = 312, R squared = 0.11). Explain the coefficient on homeGame (2535.3301) against its reference group.",
+  "worked_answer": "homeGame is 1 on home game days and 0 on days without a home game (no game or an away game), the reference group. Predicted daily sales on home game days are 2,535.33 dollars higher than on days without a home game (no game or an away game).",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I044",
+  "kind": "predict",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). Predict daily sales for gameDay = 0, sales_364 = 2743 dollars. (gameDay observed from 0 to 1; sales_364 observed from 0 to 7557.)",
+  "worked_answer": "sales = 1042.4279 + 0.6202 x sales_364 + 440.5611 x gameDay. Predicted sales = 1042.4279 + 0.6202 x 2743 + 440.5611 x 0 = 2,743.64 dollars.",
+  "inputs": {
+   "sales_364": 2743.0,
+   "gameDay": 0
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I045",
+  "kind": "predict",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). Predict daily sales for gameDay = 1, sales_364 = 4321 dollars. (gameDay observed from 0 to 1; sales_364 observed from 0 to 7557.)",
+  "worked_answer": "sales = 1042.4279 + 0.6202 x sales_364 + 440.5611 x gameDay. Predicted sales = 1042.4279 + 0.6202 x 4321 + 440.5611 x 1 = 4,162.87 dollars.",
+  "inputs": {
+   "sales_364": 4321.0,
+   "gameDay": 1
+  },
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I046",
+  "kind": "significance",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). The coefficient on sales_364 is 0.6202 with standard error 0.0354 and p-value 3.172e-48. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 3.172e-48 is below 0.05, so the coefficient on sales_364 is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I047",
+  "kind": "coefficient",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). Interpret the coefficient on sales_364 (0.6202) in words, with units.",
+  "worked_answer": "sales_364 is the total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items). Holding the other variables in the model constant, each additional dollar of sales_364 goes with predicted daily sales that are 0.6202 dollars higher.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ },
+ {
+  "id": "I048",
+  "kind": "significance",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). The coefficient on gameDay is 440.5611 with standard error 211.3399 and p-value 0.03793. Is it statistically significant at the 5 % level?",
+  "worked_answer": "p = 0.03793 is below 0.05, so the coefficient on gameDay is significant at the 5 % level: we reject the null hypothesis that its true value is zero.",
+  "inputs": {},
+  "significance_verdict": "significant",
+  "status": "validated"
+ },
+ {
+  "id": "I049",
+  "kind": "dummy",
+  "model_id": "M8",
+  "prompt": "Model M8: sales ~ sales_364 + gameDay (OLS, n = 312, R squared = 0.536). Explain the coefficient on gameDay (440.5611) against its reference group.",
+  "worked_answer": "gameDay is 1 on game days and 0 on days without a game, the reference group. Holding the other variables in the model constant, predicted daily sales on game days are 440.56 dollars higher than on days without a game.",
+  "inputs": {},
+  "significance_verdict": null,
+  "status": "validated"
+ }
+]

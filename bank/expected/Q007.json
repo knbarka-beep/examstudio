@@ -1,0 +1,15 @@
+{
+ "id": "Q007",
+ "columns": [
+  "newest"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "2018-02-09 12:46:00"
+  ]
+ ],
+ "sha256": "2a91471224e8a8be06da00fd0af0bbaac46ea7729218c2effdec01abe8ee8343",
+ "note": "Computed independently with pandas from the raw file."
+}

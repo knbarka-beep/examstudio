@@ -1,0 +1,92 @@
+{
+ "id": "Q168",
+ "columns": [
+  "Name",
+  "TotalSpent"
+ ],
+ "row_count": 127,
+ "ordered": true,
+ "rows": [
+  [
+   "G Hines",
+   1595302.32
+  ],
+  [
+   "M Tornakian",
+   1182094.86
+  ],
+  [
+   "J Heusel",
+   627608.56
+  ],
+  [
+   "S Fitzpatrick",
+   437479.84
+  ],
+  [
+   "R Bowers",
+   392761.34
+  ],
+  [
+   "T Munday",
+   340329.11
+  ],
+  [
+   "V Yarbrough-Tessman",
+   320016.94
+  ],
+  [
+   "J Teel",
+   282056.99
+  ],
+  [
+   "M Clark",
+   275898.62
+  ],
+  [
+   "D Turner",
+   242938.28
+  ],
+  [
+   "J Bailey",
+   222736.87
+  ],
+  [
+   "D Whitmore",
+   209114.21
+  ],
+  [
+   "C Stover",
+   193760.77
+  ],
+  [
+   "H Forquer",
+   176712.96
+  ],
+  [
+   "A Ropers",
+   170611.36
+  ],
+  [
+   "C Boettcher",
+   170233.57
+  ],
+  [
+   "C Wood",
+   162853.9
+  ],
+  [
+   "J Biggs",
+   159631.12
+  ],
+  [
+   "A Kindred",
+   158280.67
+  ],
+  [
+   "S Robinson",
+   147586.06
+  ]
+ ],
+ "sha256": "86197d191dade3ee9da739f40c8ac0a455c65a7af6df07a66357d87e8e5134bc"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "Q077",
+ "columns": [
+  "dates",
+  "short_dates"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   312,
+   16
+  ]
+ ],
+ "sha256": "2d59991d81a1064ce157edd38e0887a621f836053e2bf7d3c7efa163bf4e9c93",
+ "note": "Computed independently with pandas from the raw file."
+}

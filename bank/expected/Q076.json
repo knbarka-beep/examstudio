@@ -1,0 +1,15 @@
+{
+ "id": "Q076",
+ "columns": [
+  "sales"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   2841
+  ]
+ ],
+ "sha256": "a7d38674dc215e7a3b373998b06698d88e52d7a23b4689c825b050fe6a8d9e7b",
+ "note": "Computed independently with pandas from the raw file."
+}

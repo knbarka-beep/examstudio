@@ -1,0 +1,15 @@
+{
+ "id": "Q034",
+ "columns": [
+  "count"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   81
+  ]
+ ],
+ "sha256": "17ab2778a9d9d05847a369cac1e51142eda12eea61664dcb952413ccdea8a192",
+ "note": "Computed independently with pandas from the raw file."
+}

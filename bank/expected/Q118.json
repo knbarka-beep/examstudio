@@ -1,0 +1,14 @@
+{
+ "id": "Q118",
+ "columns": [
+  "AVG(rating)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   6.23
+  ]
+ ],
+ "sha256": "c9e7c41bfa4f9a42cd3bb3d984ff7427dabb6b0bf146368d0bbfa400f555ea81"
+}

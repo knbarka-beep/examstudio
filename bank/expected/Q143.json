@@ -1,0 +1,85 @@
+{
+ "id": "Q143",
+ "columns": [
+  "Year",
+  "Month",
+  "Name",
+  "Amount",
+  "Vendor"
+ ],
+ "row_count": 10,
+ "ordered": true,
+ "rows": [
+  [
+   2011,
+   9,
+   "C STOVER",
+   247224,
+   "KONE INC."
+  ],
+  [
+   2012,
+   5,
+   "C STOVER",
+   200000,
+   "KONE INC."
+  ],
+  [
+   2012,
+   1,
+   "A ROPERS",
+   172461,
+   "AIP SOCIETY SERVICE"
+  ],
+  [
+   2011,
+   11,
+   "A ROPERS",
+   148904.01,
+   "SKC COMMUNICATION PRODUCT"
+  ],
+  [
+   2012,
+   3,
+   "C CLARK",
+   141427.39,
+   "AIRGAS CENTRAL"
+  ],
+  [
+   2011,
+   11,
+   "C STOVER",
+   136291.59,
+   "EXPRESS EMPLOYMENT PROFES"
+  ],
+  [
+   2011,
+   9,
+   "C STOVER",
+   111355.32,
+   "EXPRESS EMPLOYMENT PROFES"
+  ],
+  [
+   2011,
+   10,
+   "A ROPERS",
+   110350,
+   "COLE AND REED PC"
+  ],
+  [
+   2011,
+   11,
+   "J BRAZIL",
+   109600,
+   "12TH MAN TICKETS"
+  ],
+  [
+   2010,
+   11,
+   "C CLARK",
+   104216.97,
+   "SKC COMMUNICATION PRODUCT"
+  ]
+ ],
+ "sha256": "6b96813ca43e27276ca785c32c17c38117c2e9f0ffea9780b082e6d193459fd2"
+}

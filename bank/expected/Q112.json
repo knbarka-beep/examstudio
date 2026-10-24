@@ -1,0 +1,14 @@
+{
+ "id": "Q112",
+ "columns": [
+  "birth"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   1963
+  ]
+ ],
+ "sha256": "9385c538d14a5b2fd0cfc84d32ab3ea27f51e57ac1aed582a2b9e9c9097fbdfa"
+}

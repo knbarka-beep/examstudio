@@ -1,0 +1,15 @@
+{
+ "id": "Q023",
+ "columns": [
+  "day"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Thursday"
+  ]
+ ],
+ "sha256": "80e354fbb999490ca8cba8d5211d564cd8ce487627e64345fb166c07a8fa40d3",
+ "note": "Computed independently with pandas from the raw file."
+}

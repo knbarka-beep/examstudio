@@ -1,0 +1,17 @@
+{
+ "id": "Q074",
+ "columns": [
+  "pay_dates",
+  "payroll_ids"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   37,
+   56
+  ]
+ ],
+ "sha256": "a0509d29d06a60c08cf96fd7ee6f5334049ca3e5240e8dc490876b0d5746b45f",
+ "note": "Computed independently with pandas from the raw file."
+}

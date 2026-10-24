@@ -1,0 +1,15 @@
+{
+ "id": "Q069",
+ "columns": [
+  "per_hour"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   30.84
+  ]
+ ],
+ "sha256": "8894a659364728a04febcb780832e141313c750afb1baf9c17db6a9f9d3f57b1",
+ "note": "Computed independently with pandas from the raw file."
+}

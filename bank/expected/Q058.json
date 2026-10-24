@@ -1,0 +1,15 @@
+{
+ "id": "Q058",
+ "columns": [
+  "gross_pay"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   0
+  ]
+ ],
+ "sha256": "b090d835c2966cecd58fb01c143665f08013b27ff699757e5bfccb8de6a609f8",
+ "note": "Computed independently with pandas from the raw file."
+}

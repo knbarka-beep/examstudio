@@ -1,0 +1,16 @@
+{
+ "id": "Q166",
+ "columns": [
+  "TotalSpent",
+  "Vendor"
+ ],
+ "row_count": 1,
+ "ordered": true,
+ "rows": [
+  [
+   440379.18,
+   "Amazon.com"
+  ]
+ ],
+ "sha256": "1bec0e1c477a0c48f497442f88ec2126a2b2a7ff0fd9d753fb40800a084a4b54"
+}

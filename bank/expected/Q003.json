@@ -1,0 +1,15 @@
+{
+ "id": "Q003",
+ "columns": [
+  "missing"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   11
+  ]
+ ],
+ "sha256": "53b92bc1bf6bb903f0d025100b3828225eb60538e38111c9a0c100e0f8569366",
+ "note": "Computed independently with pandas from the raw file."
+}

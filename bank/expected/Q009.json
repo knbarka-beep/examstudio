@@ -1,0 +1,15 @@
+{
+ "id": "Q009",
+ "columns": [
+  "EventType"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Shooting Permit"
+  ]
+ ],
+ "sha256": "a163bc588c24665780612628935c6484740e56cd2dc13bc23dd9395209868af1",
+ "note": "Computed independently with pandas from the raw file."
+}

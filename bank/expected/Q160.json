@@ -1,0 +1,197 @@
+{
+ "id": "Q160",
+ "columns": [
+  "Month",
+  "Year",
+  "Name",
+  "Description",
+  "Vendor",
+  "Amount",
+  "TimeDif"
+ ],
+ "row_count": 8727,
+ "ordered": true,
+ "rows": [
+  [
+   11,
+   2014,
+   "J Conner",
+   "GENERAL PURCHASE",
+   "Claim ADJ/EMIRATES    000",
+   -36.65,
+   33
+  ],
+  [
+   11,
+   2014,
+   "J Conner",
+   "GENERAL PURCHASE",
+   "Claim ADJ/EMIRATES    261",
+   -78.54,
+   33
+  ],
+  [
+   11,
+   2014,
+   "H Forquer",
+   "94 HVY-DUTY TWIN SLOT STD EA",
+   "LOUIS AND COMPANY",
+   291.2,
+   24
+  ],
+  [
+   11,
+   2014,
+   "K MORRIS",
+   "GENERAL PURCHASE",
+   "REASOR'S #23",
+   6.76,
+   23
+  ],
+  [
+   11,
+   2014,
+   "G Hines",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   375.52,
+   22
+  ],
+  [
+   11,
+   2014,
+   "J Bailey",
+   "GENERAL PURCHASE",
+   "SHERATON DOLPHIN HOTEL",
+   -209.25,
+   22
+  ],
+  [
+   11,
+   2014,
+   "J Teel",
+   "GENERAL PURCHASE",
+   "EMD CHEMICALS",
+   -554.86,
+   20
+  ],
+  [
+   11,
+   2014,
+   "J Conner",
+   "GENERAL PURCHASE",
+   "Claim ADJ/FLIGHTCENTRE EP",
+   -771.16,
+   19
+  ],
+  [
+   11,
+   2014,
+   "J Conner",
+   "GENERAL PURCHASE",
+   "Claim ADJ/FLIGHTCENTRE EP",
+   -771.16,
+   19
+  ],
+  [
+   11,
+   2014,
+   "K Johnson",
+   "GENERAL PURCHASE",
+   "LOWES #00241",
+   -5.85,
+   15
+  ],
+  [
+   11,
+   2014,
+   "B Carter",
+   "GENERAL PURCHASE",
+   "SWASFAA",
+   325,
+   14
+  ],
+  [
+   11,
+   2014,
+   "G Hines",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   640.3,
+   14
+  ],
+  [
+   11,
+   2014,
+   "H Arthur",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/ASDA  DIRECT WE",
+   -216.24,
+   13
+  ],
+  [
+   11,
+   2014,
+   "L Jones",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/SRVCFEE COM",
+   -13.99,
+   13
+  ],
+  [
+   11,
+   2014,
+   "D Shotwell",
+   "GENERAL PURCHASE",
+   "NASHVILLE WRAPS, LLC",
+   120.25,
+   12
+  ],
+  [
+   11,
+   2014,
+   "G Hines",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   494.03,
+   12
+  ],
+  [
+   11,
+   2014,
+   "K MORRIS",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/FACEBOOK VIRTUA",
+   -33.5,
+   12
+  ],
+  [
+   11,
+   2014,
+   "K MORRIS",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/FACEBK  W7M3N6J",
+   -151.2,
+   12
+  ],
+  [
+   11,
+   2014,
+   "K MORRIS",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/FACEBK  H35F67A",
+   -33.5,
+   12
+  ],
+  [
+   11,
+   2014,
+   "K MORRIS",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/FACEBK  TGVB37W",
+   -256.6,
+   12
+  ]
+ ],
+ "sha256": "1e18d8b4dd5a521a7277adad958629478c50e5ab59318579edf50342fe835ab0"
+}

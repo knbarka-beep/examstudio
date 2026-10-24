@@ -1,0 +1,197 @@
+{
+ "id": "Q171",
+ "columns": [
+  "Amount",
+  "Name",
+  "Description",
+  "Vendor",
+  "TransactionDate",
+  "PostedDate",
+  "MCC"
+ ],
+ "row_count": 33,
+ "ordered": true,
+ "rows": [
+  [
+   5101.2,
+   "C Stover",
+   "ROOM CHARGES",
+   "HAMPTON INN",
+   "3/24/2014 0:00:00",
+   "3/25/2014 0:00:00",
+   "HAMPTON INNS"
+  ],
+  [
+   5123.25,
+   "C Stover",
+   "ROOM CHARGES",
+   "HAMPTON INNS",
+   "4/28/2014 0:00:00",
+   "4/29/2014 0:00:00",
+   "HAMPTON INNS"
+  ],
+  [
+   5638.18,
+   "K Krout",
+   "GENERAL PURCHASE",
+   "DB BAHN  A-NR G6RN22",
+   "5/28/2014 0:00:00",
+   "5/29/2014 0:00:00",
+   "PASSENGER RAILWAYS"
+  ],
+  [
+   5688.46,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "COCKRELL EYECARE CENTER",
+   "2/19/2014 0:00:00",
+   "2/20/2014 0:00:00",
+   "OPTICIANS AND DISPENSING"
+  ],
+  [
+   5731.6,
+   "C Stover",
+   "ROOM CHARGES",
+   "RED LION (CATHEDRAL CI",
+   "3/5/2014 0:00:00",
+   "3/6/2014 0:00:00",
+   "THUNDERBIRD/RED LION"
+  ],
+  [
+   5758.35,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "SMC-PATIENT FINANCIAL SRV",
+   "12/3/2014 0:00:00",
+   "12/5/2014 0:00:00",
+   "MEDICAL SERVICES & HEALTH PRACTITIONERS NOT ELSEWHERE CL"
+  ],
+  [
+   5990.29,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "NASA CATERING 10550515",
+   "8/14/2014 0:00:00",
+   "8/15/2014 0:00:00",
+   "CATERERS"
+  ],
+  [
+   6000,
+   "C Clark",
+   "GENERAL PURCHASE",
+   "POLARIS MEDICAL ACADEMY",
+   "6/10/2014 0:00:00",
+   "6/11/2014 0:00:00",
+   "SCHOOLS AND EDUCATIONAL SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   6210.5,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "BREDE ALLIED CONVENTION",
+   "4/10/2014 0:00:00",
+   "4/10/2014 0:00:00",
+   "SPECIAL TRADE CONTRACTORS--NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   6266.53,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "FREEMAN AV CHICAGO",
+   "4/10/2014 0:00:00",
+   "4/11/2014 0:00:00",
+   "SPECIAL TRADE CONTRACTORS--NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   6400.87,
+   "C Stover",
+   "ROOM CHARGES",
+   "SHERATON HOTEL",
+   "4/23/2014 0:00:00",
+   "4/25/2014 0:00:00",
+   "SHERATON"
+  ],
+  [
+   6545.02,
+   "A Ropers",
+   "ROOM CHARGES",
+   "LE MERIDIEN DALLAS NOR",
+   "4/3/2014 0:00:00",
+   "4/4/2014 0:00:00",
+   "MERIDIEN"
+  ],
+  [
+   6905.52,
+   "C Stover",
+   "ROOM CHARGES",
+   "SPRINGHILL SUITES TERRE",
+   "11/22/2014 0:00:00",
+   "11/24/2014 0:00:00",
+   "SPRINGHILL SUITES"
+  ],
+  [
+   6923.32,
+   "C Stover",
+   "ROOM CHARGES",
+   "COURTYARD BY MARRIOTT-LKU",
+   "2/21/2014 0:00:00",
+   "2/24/2014 0:00:00",
+   "COURTYARD BY MARRIOTT"
+  ],
+  [
+   6980,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "ASSETWORKS INC.",
+   "4/2/2014 0:00:00",
+   "4/3/2014 0:00:00",
+   "BUSINESS SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   7013.02,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "MAGDALENE COLLEGE",
+   "10/21/2014 0:00:00",
+   "10/22/2014 0:00:00",
+   "BUSINESS SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   7189.81,
+   "C Stover",
+   "ROOM CHARGES",
+   "SHERATON DALLAS",
+   "11/5/2014 0:00:00",
+   "11/7/2014 0:00:00",
+   "SHERATON"
+  ],
+  [
+   7951,
+   "C Stover",
+   "ROOM CHARGES",
+   "HOLIDAY INN EXPRESS & SU",
+   "3/6/2014 0:00:00",
+   "3/10/2014 0:00:00",
+   "HOLIDAY INNS"
+  ],
+  [
+   9770.4,
+   "A Ropers",
+   "GENERAL PURCHASE",
+   "TOPGOLF COLONY F&B",
+   "2/28/2014 0:00:00",
+   "3/3/2014 0:00:00",
+   "EATING PLACES AND RESTAURANTS"
+  ],
+  [
+   10153.35,
+   "C Stover",
+   "ROOM CHARGES",
+   "COURTYARD BY MARRIOTT ARL",
+   "3/20/2014 0:00:00",
+   "3/24/2014 0:00:00",
+   "COURTYARD BY MARRIOTT"
+  ]
+ ],
+ "sha256": "09075a26bee820fbfa9903a0508a8fca825f9ce41e730ae4bd65263ce16da1de"
+}

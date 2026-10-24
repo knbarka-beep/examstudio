@@ -1,0 +1,17 @@
+{
+ "id": "Q039",
+ "columns": [
+  "LocationPlantID",
+  "count"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "ARG-15",
+   11
+  ]
+ ],
+ "sha256": "484240a2f2d99d61e033a0af556b37607aa5f427d447693e1128c0d1e767a252",
+ "note": "Computed independently with pandas from the raw file."
+}

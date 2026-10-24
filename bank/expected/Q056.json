@@ -1,0 +1,17 @@
+{
+ "id": "Q056",
+ "columns": [
+  "Job",
+  "rows"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "14S1440",
+   1
+  ]
+ ],
+ "sha256": "eebc7b6103670222495d646f7999aec7bebbcba03530cf4c5eeb54c8f3e2c26b",
+ "note": "Computed independently with pandas from the raw file."
+}

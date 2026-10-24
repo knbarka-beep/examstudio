@@ -1,0 +1,15 @@
+{
+ "id": "Q060",
+ "columns": [
+  "increase"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   266055.56
+  ]
+ ],
+ "sha256": "a558526970906b52baf4626ff9b60ed34e42372e25e00ebde4914abd88e2bb2f",
+ "note": "Computed independently with pandas from the raw file."
+}

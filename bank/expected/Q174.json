@@ -1,0 +1,197 @@
+{
+ "id": "Q174",
+ "columns": [
+  "Amount",
+  "Name",
+  "Description",
+  "Vendor",
+  "TransactionDate",
+  "PostedDate",
+  "MCC"
+ ],
+ "row_count": 118,
+ "ordered": true,
+ "rows": [
+  [
+   4883.77,
+   "C Blevins",
+   "GENERAL PURCHASE",
+   "GRIGSBY'S CARPET SHOWROOM",
+   "1/6/2014 0:00:00",
+   "1/8/2014 0:00:00",
+   "FURNITURE,HOME FURNISHINGS AND EQUIPMENT STORES"
+  ],
+  [
+   554.22,
+   "C Blevins",
+   "GENERAL PURCHASE",
+   "L & M OFFICE FURNITURE IN",
+   "1/6/2014 0:00:00",
+   "1/8/2014 0:00:00",
+   "COMMERCIAL FURNITURE"
+  ],
+  [
+   5000,
+   "S Fitzpatrick",
+   "GENERAL PURCHASE",
+   "ACADEMY OF NUTRI & DIET",
+   "1/16/2014 0:00:00",
+   "1/17/2014 0:00:00",
+   "MEMBERSHIP ORGANIZATIONS--NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   3775,
+   "S Fitzpatrick",
+   "GENERAL PURCHASE",
+   "SQ  DON-CO PLUMBING",
+   "1/16/2014 0:00:00",
+   "1/17/2014 0:00:00",
+   "PROFESSIONAL SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   2789,
+   "S Fitzpatrick",
+   "GENERAL PURCHASE",
+   "SAGE PUBLICATIONS",
+   "2/4/2014 0:00:00",
+   "2/5/2014 0:00:00",
+   "NEWS DEALERS AND NEWSSTANDS"
+  ],
+  [
+   3250,
+   "S Fitzpatrick",
+   "GENERAL PURCHASE",
+   "SQ  ARTISAN WINDOW CLEANI",
+   "2/4/2014 0:00:00",
+   "2/5/2014 0:00:00",
+   "MISCELLANEOUS PERSONAL SERVICES--NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   5000,
+   "B Nation",
+   "GENERAL PURCHASE",
+   "I2E INC",
+   "2/14/2014 0:00:00",
+   "2/17/2014 0:00:00",
+   "CHARITABLE AND SOCIAL SERVICE ORGANIZATIONS"
+  ],
+  [
+   2.8,
+   "B Nation",
+   "GENERAL PURCHASE",
+   "PIKEPASS RECYCLING",
+   "2/14/2014 0:00:00",
+   "2/17/2014 0:00:00",
+   "TOLLS AND BRIDGE FEES"
+  ],
+  [
+   350,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "ACADEMIC IMPRESSIONS INC",
+   "2/18/2014 0:00:00",
+   "2/19/2014 0:00:00",
+   "SCHOOLS AND EDUCATIONAL SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   4837.56,
+   "C Stover",
+   "ROOM CHARGES",
+   "HYATT PLACE SAN ANTONIO/W",
+   "2/18/2014 0:00:00",
+   "2/20/2014 0:00:00",
+   "HYATT PLACE"
+  ],
+  [
+   3040.62,
+   "O Graham",
+   "Payment on Account Pay",
+   "FORTESSA TABLEWARE SOL",
+   "2/18/2014 0:00:00",
+   "2/20/2014 0:00:00",
+   "PIECE GOODS, NOTIONS, AND OTHER DRY GOODS"
+  ],
+  [
+   2170.02,
+   "O Graham",
+   "GENERAL PURCHASE",
+   "ONITY, INC.",
+   "2/18/2014 0:00:00",
+   "2/20/2014 0:00:00",
+   "INDUSTRIAL SUPPLIES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   5688.46,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "COCKRELL EYECARE CENTER",
+   "2/19/2014 0:00:00",
+   "2/20/2014 0:00:00",
+   "OPTICIANS AND DISPENSING"
+  ],
+  [
+   90,
+   "C Stover",
+   "GENERAL PURCHASE",
+   "FIELD & FIELD CHIROPRACTI",
+   "2/19/2014 0:00:00",
+   "2/21/2014 0:00:00",
+   "CHIROPRACTORS"
+  ],
+  [
+   3564,
+   "D Hunter",
+   "GENERAL PURCHASE",
+   "BOMGAR CORPORATION",
+   "2/26/2014 0:00:00",
+   "2/28/2014 0:00:00",
+   "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE"
+  ],
+  [
+   2048,
+   "D Hunter",
+   "GENERAL PURCHASE",
+   "GETCONNECT",
+   "2/26/2014 0:00:00",
+   "2/27/2014 0:00:00",
+   "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE"
+  ],
+  [
+   2197.54,
+   "C Wood",
+   "IBM ULTRIUM LTO 6 TAPE C PCB|TDK LTO123 ULTRIUM123",
+   "CDW GOVERNMENT",
+   "2/27/2014 0:00:00",
+   "2/28/2014 0:00:00",
+   "CATALOG MERCHANTS"
+  ],
+  [
+   3868.96,
+   "C Wood",
+   "GENERAL PURCHASE",
+   "COMPUTER MANAGEMENT CO",
+   "2/27/2014 0:00:00",
+   "2/27/2014 0:00:00",
+   "STATIONERY, OFFICE SUPPLIES, PRINTING AND WRITING PAPER"
+  ],
+  [
+   4950,
+   "C Miller",
+   "GENERAL PURCHASE",
+   "HUMAN E SOURCES, LTD",
+   "3/5/2014 0:00:00",
+   "3/6/2014 0:00:00",
+   "PROFESSIONAL SERVICES NOT ELSEWHERE CLASSIFIED"
+  ],
+  [
+   3200,
+   "C Miller",
+   "GENERAL PURCHASE",
+   "SCRIPPS MEDIA INC.",
+   "3/5/2014 0:00:00",
+   "3/6/2014 0:00:00",
+   "ADVERTISING SERVICES"
+  ]
+ ],
+ "sha256": "0faf87b04d318926a2b35c2e030af742a940fee613609b42043a45b3a6402416"
+}

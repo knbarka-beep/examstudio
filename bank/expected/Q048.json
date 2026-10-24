@@ -1,0 +1,15 @@
+{
+ "id": "Q048",
+ "columns": [
+  "preparer"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Brian Gibson"
+  ]
+ ],
+ "sha256": "5dfc8986bff907968d27a8de18a0dc63e237d6efe1eb9602d40fbcf751c10a00",
+ "note": "Computed independently with pandas from the raw file."
+}

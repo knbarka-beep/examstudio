@@ -1,0 +1,24 @@
+{
+ "id": "Q167",
+ "columns": [
+  "Year",
+  "PercDiffFrom2010"
+ ],
+ "row_count": 3,
+ "ordered": true,
+ "rows": [
+  [
+   2012,
+   1.31
+  ],
+  [
+   2013,
+   0.35
+  ],
+  [
+   2014,
+   -0.14
+  ]
+ ],
+ "sha256": "b3314f40c3d865dad9a65002844907f4dc43829f3d50b83b6e739aae3a22146c"
+}

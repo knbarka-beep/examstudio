@@ -1,0 +1,15 @@
+{
+ "id": "Q082",
+ "columns": [
+  "missing_prcp"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   5
+  ]
+ ],
+ "sha256": "1d418105eb294b280daa0571939718b8021d41c6e0d674409d4fb0800d35f8ad",
+ "note": "Computed independently with pandas from the raw file."
+}

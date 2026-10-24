@@ -1,0 +1,15 @@
+{
+ "id": "Q059",
+ "columns": [
+  "gross_wages"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   132294.35
+  ]
+ ],
+ "sha256": "f31546bdeafee7b9a7583d86cbfa6f9428db81821eef5e3d5a82cf5ec803fb84",
+ "note": "Computed independently with pandas from the raw file."
+}

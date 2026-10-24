@@ -1,0 +1,197 @@
+{
+ "id": "Q161",
+ "columns": [
+  "Month",
+  "Year",
+  "Name",
+  "Description",
+  "Vendor",
+  "Amount",
+  "TimeDif"
+ ],
+ "row_count": 10951,
+ "ordered": true,
+ "rows": [
+  [
+   10,
+   2014,
+   "K ISHAM",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/MAZZIO S 144 Q6",
+   -45.31,
+   46
+  ],
+  [
+   10,
+   2014,
+   "K Kelley",
+   "GENERAL PURCHASE",
+   "RED ROCK BAKERY AND DELI",
+   39,
+   27
+  ],
+  [
+   10,
+   2014,
+   "K McAdams",
+   "GENERAL PURCHASE",
+   "RED ROCK BAKERY AND DELI",
+   22.17,
+   27
+  ],
+  [
+   10,
+   2014,
+   "R Fouquet-Ketron",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/DELIVERY.COM",
+   -52.65,
+   25
+  ],
+  [
+   10,
+   2014,
+   "M Chapman",
+   "GENERAL PURCHASE",
+   "SHEETMUSICPLUS.COM",
+   51.84,
+   20
+  ],
+  [
+   10,
+   2014,
+   "L Riggs-Jenkins",
+   "GENERAL PURCHASE",
+   "CLAIM ADJ/WAKEHOUSE",
+   -309.99,
+   18
+  ],
+  [
+   10,
+   2014,
+   "P Singleton",
+   "GENERAL PURCHASE",
+   "Claim ADJ/AmazonPrime Mem",
+   -99,
+   18
+  ],
+  [
+   10,
+   2014,
+   "N Hurst",
+   "GENERAL PURCHASE",
+   "SDX OSU OKC   10062396",
+   332.32,
+   17
+  ],
+  [
+   10,
+   2014,
+   "J Wieland",
+   "GENERAL PURCHASE",
+   "SDX OSU OKC   10062396",
+   32.5,
+   14
+  ],
+  [
+   10,
+   2014,
+   "G Hines",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   25.9,
+   13
+  ],
+  [
+   10,
+   2014,
+   "G Hines",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   7.64,
+   13
+  ],
+  [
+   10,
+   2014,
+   "B Wyant",
+   "ROOM CHARGES",
+   "OMNI FORT WORTH",
+   217.35,
+   12
+  ],
+  [
+   10,
+   2014,
+   "C Steinbock",
+   "GENERAL PURCHASE",
+   "THE GRIDDLE CAFE",
+   20,
+   12
+  ],
+  [
+   10,
+   2014,
+   "C Prusso",
+   "GE Constant Color MR16 35 EA",
+   "1000BULBS.COM",
+   52.26,
+   11
+  ],
+  [
+   10,
+   2014,
+   "G Davis",
+   "GENERAL PURCHASE",
+   "PENSKE MISTER MUFFLER BR",
+   670,
+   11
+  ],
+  [
+   10,
+   2014,
+   "M Tornakian",
+   "GENERAL PURCHASE",
+   "STILLWATER WINNELSON C",
+   302.7,
+   11
+  ],
+  [
+   10,
+   2014,
+   "G Davis",
+   "GENERAL PURCHASE",
+   "PENSKE MISTER MUFFLER BR",
+   670,
+   9
+  ],
+  [
+   10,
+   2014,
+   "J Horn CH",
+   "ROOM CHARGES",
+   "HOLIDAY INN & SUITES STIL",
+   673.52,
+   9
+  ],
+  [
+   10,
+   2014,
+   "J Horn CH",
+   "ROOM CHARGES",
+   "HOLIDAY INN & SUITES STIL",
+   539.26,
+   9
+  ],
+  [
+   10,
+   2014,
+   "J Horn CH",
+   "ROOM CHARGES",
+   "HOLIDAY INN & SUITES STIL",
+   539.26,
+   9
+  ]
+ ],
+ "sha256": "833989c8ba670ec85b90d5eefd55b0bfa7e92f22de82c9b1585ee252d77d1853"
+}

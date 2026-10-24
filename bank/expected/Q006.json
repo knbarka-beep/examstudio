@@ -1,0 +1,15 @@
+{
+ "id": "Q006",
+ "columns": [
+  "oldest"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "2011-12-07 16:38:00"
+  ]
+ ],
+ "sha256": "1b590805bb01241211f00ac4b8a74fd1a804981bd832b2b5949e1e90db57e732",
+ "note": "Computed independently with pandas from the raw file."
+}

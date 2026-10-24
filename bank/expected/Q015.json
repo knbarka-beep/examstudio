@@ -1,0 +1,18 @@
+{
+ "id": "Q015",
+ "columns": [
+  "year"
+ ],
+ "row_count": 2,
+ "ordered": false,
+ "rows": [
+  [
+   2017
+  ],
+  [
+   2018
+  ]
+ ],
+ "sha256": "9b413915e21a15c474e088332e2f2955db1cb4a5a74056895c0be061ae73e2b7",
+ "note": "Computed independently with pandas from the raw file."
+}

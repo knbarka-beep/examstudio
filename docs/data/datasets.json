@@ -1,0 +1,911 @@
+{
+ "version": "23.10.2026-db6b8ee",
+ "datasets": [
+  {
+   "id": "nyc_film_permits_txt",
+   "label": "NYC film permits (text export)",
+   "case": "Excel Part 1",
+   "file": "NYC_Film_Permits.txt",
+   "size_bytes": 11120891,
+   "delimiter": "comma",
+   "encoding": "utf-8",
+   "headers": [
+    "EventID",
+    "EventType",
+    "StartDateTime",
+    "EndDateTime",
+    "EnteredOn",
+    "EventAgency",
+    "ParkingHeld",
+    "Borough",
+    "CommunityBoard(s)",
+    "PolicePrecinct(s)",
+    "Category",
+    "SubCategoryName",
+    "Country",
+    "ZipCode"
+   ],
+   "rows": 33502,
+   "download": "files/NYC_Film_Permits.txt"
+  },
+  {
+   "id": "nyc_film_permits_xlsx",
+   "label": "NYC film permits (Excel)",
+   "case": "Excel Part 1",
+   "file": "NYC_Film_Permits.xlsx",
+   "size_bytes": 3506591,
+   "sheets": [
+    {
+     "name": "NYC_Film_Permits",
+     "header_row": 1,
+     "headers": [
+      "EventID",
+      "EventType",
+      "StartDateTime",
+      "EndDateTime",
+      "EnteredOn",
+      "EventAgency",
+      "ParkingHeld",
+      "Borough",
+      "CommunityBoard(s)",
+      "PolicePrecinct(s)",
+      "Category",
+      "SubCategoryName",
+      "Country",
+      "ZipCode"
+     ],
+     "rows": 33502
+    }
+   ],
+   "download": "files/NYC_Film_Permits.xlsx"
+  },
+  {
+   "id": "etl_case1",
+   "label": "ETL case 1 data",
+   "case": "Excel Part 2",
+   "file": "Analytics_mindset_case_studies_ETL_Case1.csv",
+   "size_bytes": 1779,
+   "delimiter": "comma",
+   "encoding": "utf-8",
+   "headers": [
+    "Ticker",
+    "Name",
+    "Year",
+    "Cash",
+    "Accounts Receivables",
+    "Inventories",
+    "Total Current Assets",
+    "Total Depreciation"
+   ],
+   "rows": 22,
+   "download": "files/Analytics_mindset_case_studies_ETL_Case1.csv"
+  },
+  {
+   "id": "etl_case2",
+   "label": "ETL case 2 data",
+   "case": "Excel Part 2",
+   "file": "Analytics_mindset_case_studies_ETL_Case2_Excel.xlsx",
+   "size_bytes": 48502,
+   "sheets": [
+    {
+     "name": "Case 2",
+     "header_row": 1,
+     "headers": [
+      "EmployeeCode",
+      "FirstName",
+      "LastName"
+     ],
+     "rows": 597
+    },
+    {
+     "name": "Case 2 solution",
+     "header_row": 2,
+     "headers": [
+      "EmployeeCode",
+      "FirstName",
+      "LastName",
+      "Location",
+      "EmpID",
+      "Plant ID",
+      "Pay Period",
+      "LocationPlantID",
+      null,
+      "EmpID",
+      "Location",
+      "Plant ID",
+      "Pay Period",
+      "LocationPlantID"
+     ],
+     "rows": 597
+    }
+   ],
+   "download": "files/Analytics_mindset_case_studies_ETL_Case2_Excel.xlsx"
+  },
+  {
+   "id": "etl_case3",
+   "label": "ETL case 3 data",
+   "case": "Excel Part 2",
+   "file": "Analytics_mindset_case_studies_ETL_Case3_Excel.xlsx",
+   "size_bytes": 48326,
+   "sheets": [
+    {
+     "name": "Case 3 data",
+     "header_row": 1,
+     "headers": [
+      "EmployeeCode",
+      "FirstName",
+      "LastName"
+     ],
+     "rows": 597
+    },
+    {
+     "name": "Case 3 solution",
+     "header_row": 2,
+     "headers": [
+      "EmployeeCode",
+      "FirstName",
+      "LastName",
+      "Location",
+      "EmpID",
+      "Plant ID",
+      "Pay Period",
+      "LocationPlantID",
+      null,
+      "Location",
+      "EmpID",
+      "Plant ID",
+      "Pay Period",
+      "LocationPlantID"
+     ],
+     "rows": 597
+    }
+   ],
+   "download": "files/Analytics_mindset_case_studies_ETL_Case3_Excel.xlsx"
+  },
+  {
+   "id": "etl_case4",
+   "label": "ETL case 4 data",
+   "case": "Excel Part 2",
+   "file": "Analytics_mindset_case_studies_ETL_Case4_Excel.xlsx",
+   "size_bytes": 114035,
+   "sheets": [
+    {
+     "name": "JELineItems",
+     "header_row": 1,
+     "headers": [
+      "JENumber",
+      "GLAccountNumber",
+      "BusinessUnitID",
+      "PreparerID",
+      "SourceID",
+      "EffectiveDate",
+      "JEDescription",
+      "Debit",
+      "Credit",
+      "Amount"
+     ],
+     "rows": 789
+    },
+    {
+     "name": "BusinessUnits",
+     "header_row": 1,
+     "headers": [
+      "BusinessUnitID",
+      "BusinessUnit",
+      "BUDescription"
+     ],
+     "rows": 8
+    },
+    {
+     "name": "ChartOfAccounts",
+     "header_row": 1,
+     "headers": [
+      "GLAccountName",
+      "GLAccountNumber",
+      "AccountType",
+      "AccountClass"
+     ],
+     "rows": 85
+    },
+    {
+     "name": "PreparerInfo",
+     "header_row": 1,
+     "headers": [
+      "PreparerName",
+      "PreparerID",
+      "BusinessUnitID"
+     ],
+     "rows": 12
+    },
+    {
+     "name": "Source",
+     "header_row": 1,
+     "headers": [
+      "SourceID",
+      "Source"
+     ],
+     "rows": 8
+    },
+    {
+     "name": "Case 4 solution",
+     "header_row": 1,
+     "headers": [
+      "JENumber",
+      "GLAccountNumber",
+      "BusinessUnitID",
+      "PreparerID",
+      "SourceID",
+      "EffectiveDate",
+      "JEDescription",
+      "Debit",
+      "Credit",
+      "Amount",
+      "BusinessUnit",
+      "BUDescription",
+      "GLAccountName",
+      "AccountType",
+      "AccountClass",
+      "PreparerName",
+      "Source"
+     ],
+     "rows": 789
+    }
+   ],
+   "download": "files/Analytics_mindset_case_studies_ETL_Case4_Excel.xlsx"
+  },
+  {
+   "id": "ic_payroll2015_csv",
+   "label": "IntegrateCo payroll 2015 (CSV)",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_2015payroll.csv",
+   "size_bytes": 378963,
+   "delimiter": "pipe",
+   "encoding": "utf-8",
+   "headers": [
+    "Pay_Date",
+    "Payroll_ID",
+    "Emp_No",
+    "Home_Div",
+    "Work_Div",
+    "First_Name",
+    "Last_Name",
+    "Job",
+    "Reg_Hrs",
+    "OT_Hrs",
+    "Reg_Pay",
+    "OT_Pay",
+    "Futa",
+    "Suta",
+    "Fica_Medc",
+    "Work_Comp"
+   ],
+   "rows": 4981,
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_2015payroll.csv"
+  },
+  {
+   "id": "ic_payroll2015_xlsx",
+   "label": "IntegrateCo payroll 2015 (Excel)",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_2015payroll.xlsx",
+   "size_bytes": 399922,
+   "sheets": [
+    {
+     "name": "Analytics_mindset_case_studies_",
+     "header_row": 1,
+     "headers": [
+      "Pay_Date",
+      "Payroll_ID",
+      "Emp_No",
+      "Home_Div",
+      "Work_Div",
+      "First_Name",
+      "Last_Name",
+      "Job",
+      "Reg_Hrs",
+      "OT_Hrs",
+      "Reg_Pay",
+      "OT_Pay",
+      "Futa",
+      "Suta",
+      "Fica_Medc",
+      "Work_Comp"
+     ],
+     "rows": 4981
+    }
+   ],
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_2015payroll.xlsx"
+  },
+  {
+   "id": "ic_payroll2016_csv",
+   "label": "IntegrateCo payroll 2016 (CSV)",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_2016payroll.csv",
+   "size_bytes": 49152,
+   "delimiter": "pipe",
+   "encoding": "utf-8",
+   "headers": [
+    "Project",
+    "Employee_ID",
+    "Employee_Number",
+    "Employee_Name",
+    "Hours",
+    "OT_Hours",
+    "Gross_Wages",
+    "SocSec_Medicare",
+    "FUTA",
+    "SUTA",
+    "Work_Comp"
+   ],
+   "rows": 804,
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_2016payroll.csv"
+  },
+  {
+   "id": "ic_payroll2016_xlsx",
+   "label": "IntegrateCo payroll 2016 (Excel)",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_2016payroll.xlsx",
+   "size_bytes": 62745,
+   "sheets": [
+    {
+     "name": "Analytics_mindset_case_studies_",
+     "header_row": 1,
+     "headers": [
+      "Project",
+      "Employee_ID",
+      "Employee_Number",
+      "Employee_Name",
+      "Hours",
+      "OT_Hours",
+      "Gross_Wages",
+      "SocSec_Medicare",
+      "FUTA",
+      "SUTA",
+      "Work_Comp"
+     ],
+     "rows": 804
+    }
+   ],
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_2016payroll.xlsx"
+  },
+  {
+   "id": "ic_jobcodes",
+   "label": "IntegrateCo job codes",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_jobcodes.csv",
+   "size_bytes": 283,
+   "delimiter": "pipe",
+   "encoding": "utf-8",
+   "headers": [
+    "Job_Code",
+    "Job_Description"
+   ],
+   "rows": 12,
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_jobcodes.csv"
+  },
+  {
+   "id": "ic_locations",
+   "label": "IntegrateCo locations",
+   "case": "Excel Part 3",
+   "file": "Analytics_mindset_case_studies_IntegrateCo_locations.csv",
+   "size_bytes": 1706,
+   "delimiter": "pipe",
+   "encoding": "utf-8",
+   "headers": [
+    "Employee_Name",
+    "Location"
+   ],
+   "rows": 102,
+   "download": "files/Analytics_mindset_case_studies_IntegrateCo_locations.csv"
+  },
+  {
+   "id": "restaurant_data",
+   "label": "Restaurant regression data",
+   "case": "Excel Part 4",
+   "file": "data.xlsm",
+   "size_bytes": 540404,
+   "sheets": [
+    {
+     "name": "salesData",
+     "header_row": 1,
+     "headers": [
+      "date",
+      "LineItem",
+      "quantity",
+      "price",
+      "discounts",
+      "netTotal",
+      "purchaseNumber",
+      "daysSinceLastPurch",
+      "quantity_364",
+      "price_364",
+      "discounts_364",
+      "netTotal_364",
+      "quantity_28",
+      "price_28",
+      "discounts_28",
+      "netTotal_28",
+      "quantity_7",
+      "price_7",
+      "discounts_7",
+      "netTotal_7"
+     ],
+     "rows": 4610
+    },
+    {
+     "name": "salesDataDictionary",
+     "header_row": 4,
+     "headers": [
+      "Variable Name",
+      "Definition",
+      "Example"
+     ],
+     "rows": 20
+    },
+    {
+     "name": "weatherData",
+     "header_row": 1,
+     "headers": [
+      "date",
+      "prcp",
+      "snow",
+      "tmax",
+      "tmin"
+     ],
+     "rows": 365
+    },
+    {
+     "name": "weatherDataDictionary",
+     "header_row": 4,
+     "headers": [
+      "Variable Name",
+      "Definition",
+      "Example"
+     ],
+     "rows": 5
+    },
+    {
+     "name": "gameData",
+     "header_row": 1,
+     "headers": [
+      "date",
+      "homeGame",
+      "winRecord",
+      "pointDiff",
+      "gameDay"
+     ],
+     "rows": 13
+    },
+    {
+     "name": "gameDataDictionary",
+     "header_row": 4,
+     "headers": [
+      "Variable Name",
+      "Definition",
+      "Example"
+     ],
+     "rows": 5
+    }
+   ],
+   "download": "files/data.xlsm"
+  },
+  {
+   "id": "cs50_movies",
+   "label": "CS50 movies database",
+   "case": "SQL Part 1 CS50",
+   "file": "movies.db",
+   "size_bytes": 68939776,
+   "tables": [
+    {
+     "name": "directors",
+     "type": "table",
+     "rows": 350626,
+     "columns": [
+      "movie_id INTEGER",
+      "person_id INTEGER"
+     ]
+    },
+    {
+     "name": "movies",
+     "type": "table",
+     "rows": 355672,
+     "columns": [
+      "id INTEGER",
+      "title TEXT",
+      "year NUMERIC"
+     ]
+    },
+    {
+     "name": "people",
+     "type": "table",
+     "rows": 1091509,
+     "columns": [
+      "id INTEGER",
+      "name TEXT",
+      "birth NUMERIC"
+     ]
+    },
+    {
+     "name": "ratings",
+     "type": "table",
+     "rows": 197279,
+     "columns": [
+      "movie_id INTEGER",
+      "rating REAL",
+      "votes INTEGER"
+     ]
+    },
+    {
+     "name": "stars",
+     "type": "table",
+     "rows": 1247048,
+     "columns": [
+      "movie_id INTEGER",
+      "person_id INTEGER"
+     ]
+    }
+   ],
+   "download": "https://github.com/knbarka-beep/examstudio/releases/download/datasets-v1/movies.zip",
+   "release_asset": "movies.zip",
+   "download_size_bytes": 39419579
+  },
+  {
+   "id": "cs50_fiftyville",
+   "label": "CS50 Fiftyville database (optional)",
+   "case": "SQL Part 1 CS50",
+   "file": "fiftyville.db",
+   "size_bytes": 270336,
+   "tables": [
+    {
+     "name": "airports",
+     "type": "table",
+     "rows": 12,
+     "columns": [
+      "id INTEGER",
+      "abbreviation TEXT",
+      "full_name TEXT",
+      "city TEXT"
+     ]
+    },
+    {
+     "name": "atm_transactions",
+     "type": "table",
+     "rows": 1332,
+     "columns": [
+      "id INTEGER",
+      "account_number INTEGER",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "atm_location TEXT",
+      "transaction_type TEXT",
+      "amount INTEGER"
+     ]
+    },
+    {
+     "name": "bank_accounts",
+     "type": "table",
+     "rows": 137,
+     "columns": [
+      "account_number INTEGER",
+      "person_id INTEGER",
+      "creation_year INTEGER"
+     ]
+    },
+    {
+     "name": "courthouse_security_logs",
+     "type": "table",
+     "rows": 468,
+     "columns": [
+      "id INTEGER",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "hour INTEGER",
+      "minute INTEGER",
+      "activity TEXT",
+      "license_plate TEXT"
+     ]
+    },
+    {
+     "name": "crime_scene_reports",
+     "type": "table",
+     "rows": 301,
+     "columns": [
+      "id INTEGER",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "street TEXT",
+      "description TEXT"
+     ]
+    },
+    {
+     "name": "flights",
+     "type": "table",
+     "rows": 58,
+     "columns": [
+      "id INTEGER",
+      "origin_airport_id INTEGER",
+      "destination_airport_id INTEGER",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "hour INTEGER",
+      "minute INTEGER"
+     ]
+    },
+    {
+     "name": "interviews",
+     "type": "table",
+     "rows": 190,
+     "columns": [
+      "id INTEGER",
+      "name TEXT",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "transcript TEXT"
+     ]
+    },
+    {
+     "name": "passengers",
+     "type": "table",
+     "rows": 359,
+     "columns": [
+      "flight_id INTEGER",
+      "passport_number INTEGER",
+      "seat TEXT"
+     ]
+    },
+    {
+     "name": "people",
+     "type": "table",
+     "rows": 200,
+     "columns": [
+      "id INTEGER",
+      "name TEXT",
+      "phone_number TEXT",
+      "passport_number INTEGER",
+      "license_plate TEXT"
+     ]
+    },
+    {
+     "name": "phone_calls",
+     "type": "table",
+     "rows": 518,
+     "columns": [
+      "id INTEGER",
+      "caller TEXT",
+      "receiver TEXT",
+      "year INTEGER",
+      "month INTEGER",
+      "day INTEGER",
+      "duration INTEGER"
+     ]
+    }
+   ],
+   "download": "files/fiftyville.db"
+  },
+  {
+   "id": "cs50_songs",
+   "label": "CS50 songs database",
+   "case": "SQL Part 1 CS50",
+   "file": "songs.db",
+   "size_bytes": 24576,
+   "tables": [
+    {
+     "name": "artists",
+     "type": "table",
+     "rows": 70,
+     "columns": [
+      "id INTEGER",
+      "name TEXT"
+     ]
+    },
+    {
+     "name": "songs",
+     "type": "table",
+     "rows": 100,
+     "columns": [
+      "id INTEGER",
+      "name TEXT",
+      "artist_id INTEGER",
+      "danceability REAL",
+      "energy REAL",
+      "key INTEGER",
+      "loudness REAL",
+      "speechiness REAL",
+      "valence REAL",
+      "tempo REAL",
+      "duration_ms INTEGER"
+     ]
+    }
+   ],
+   "download": "files/songs.db"
+  },
+  {
+   "id": "chinook",
+   "label": "Chinook music store database",
+   "case": "SQL Part 1 PWC",
+   "file": "Chinook_Sqlite.sqlite",
+   "size_bytes": 1067008,
+   "tables": [
+    {
+     "name": "Album",
+     "type": "table",
+     "rows": 347,
+     "columns": [
+      "AlbumId INTEGER",
+      "Title NVARCHAR(160)",
+      "ArtistId INTEGER"
+     ]
+    },
+    {
+     "name": "Artist",
+     "type": "table",
+     "rows": 275,
+     "columns": [
+      "ArtistId INTEGER",
+      "Name NVARCHAR(120)"
+     ]
+    },
+    {
+     "name": "Customer",
+     "type": "table",
+     "rows": 59,
+     "columns": [
+      "CustomerId INTEGER",
+      "FirstName NVARCHAR(40)",
+      "LastName NVARCHAR(20)",
+      "Company NVARCHAR(80)",
+      "Address NVARCHAR(70)",
+      "City NVARCHAR(40)",
+      "State NVARCHAR(40)",
+      "Country NVARCHAR(40)",
+      "PostalCode NVARCHAR(10)",
+      "Phone NVARCHAR(24)",
+      "Fax NVARCHAR(24)",
+      "Email NVARCHAR(60)",
+      "SupportRepId INTEGER"
+     ]
+    },
+    {
+     "name": "Employee",
+     "type": "table",
+     "rows": 8,
+     "columns": [
+      "EmployeeId INTEGER",
+      "LastName NVARCHAR(20)",
+      "FirstName NVARCHAR(20)",
+      "Title NVARCHAR(30)",
+      "ReportsTo INTEGER",
+      "BirthDate DATETIME",
+      "HireDate DATETIME",
+      "Address NVARCHAR(70)",
+      "City NVARCHAR(40)",
+      "State NVARCHAR(40)",
+      "Country NVARCHAR(40)",
+      "PostalCode NVARCHAR(10)",
+      "Phone NVARCHAR(24)",
+      "Fax NVARCHAR(24)",
+      "Email NVARCHAR(60)"
+     ]
+    },
+    {
+     "name": "Genre",
+     "type": "table",
+     "rows": 25,
+     "columns": [
+      "GenreId INTEGER",
+      "Name NVARCHAR(120)"
+     ]
+    },
+    {
+     "name": "Invoice",
+     "type": "table",
+     "rows": 412,
+     "columns": [
+      "InvoiceId INTEGER",
+      "CustomerId INTEGER",
+      "InvoiceDate DATETIME",
+      "BillingAddress NVARCHAR(70)",
+      "BillingCity NVARCHAR(40)",
+      "BillingState NVARCHAR(40)",
+      "BillingCountry NVARCHAR(40)",
+      "BillingPostalCode NVARCHAR(10)",
+      "Total NUMERIC(10,2)"
+     ]
+    },
+    {
+     "name": "InvoiceLine",
+     "type": "table",
+     "rows": 2240,
+     "columns": [
+      "InvoiceLineId INTEGER",
+      "InvoiceId INTEGER",
+      "TrackId INTEGER",
+      "UnitPrice NUMERIC(10,2)",
+      "Quantity INTEGER"
+     ]
+    },
+    {
+     "name": "MediaType",
+     "type": "table",
+     "rows": 5,
+     "columns": [
+      "MediaTypeId INTEGER",
+      "Name NVARCHAR(120)"
+     ]
+    },
+    {
+     "name": "Playlist",
+     "type": "table",
+     "rows": 18,
+     "columns": [
+      "PlaylistId INTEGER",
+      "Name NVARCHAR(120)"
+     ]
+    },
+    {
+     "name": "PlaylistTrack",
+     "type": "table",
+     "rows": 8715,
+     "columns": [
+      "PlaylistId INTEGER",
+      "TrackId INTEGER"
+     ]
+    },
+    {
+     "name": "Track",
+     "type": "table",
+     "rows": 3503,
+     "columns": [
+      "TrackId INTEGER",
+      "Name NVARCHAR(200)",
+      "AlbumId INTEGER",
+      "MediaTypeId INTEGER",
+      "GenreId INTEGER",
+      "Composer NVARCHAR(220)",
+      "Milliseconds INTEGER",
+      "Bytes INTEGER",
+      "UnitPrice NUMERIC(10,2)"
+     ]
+    }
+   ],
+   "download": "files/Chinook_Sqlite.sqlite"
+  },
+  {
+   "id": "pcards",
+   "label": "Oklahoma P-card transactions",
+   "case": "SQL Part 2 P-card",
+   "file": "pcards.db",
+   "size_bytes": 94003200,
+   "tables": [
+    {
+     "name": "pcards",
+     "type": "table",
+     "rows": 489178,
+     "columns": [
+      "Year INTEGER",
+      "Month INTEGER",
+      "FullName TEXT",
+      "ID INTEGER",
+      "AgencyNumber INTEGER",
+      "AgencyName TEXT",
+      "CardholderLastName TEXT",
+      "CardholderFirstInitial TEXT",
+      "Description TEXT",
+      "Amount REAL",
+      "Vendor TEXT",
+      "TransactionDate TEXT",
+      "PostedDate TEXT",
+      "MCC TEXT"
+     ]
+    }
+   ],
+   "download": "https://github.com/knbarka-beep/examstudio/releases/download/datasets-v1/pcards.zip",
+   "release_asset": "pcards.zip",
+   "download_size_bytes": 22048698
+  }
+ ]
+}

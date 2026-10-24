@@ -1,0 +1,17 @@
+{
+ "id": "Q030",
+ "columns": [
+  "rows",
+  "company"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   3,
+   "Armada Hoffler Properties Inc."
+  ]
+ ],
+ "sha256": "82b0974e76f855205840a60b31e0e74b515d90972aec61712ecb256c3e72c2a9",
+ "note": "Computed independently with pandas from the raw file."
+}

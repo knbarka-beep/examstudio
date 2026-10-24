@@ -1,0 +1,14 @@
+{
+ "id": "Q137",
+ "columns": [
+  "description"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Theft of the CS50 duck took place at 10:15am at the Chamberlin Street courthouse. Interviews were conducted today with three witnesses who were present at the time — each of their interview transcripts mentions the courthouse."
+  ]
+ ],
+ "sha256": "8b54e887df751ca1da9863797f802dfddf263509b4e3c266256efd1ffccb49d4"
+}

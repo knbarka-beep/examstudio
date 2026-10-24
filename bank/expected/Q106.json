@@ -1,0 +1,18 @@
+{
+ "id": "Q106",
+ "columns": [
+  "FirstDate",
+  "LastDate",
+  "Years"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "2009-01-01 00:00:00",
+   "2013-12-22 00:00:00",
+   5
+  ]
+ ],
+ "sha256": "1016a8578947d30a0f7929788f0c195b4535c765591d8eb10ec93cc8e7f6e9b2"
+}

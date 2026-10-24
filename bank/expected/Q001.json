@@ -1,0 +1,15 @@
+{
+ "id": "Q001",
+ "columns": [
+  "records"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   33502
+  ]
+ ],
+ "sha256": "84ab9120d6c32fcfce3da499599614009921057ac1f9823ca9a993e51098731a",
+ "note": "Computed independently with pandas from the raw file."
+}

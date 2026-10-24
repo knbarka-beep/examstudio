@@ -1,0 +1,14 @@
+{
+ "id": "Q147",
+ "columns": [
+  "TotalTrans"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   489178
+  ]
+ ],
+ "sha256": "ed6fb50ddd2d6e415a4da3567c5c6f706874cb62c90390b7f673ea587424253d"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "Q063",
+ "columns": [
+  "Code",
+  "OT_Pay"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "006",
+   6007.52
+  ]
+ ],
+ "sha256": "8717118ea20b0e296083caff640944042c43efcbb5f952ccdca97a37e3efd980",
+ "note": "Computed independently with pandas from the raw file."
+}

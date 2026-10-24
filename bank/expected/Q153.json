@@ -1,0 +1,113 @@
+{
+ "id": "Q153",
+ "columns": [
+  "Name",
+  "ReturnedGoodsValue",
+  "ReturnedGoodsCount"
+ ],
+ "row_count": 1055,
+ "ordered": true,
+ "rows": [
+  [
+   "J Heusel",
+   -21898.28,
+   126
+  ],
+  [
+   "G Hines",
+   -18104.53,
+   84
+  ],
+  [
+   "M Tornakian",
+   -18072.26,
+   55
+  ],
+  [
+   "S Marshall",
+   -12118.57,
+   7
+  ],
+  [
+   "R Bowers",
+   -12115.02,
+   116
+  ],
+  [
+   "J Bailey",
+   -11127.1,
+   44
+  ],
+  [
+   "J Ward",
+   -7430.95,
+   7
+  ],
+  [
+   "J Biggs",
+   -6664.41,
+   12
+  ],
+  [
+   "A Ropers",
+   -6393.17,
+   3
+  ],
+  [
+   "L Bartlett",
+   -6023.19,
+   7
+  ],
+  [
+   "T Munday",
+   -5891.76,
+   38
+  ],
+  [
+   "K Custar",
+   -5725.51,
+   15
+  ],
+  [
+   "J Leforce",
+   -5437.66,
+   6
+  ],
+  [
+   "L LeMaster",
+   -5139,
+   2
+  ],
+  [
+   "P Mulder",
+   -5021.92,
+   2
+  ],
+  [
+   "T Wilkinson",
+   -4722.53,
+   6
+  ],
+  [
+   "M Robinson",
+   -4698.73,
+   9
+  ],
+  [
+   "C Boettcher",
+   -4653.73,
+   15
+  ],
+  [
+   "J Teel",
+   -4196.96,
+   23
+  ],
+  [
+   "C Young",
+   -4066.89,
+   14
+  ]
+ ],
+ "sha256": "3d4393b2cea06b37298164a14e3fe6b8c7b557538f1ccf58ce7eef757a3f03ea"
+}

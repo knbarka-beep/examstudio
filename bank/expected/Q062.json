@@ -1,0 +1,19 @@
+{
+ "id": "Q062",
+ "columns": [
+  "Emp_No",
+  "Name",
+  "OT_Pay"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   27,
+   "Cindy Lunt",
+   4186.24
+  ]
+ ],
+ "sha256": "425280abcffcc7c7475f57b4b8f740ebe17f3ec5bf9650f831978836ac3f3745",
+ "note": "Computed independently with pandas from the raw file."
+}

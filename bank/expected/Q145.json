@@ -1,0 +1,155 @@
+{
+ "id": "Q145",
+ "columns": [
+  "Year",
+  "Month",
+  "Name",
+  "Amount",
+  "Vendor"
+ ],
+ "row_count": 1197,
+ "ordered": true,
+ "rows": [
+  [
+   2014,
+   1,
+   "C Clark",
+   12600,
+   "TLC PAINTING"
+  ],
+  [
+   2014,
+   1,
+   "S Fitzpatrick",
+   5000,
+   "ACADEMY OF NUTRI & DIET"
+  ],
+  [
+   2014,
+   1,
+   "S Rains",
+   5000,
+   "DIGI SURVEILLANCE SYSTEMS"
+  ],
+  [
+   2014,
+   1,
+   "S Stacy",
+   5000,
+   "OSU NURSING BHAC"
+  ],
+  [
+   2014,
+   1,
+   "D Whitmore",
+   4982,
+   "SHAKE RATTLE AND ROLL"
+  ],
+  [
+   2014,
+   1,
+   "K Henderson",
+   4943.18,
+   "HUBCO INC"
+  ],
+  [
+   2014,
+   1,
+   "R Allen",
+   4905.5,
+   "IVG INVITROGEN CORPORA"
+  ],
+  [
+   2014,
+   1,
+   "C Blevins",
+   4883.77,
+   "GRIGSBY'S CARPET SHOWROOM"
+  ],
+  [
+   2014,
+   1,
+   "M Tornakian",
+   4875,
+   "BAKERS WASTE EQUIPMENT"
+  ],
+  [
+   2014,
+   1,
+   "P DeBow",
+   4815,
+   "STILLWATER SCREENPRINTING"
+  ],
+  [
+   2014,
+   1,
+   "S Fitzpatrick",
+   4780,
+   "DAVID ALLRED CONSTRUCTION"
+  ],
+  [
+   2014,
+   1,
+   "P Clark",
+   4758.29,
+   "KROHNE"
+  ],
+  [
+   2014,
+   1,
+   "M Tornakian",
+   4725,
+   "SHAKE RATTLE AND ROLL"
+  ],
+  [
+   2014,
+   1,
+   "S James",
+   4512.52,
+   "WWW.NEWEGG.COM"
+  ],
+  [
+   2014,
+   1,
+   "G Hines",
+   4490,
+   "RKI INSTRUMENTS INC"
+  ],
+  [
+   2014,
+   1,
+   "M Meridith",
+   4462,
+   "HISTORICAL PUBLISHING"
+  ],
+  [
+   2014,
+   1,
+   "S Fitzpatrick",
+   4410,
+   "SQ  ALVA ROOFING CO"
+  ],
+  [
+   2014,
+   1,
+   "S Fitzpatrick",
+   4390,
+   "US GLOBAL RESOURCES"
+  ],
+  [
+   2014,
+   1,
+   "R Kuehn",
+   4386.56,
+   "DMI  DELL HIGHER EDUC"
+  ],
+  [
+   2014,
+   1,
+   "J Ward",
+   4381.9,
+   "EL MONTE SAGRADO"
+  ]
+ ],
+ "sha256": "aa1e414b3cf144836f9dd386ca3044041d520d3ebe45aefb35c57ba40ee49bfc"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "Q115",
+ "columns": [
+  "COUNT(*)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   195
+  ]
+ ],
+ "sha256": "5bdb919ae1b98dca212ab343e30046e8030bf7b8405240fbe7ac95a64b49b2bc"
+}

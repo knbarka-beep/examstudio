@@ -1,0 +1,15 @@
+{
+ "id": "Q066",
+ "columns": [
+  "cost"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   1486454.83
+  ]
+ ],
+ "sha256": "609013cf01e0b4e9aacbcdb66f9ba6cf6cbdec572fe711c801acedd1c9ff8c1c",
+ "note": "Computed independently with pandas from the raw file."
+}

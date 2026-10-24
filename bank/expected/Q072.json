@@ -1,0 +1,15 @@
+{
+ "id": "Q072",
+ "columns": [
+  "march"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   220640.06
+  ]
+ ],
+ "sha256": "7e30cbf196d78d3118a1d3aea00557e5eabbb4a148832cd3a68a25215c936a17",
+ "note": "Computed independently with pandas from the raw file."
+}

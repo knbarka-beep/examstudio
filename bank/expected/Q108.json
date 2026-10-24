@@ -1,0 +1,14 @@
+{
+ "id": "Q108",
+ "columns": [
+  "COUNT(DISTINCT p.AlbumId)"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   41
+  ]
+ ],
+ "sha256": "9f8896ce5aaf20069133c3c5f1fe0dc03df3d5438b10ae825bb63960ab472d87"
+}

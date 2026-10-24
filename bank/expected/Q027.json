@@ -1,0 +1,17 @@
+{
+ "id": "Q027",
+ "columns": [
+  "column",
+  "value"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Cash",
+   20500000000
+  ]
+ ],
+ "sha256": "6a19bdd4dd49abae7a8165e32f124040d9a4a7e9f842e9f1a27e4d4b725fc089",
+ "note": "Computed independently with pandas from the raw file."
+}

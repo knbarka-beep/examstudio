@@ -1,0 +1,17 @@
+{
+ "id": "Q031",
+ "columns": [
+  "company",
+  "ticker"
+ ],
+ "row_count": 1,
+ "ordered": false,
+ "rows": [
+  [
+   "Amazon.com Inc.",
+   "AMZN"
+  ]
+ ],
+ "sha256": "a88c032d416bc8358378bd016fc3b045d420045c9148da2615c51214d66e0d37",
+ "note": "Computed independently with pandas from the raw file."
+}

@@ -1,0 +1,436 @@
+[
+ {
+  "id": "M1",
+  "formula": "sales ~ sales_7 + sales_364",
+  "purpose": "Instructions: predict aggregated sales 7 days from the last day of data",
+  "asked_in_instructions": true,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.5691,
+  "adj_r_squared": 0.5663,
+  "coefficients": {
+   "Intercept": {
+    "coef": 704.3618,
+    "se": 133.6851,
+    "p": 2.58044e-07
+   },
+   "sales_7": {
+    "coef": 0.2452,
+    "se": 0.046,
+    "p": 1.85085e-07
+   },
+   "sales_364": {
+    "coef": 0.4969,
+    "se": 0.0424,
+    "p": 1.73997e-26
+   }
+  },
+  "variables": {
+   "sales_364": {
+    "definition": "Total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7557.0,
+    "median": 3257.0
+   },
+   "sales_7": {
+    "definition": "Total net sales 7 days earlier (sum of netTotal_7 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7033.0,
+    "median": 3098.5
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {},
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M2",
+  "formula": "sales ~ tmax",
+  "purpose": "Instructions: are sales affected by temperature?",
+  "asked_in_instructions": true,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.0227,
+  "adj_r_squared": 0.0196,
+  "coefficients": {
+   "Intercept": {
+    "coef": 2725.2924,
+    "se": 204.5164,
+    "p": 2.44429e-32
+   },
+   "tmax": {
+    "coef": 7.5797,
+    "se": 2.824,
+    "p": 0.00766585
+   }
+  },
+  "variables": {
+   "tmax": {
+    "definition": "Maximum temperature during the day",
+    "unit": "degrees Fahrenheit",
+    "min": 28.94,
+    "max": 104.0,
+    "median": 66.92
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {},
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M3",
+  "formula": "sales ~ gameDay",
+  "purpose": "Instructions: does a game day affect sales?",
+  "asked_in_instructions": true,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.0748,
+  "adj_r_squared": 0.0718,
+  "coefficients": {
+   "Intercept": {
+    "coef": 3191.0803,
+    "se": 58.5784,
+    "p": 8.4696e-161
+   },
+   "gameDay": {
+    "coef": 1436.3043,
+    "se": 286.9742,
+    "p": 9.38315e-07
+   }
+  },
+  "variables": {
+   "gameDay": {
+    "definition": "1 if there is a university football game on the date, 0 otherwise",
+    "unit": "dummy",
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {
+   "gameDay": {
+    "1": "game days",
+    "0 (reference)": "days without a game"
+   }
+  },
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M4",
+  "formula": "sales ~ sales_364 * gameDay",
+  "purpose": "Instructions: how sales one year ago interact with a game day",
+  "asked_in_instructions": true,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.536,
+  "adj_r_squared": 0.5315,
+  "coefficients": {
+   "Intercept": {
+    "coef": 1044.4155,
+    "se": 132.9052,
+    "p": 6.56892e-14
+   },
+   "sales_364": {
+    "coef": 0.6196,
+    "se": 0.0364,
+    "p": 3.33088e-46
+   },
+   "gameDay": {
+    "coef": 387.0296,
+    "se": 813.7023,
+    "p": 0.634668
+   },
+   "sales_364:gameDay": {
+    "coef": 0.0107,
+    "se": 0.1576,
+    "p": 0.945724
+   }
+  },
+  "variables": {
+   "gameDay": {
+    "definition": "1 if there is a university football game on the date, 0 otherwise",
+    "unit": "dummy",
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0
+   },
+   "sales_364": {
+    "definition": "Total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7557.0,
+    "median": 3257.0
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {
+   "gameDay": {
+    "1": "game days",
+    "0 (reference)": "days without a game"
+   }
+  },
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M5",
+  "formula": "sales ~ tmax + prcp + gameDay",
+  "purpose": "Extra: weather and game day together",
+  "asked_in_instructions": false,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 309,
+  "r_squared": 0.099,
+  "adj_r_squared": 0.0901,
+  "coefficients": {
+   "Intercept": {
+    "coef": 2637.0401,
+    "se": 204.4307,
+    "p": 1.11547e-30
+   },
+   "tmax": {
+    "coef": 7.873,
+    "se": 2.7868,
+    "p": 0.00503761
+   },
+   "prcp": {
+    "coef": 33.3363,
+    "se": 45.7198,
+    "p": 0.466473
+   },
+   "gameDay": {
+    "coef": 1397.8348,
+    "se": 285.731,
+    "p": 1.61758e-06
+   }
+  },
+  "variables": {
+   "gameDay": {
+    "definition": "1 if there is a university football game on the date, 0 otherwise",
+    "unit": "dummy",
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0
+   },
+   "prcp": {
+    "definition": "Total precipitation during the day",
+    "unit": "inches",
+    "min": 0.0,
+    "max": 12.0079,
+    "median": 0.0
+   },
+   "tmax": {
+    "definition": "Maximum temperature during the day",
+    "unit": "degrees Fahrenheit",
+    "min": 28.94,
+    "max": 104.0,
+    "median": 66.02
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3096.0
+   }
+  },
+  "dummy_coding": {
+   "gameDay": {
+    "1": "game days",
+    "0 (reference)": "days without a game"
+   }
+  },
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M6",
+  "formula": "sales ~ sales_7 + sales_28 + sales_364",
+  "purpose": "Extra: all three lagged sales measures",
+  "asked_in_instructions": false,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.5978,
+  "adj_r_squared": 0.5939,
+  "coefficients": {
+   "Intercept": {
+    "coef": 513.0793,
+    "se": 135.6514,
+    "p": 0.000186625
+   },
+   "sales_7": {
+    "coef": 0.1638,
+    "se": 0.0477,
+    "p": 0.000685217
+   },
+   "sales_28": {
+    "coef": 0.2107,
+    "se": 0.045,
+    "p": 4.16369e-06
+   },
+   "sales_364": {
+    "coef": 0.4299,
+    "se": 0.0435,
+    "p": 3.23568e-20
+   }
+  },
+  "variables": {
+   "sales_28": {
+    "definition": "Total net sales 28 days earlier (sum of netTotal_28 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7033.0,
+    "median": 3104.0
+   },
+   "sales_364": {
+    "definition": "Total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7557.0,
+    "median": 3257.0
+   },
+   "sales_7": {
+    "definition": "Total net sales 7 days earlier (sum of netTotal_7 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7033.0,
+    "median": 3098.5
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {},
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M7",
+  "formula": "sales ~ homeGame",
+  "purpose": "Extra: home games only",
+  "asked_in_instructions": false,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.11,
+  "adj_r_squared": 0.1072,
+  "coefficients": {
+   "Intercept": {
+    "coef": 3202.1699,
+    "se": 56.7901,
+    "p": 5.13904e-165
+   },
+   "homeGame": {
+    "coef": 2535.3301,
+    "se": 409.5191,
+    "p": 1.89373e-09
+   }
+  },
+  "variables": {
+   "homeGame": {
+    "definition": "1 if there is a home game on the date, 0 otherwise (away games and days without a game are 0)",
+    "unit": "dummy",
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {
+   "homeGame": {
+    "1": "home game days",
+    "0 (reference)": "days without a home game (no game or an away game)"
+   }
+  },
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ },
+ {
+  "id": "M8",
+  "formula": "sales ~ sales_364 + gameDay",
+  "purpose": "Extra: game day and last year's sales without interaction",
+  "asked_in_instructions": false,
+  "source_doc": "1. Excel part 4/Regression Assignment/Restaurant/Instructions.docx",
+  "n": 312,
+  "r_squared": 0.536,
+  "adj_r_squared": 0.533,
+  "coefficients": {
+   "Intercept": {
+    "coef": 1042.4279,
+    "se": 129.455,
+    "p": 1.77391e-14
+   },
+   "sales_364": {
+    "coef": 0.6202,
+    "se": 0.0354,
+    "p": 3.17172e-48
+   },
+   "gameDay": {
+    "coef": 440.5611,
+    "se": 211.3399,
+    "p": 0.0379256
+   }
+  },
+  "variables": {
+   "gameDay": {
+    "definition": "1 if there is a university football game on the date, 0 otherwise",
+    "unit": "dummy",
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.0
+   },
+   "sales_364": {
+    "definition": "Total net sales 364 days earlier, the same weekday last year (sum of netTotal_364 over items)",
+    "unit": "dollars",
+    "min": 0.0,
+    "max": 7557.0,
+    "median": 3257.0
+   },
+   "sales": {
+    "definition": "Total before-tax net sales of all menu items on the day (sum of netTotal over items)",
+    "unit": "dollars",
+    "min": 20.0,
+    "max": 7033.0,
+    "median": 3086.5
+   }
+  },
+  "dummy_coding": {
+   "gameDay": {
+    "1": "game days",
+    "0 (reference)": "days without a game"
+   }
+  },
+  "data_prep": "salesData summed by date; weatherData and gameData merged on date; dates without a game get gameDay = 0 and homeGame = 0; rows with a missing predictor are dropped."
+ }
+]

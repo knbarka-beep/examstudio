@@ -1,0 +1,85 @@
+{
+ "id": "Q144",
+ "columns": [
+  "Year",
+  "Month",
+  "Name",
+  "Amount",
+  "Vendor"
+ ],
+ "row_count": 10,
+ "ordered": true,
+ "rows": [
+  [
+   2014,
+   1,
+   "C Clark",
+   12600,
+   "TLC PAINTING"
+  ],
+  [
+   2014,
+   1,
+   "S Fitzpatrick",
+   5000,
+   "ACADEMY OF NUTRI & DIET"
+  ],
+  [
+   2014,
+   1,
+   "S Rains",
+   5000,
+   "DIGI SURVEILLANCE SYSTEMS"
+  ],
+  [
+   2014,
+   1,
+   "S Stacy",
+   5000,
+   "OSU NURSING BHAC"
+  ],
+  [
+   2014,
+   1,
+   "D Whitmore",
+   4982,
+   "SHAKE RATTLE AND ROLL"
+  ],
+  [
+   2014,
+   1,
+   "K Henderson",
+   4943.18,
+   "HUBCO INC"
+  ],
+  [
+   2014,
+   1,
+   "R Allen",
+   4905.5,
+   "IVG INVITROGEN CORPORA"
+  ],
+  [
+   2014,
+   1,
+   "C Blevins",
+   4883.77,
+   "GRIGSBY'S CARPET SHOWROOM"
+  ],
+  [
+   2014,
+   1,
+   "M Tornakian",
+   4875,
+   "BAKERS WASTE EQUIPMENT"
+  ],
+  [
+   2014,
+   1,
+   "P DeBow",
+   4815,
+   "STILLWATER SCREENPRINTING"
+  ]
+ ],
+ "sha256": "c01aae054c5c5c0ad23bb65895596e6ae3d9523a633537c084c74ff429e7f01e"
+}
