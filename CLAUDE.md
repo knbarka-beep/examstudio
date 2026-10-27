@@ -28,7 +28,7 @@ Plain HTML, CSS and vanilla JavaScript in `docs/`, reading JSON from `docs/data/
 2. Never invent a reference solution and attribute it to the materials. Solutions taken from the materials get `solution_source: "materials"` with the file name. Solutions you write get `solution_source: "generated"` and must be verified in Run 2 before they count.
 3. Do not publish reference solutions, answer documents or case texts. Nothing from `materials/` goes into git except the dataset files students need, copied into `docs/files/`. `scripts/build_site.py` strips solution fields from the public JSON unless `docs/data/config.json` has `"showReferenceSolutions": true` (default false).
 4. No secrets anywhere. Never print, echo or commit a key, token or password. If any secret appears in a file, stop and log it.
-5. Do not build "the improvement". Knut chooses it later from his own experience on the course. Leave the slot described in Run 3 and nothing more. Do not add AI tutoring, feedback storage, analytics or accounts.
+5. The improvement is built: the answer check with computed trap answers (`docs/js/improvement.js`, `scripts/build_checks.py`). Do not change it in a design run. Do not add AI tutoring, feedback storage, analytics or accounts.
 6. Everything user facing is in English. British spelling. Dates as 31.12.2026.
 7. Design: quiet and functional, like a university tool. No purple or other gradients, no pill-shaped buttons, no emoji or decorative icons, no vague hero text, no scroll or cursor animations, no fake metrics, counters or testimonials, no stock or AI images, no em dashes in any copy, no "made with AI" tag.
 8. Where Knut's own wording is needed, insert a marker `[[KNUT: what is needed]]` instead of writing it.

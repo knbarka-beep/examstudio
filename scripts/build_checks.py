@@ -195,10 +195,6 @@ TRAPS = {
                                     "CAST(strftime('%Y', BirthDate) AS INT)) FROM Employee"),
               "You subtracted the years only. That ignores whether the birthday had passed at the hire date. "
               "Use the day difference divided by 365.25.", {})],
-    "Q108": [(GRAIN, lambda: 49,
-              "This is the number of invoice and album pairs. {d} albums were downloaded complete on two "
-              "invoices, so they are counted twice. The question asks for distinct albums. The course answer "
-              "sheet also says 49, which is why this question is marked disputed.", {"d": lambda: 49 - 41})],
     "Q114": [(EDGE, lambda: sql(MV, "SELECT COUNT(*) FROM ratings WHERE rating >= 9.0"),
               "You used >= instead of >. {k} movies are rated exactly 9.0.",
               {"k": lambda: sql(MV, "SELECT COUNT(*) FROM ratings WHERE rating = 9.0")})],
@@ -230,10 +226,7 @@ TRAPS = {
 }
 
 # Disputed questions: more than one defensible answer.
-ALSO_ACCEPT = {
-    "Q015": ([2018], "2018 also fits the wording, but the data stops in February 2018, so 2017 is the only "
-                     "full year where Brooklyn leads. In an exam, give 2017 and say why."),
-}
+ALSO_ACCEPT = {}  # id -> ([other accepted values], note); empty: Q015 and Q108 are disputed and left off the site
 
 
 def kind_of(q, value):
@@ -270,6 +263,9 @@ def py(v):
 
 def main():
     qs = json.loads((ROOT / "bank" / "questions.json").read_text(encoding="utf-8"))
+    on_site = {q["id"] for q in json.loads((ROOT / "docs" / "data" / "questions.json").read_text(
+        encoding="utf-8"))["questions"]}
+    qs = [q for q in qs if q["id"] in on_site]
     checks, cats, eligible = {}, Counter(), 0
     for q in qs:
         exp = json.loads((ROOT / "bank" / "expected" / f"{q['id']}.json").read_text(encoding="utf-8"))
@@ -309,7 +305,7 @@ def main():
     OUT.write_text(json.dumps({"meta": meta, "checks": checks}, indent=1, ensure_ascii=False) + "\n",
                    encoding="utf-8")
     lines = ["# Computed trap answers", "",
-             f"{meta['checked']} single-value questions get an answer check. {meta['with_traps']} of them have "
+             f"{meta['checked']} single-value questions on the site get an answer check. {meta['with_traps']} of them have "
              f"at least one computed trap answer ({meta['traps']} traps in total). Every trap is calculated from "
              "the raw data with the wrong method in `scripts/build_checks.py`; none is guessed.", "",
              "| Category | Traps |", "|---|---|"]

@@ -309,6 +309,14 @@ Critique, comparing `runs/screens-run5/` with `runs/screens/`:
 
 Failed: nothing.
 
+### Improvement (interactive session with Claude, 27.10.2026, ended 27.10.2026 15:29)
+
+- Built the answer check with trap answers in `docs/js/improvement.js` and `docs/css/improvement.css`, switched on in `config.json`.
+- `scripts/build_checks.py` computes each trap from the raw data with the wrong method and keeps it only when it differs from the expected answer. Result: 103 checked questions, 36 with traps, 38 traps (wrong definition 11, wrong grain or key 9, boundary or parsing 9, wrong population 7, average of ratios 2). 240 of 304 manipulation exams contain at least one trap question.
+- `tests/check_answers.mjs`: every expected answer grades as correct, every trap as its trap, plus 27 format cases. All passed.
+- Q015 and Q108 stay off the site as disputed; they are described in the materials paragraph.
+- Run 6 picked up the first version of these files in its commit; this entry covers the rest.
+
 ## Cost statement
 
 [[KNUT: cost figures]]

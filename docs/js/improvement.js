@@ -148,7 +148,7 @@ function trapList(check, intro) {
 }
 
 function answerBlock(check) {
-  const tol = check.tol > 0 ? ` Accepted within ${show(check, check.tol).replace(/^0(?=[.,]\d)/, "0")} of this.` : "";
+  const tol = check.tol > 0 ? " Answers that round to this are accepted." : "";
   return h("div", { class: "ic-answer" },
     h("p", {}, h("strong", { text: "Expected answer: " }), show(check, check.answer),
       check.also?.length ? ` (${check.also.map((a) => show(check, a)).join(", ")} also fits the wording)` : "",

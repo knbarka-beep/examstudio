@@ -1,12 +1,12 @@
 {
  "meta": {
-  "checked": 105,
-  "with_traps": 37,
-  "traps": 39,
+  "checked": 103,
+  "with_traps": 36,
+  "traps": 38,
   "categories": {
    "Wrong definition": 11,
    "Wrong population": 7,
-   "Wrong grain or key": 10,
+   "Wrong grain or key": 9,
    "Boundary or parsing": 9,
    "Average of ratios": 2
   }
@@ -119,16 +119,6 @@
    "answer": 0.08,
    "tol": 0.0055,
    "traps": []
-  },
-  "Q015": {
-   "kind": "number",
-   "answer": 2017,
-   "tol": 0,
-   "traps": [],
-   "also": [
-    2018
-   ],
-   "note": "2018 also fits the wording, but the data stops in February 2018, so 2017 is the only full year where Brooklyn leads. In an exam, give 2017 and say why."
   },
   "Q016": {
    "kind": "percent",
@@ -716,18 +706,6 @@
    "answer": 2,
    "tol": 0,
    "traps": []
-  },
-  "Q108": {
-   "kind": "number",
-   "answer": 41,
-   "tol": 0,
-   "traps": [
-    {
-     "category": "Wrong grain or key",
-     "value": 49,
-     "why": "This is the number of invoice and album pairs. 8 albums were downloaded complete on two invoices, so they are counted twice. The question asks for distinct albums. The course answer sheet also says 49, which is why this question is marked disputed."
-    }
-   ]
   },
   "Q112": {
    "kind": "number",

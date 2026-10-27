@@ -1,11 +1,11 @@
 # Computed trap answers
 
-105 single-value questions get an answer check. 37 of them have at least one computed trap answer (39 traps in total). Every trap is calculated from the raw data with the wrong method in `scripts/build_checks.py`; none is guessed.
+103 single-value questions on the site get an answer check. 36 of them have at least one computed trap answer (38 traps in total). Every trap is calculated from the raw data with the wrong method in `scripts/build_checks.py`; none is guessed.
 
 | Category | Traps |
 |---|---|
 | Wrong definition | 11 |
-| Wrong grain or key | 10 |
+| Wrong grain or key | 9 |
 | Boundary or parsing | 9 |
 | Wrong population | 7 |
 | Average of ratios | 2 |
@@ -41,7 +41,6 @@
 | Q081 | 3191.08 | 216.06 | Wrong grain or key |
 | Q098 | 2 | 1 | Boundary or parsing |
 | Q100 | 55.6 | 56 | Boundary or parsing |
-| Q108 | 41 | 49 | Wrong grain or key |
 | Q114 | 1297 | 1890 | Boundary or parsing |
 | Q115 | 195 | 252 | Boundary or parsing |
 | Q118 | 6.23 | 3.54 | Wrong definition |

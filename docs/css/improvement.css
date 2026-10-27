@@ -17,3 +17,4 @@
 .ic-traps { margin-top: 8px; }
 .ic-traps strong { font-family: var(--mono, monospace); font-weight: 600; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ic-right > p:first-child strong { color: #7FC48D; } }
+.ic [hidden] { display: none !important; }

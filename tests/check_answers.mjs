@@ -24,8 +24,7 @@ const cases = [
   ["Q016", "20%", "correct"], ["Q016", "20", "correct"], ["Q016", "0.2", "correct"], ["Q016", "8%", "trap"],
   ["Q024", "23,65 %", "correct"], ["Q024", "18%", "trap"], ["Q006", "07.12.2011 16:38", "correct"],
   ["Q006", "2011-12-07 16:38:00", "correct"], ["Q006", "12/7/2011 4:38", "wrong"], ["Q006", "07.12.2011", "notime"],
-  ["Q048", " brian gibson ", "correct"], ["Q048", "Elizabeth Rees", "trap"], ["Q015", "2018", "also"],
-  ["Q108", "49", "trap"], ["Q061", "16,24", "trap"], ["Q001", "abc", "unreadable"], ["Q001", "33501", "wrong"],
+  ["Q048", " brian gibson ", "correct"], ["Q048", "Elizabeth Rees", "trap"], ["Q061", "9,66", "correct"], ["Q061", "16,24", "trap"], ["Q001", "abc", "unreadable"], ["Q001", "33501", "wrong"],
 ];
 for (const [id, v, want] of cases) {
   const got = grade(c(id), v).state;
