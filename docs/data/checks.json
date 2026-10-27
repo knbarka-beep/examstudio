@@ -1,0 +1,882 @@
+{
+ "meta": {
+  "checked": 105,
+  "with_traps": 37,
+  "traps": 39,
+  "categories": {
+   "Wrong definition": 11,
+   "Wrong population": 7,
+   "Wrong grain or key": 10,
+   "Boundary or parsing": 9,
+   "Average of ratios": 2
+  }
+ },
+ "checks": {
+  "Q001": {
+   "kind": "number",
+   "answer": 33502,
+   "tol": 0,
+   "traps": []
+  },
+  "Q002": {
+   "kind": "number",
+   "answer": 14,
+   "tol": 0,
+   "traps": []
+  },
+  "Q003": {
+   "kind": "number",
+   "answer": 11,
+   "tol": 0,
+   "traps": []
+  },
+  "Q004": {
+   "kind": "number",
+   "answer": 2,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 13,
+     "why": "You counted the blank ZipCodes as invalid too. LEN(blank) is 0, which is not 5, so a LEN test catches the 11 missing ones. The question asks for values that are present but wrong."
+    }
+   ]
+  },
+  "Q005": {
+   "kind": "text",
+   "answer": "EventAgency",
+   "tol": 0,
+   "traps": []
+  },
+  "Q006": {
+   "kind": "datetime",
+   "answer": "2011-12-07 16:38:00",
+   "tol": 0,
+   "traps": []
+  },
+  "Q007": {
+   "kind": "datetime",
+   "answer": "2018-02-09 12:46:00",
+   "tol": 0,
+   "traps": []
+  },
+  "Q008": {
+   "kind": "number",
+   "answer": 4,
+   "tol": 0,
+   "traps": []
+  },
+  "Q009": {
+   "kind": "text",
+   "answer": "Shooting Permit",
+   "tol": 0,
+   "traps": []
+  },
+  "Q010": {
+   "kind": "text",
+   "answer": "Television",
+   "tol": 0,
+   "traps": []
+  },
+  "Q011": {
+   "kind": "number",
+   "answer": 193,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 282,
+     "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
+    }
+   ]
+  },
+  "Q012": {
+   "kind": "number",
+   "answer": 145,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 147,
+     "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
+    }
+   ]
+  },
+  "Q013": {
+   "kind": "number",
+   "answer": 98,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 99,
+     "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
+    }
+   ]
+  },
+  "Q014": {
+   "kind": "percent",
+   "answer": 0.08,
+   "tol": 0.0055,
+   "traps": []
+  },
+  "Q015": {
+   "kind": "number",
+   "answer": 2017,
+   "tol": 0,
+   "traps": [],
+   "also": [
+    2018
+   ],
+   "note": "2018 also fits the wording, but the data stops in February 2018, so 2017 is the only full year where Brooklyn leads. In an exam, give 2017 and say why."
+  },
+  "Q016": {
+   "kind": "percent",
+   "answer": 0.2,
+   "tol": 0.0055,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 0.0821,
+     "why": "You divided by all shooting permits instead of the Manhattan ones. The denominator is the population the question names: shoots in Manhattan."
+    },
+    {
+     "category": "Wrong population",
+     "value": 0.2298,
+     "why": "You kept every event type in Manhattan. Filter on shooting permits first."
+    }
+   ]
+  },
+  "Q017": {
+   "kind": "percent",
+   "answer": 0.02,
+   "tol": 0.0055,
+   "traps": []
+  },
+  "Q018": {
+   "kind": "number",
+   "answer": 7,
+   "tol": 0,
+   "traps": []
+  },
+  "Q019": {
+   "kind": "number",
+   "answer": 2,
+   "tol": 0,
+   "traps": []
+  },
+  "Q020": {
+   "kind": "number",
+   "answer": 17,
+   "tol": 0.25,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 20.5,
+     "why": "You averaged every event type. Non-shooting events run longer, which pulls the mean up. Filter on shooting permits first."
+    }
+   ]
+  },
+  "Q021": {
+   "kind": "number",
+   "answer": 1,
+   "tol": 0,
+   "traps": []
+  },
+  "Q022": {
+   "kind": "number",
+   "answer": 5,
+   "tol": 0.49,
+   "traps": [
+    {
+     "category": "Wrong population",
+     "value": 6,
+     "why": "You averaged every event type. Filter on shooting permits first."
+    }
+   ]
+  },
+  "Q023": {
+   "kind": "text",
+   "answer": "Thursday",
+   "tol": 0,
+   "traps": []
+  },
+  "Q024": {
+   "kind": "percent",
+   "answer": 0.24,
+   "tol": 0.0055,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 0.1793,
+     "why": "You counted permits that start on a Friday. The question counts permits that touch a Friday anywhere between start and end, so multi-day shoots that start on Wednesday or Thursday count too."
+    }
+   ]
+  },
+  "Q025": {
+   "kind": "percent",
+   "answer": 0.12,
+   "tol": 0.0055,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 0.0518,
+     "why": "You counted permits that start on a Saturday. The question counts permits that touch a Saturday anywhere between start and end, so shoots that start earlier in the week and run over count too."
+    }
+   ]
+  },
+  "Q026": {
+   "kind": "number",
+   "answer": 3,
+   "tol": 0,
+   "traps": []
+  },
+  "Q028": {
+   "kind": "number",
+   "answer": -17400000000,
+   "tol": 0,
+   "traps": []
+  },
+  "Q029": {
+   "kind": "number",
+   "answer": 1,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 2,
+     "why": "You counted both copies. Remove Duplicates and COUNTIFS both see the original as well; the question asks how many rows repeat an earlier row."
+    }
+   ]
+  },
+  "Q032": {
+   "kind": "number",
+   "answer": 4,
+   "tol": 0,
+   "traps": []
+  },
+  "Q033": {
+   "kind": "number",
+   "answer": 66,
+   "tol": 0,
+   "traps": []
+  },
+  "Q034": {
+   "kind": "number",
+   "answer": 81,
+   "tol": 0,
+   "traps": []
+  },
+  "Q035": {
+   "kind": "number",
+   "answer": 86,
+   "tol": 0,
+   "traps": []
+  },
+  "Q037": {
+   "kind": "number",
+   "answer": 133,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 17,
+     "why": "You counted distinct PlantIDs. Plant 12 exists in several countries, so PlantID alone is not a key. The plant is only identified by Location and PlantID together."
+    }
+   ]
+  },
+  "Q038": {
+   "kind": "number",
+   "answer": 258,
+   "tol": 0,
+   "traps": []
+  },
+  "Q040": {
+   "kind": "number",
+   "answer": 71,
+   "tol": 0,
+   "traps": []
+  },
+  "Q041": {
+   "kind": "number",
+   "answer": 81,
+   "tol": 0,
+   "traps": []
+  },
+  "Q042": {
+   "kind": "number",
+   "answer": 339,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 158,
+     "why": "You matched only 'M'. 181 employees are coded 'Mo', which also means monthly. Check the distinct values of a coded field before you count."
+    }
+   ]
+  },
+  "Q043": {
+   "kind": "number",
+   "answer": 17,
+   "tol": 0,
+   "traps": []
+  },
+  "Q044": {
+   "kind": "number",
+   "answer": 133,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 17,
+     "why": "You counted distinct PlantIDs. The same plant number is used in several countries, so the key is Location and PlantID together."
+    }
+   ]
+  },
+  "Q045": {
+   "kind": "text",
+   "answer": "Sales - Other",
+   "tol": 0,
+   "traps": []
+  },
+  "Q046": {
+   "kind": "number",
+   "answer": 439054.18,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q047": {
+   "kind": "number",
+   "answer": 477539.28,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q048": {
+   "kind": "text",
+   "answer": "Brian Gibson",
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": "Elizabeth Rees",
+     "why": "You looked up PreparerID 102 alone and got the first match, which belongs to BusinessUnitID 1. PreparerID 102 appears 3 times, so the lookup needs both columns (INDEX/MATCH on two conditions, or a helper key)."
+    }
+   ]
+  },
+  "Q049": {
+   "kind": "number",
+   "answer": 152,
+   "tol": 0,
+   "traps": []
+  },
+  "Q050": {
+   "kind": "number",
+   "answer": 228,
+   "tol": 0,
+   "traps": []
+  },
+  "Q051": {
+   "kind": "number",
+   "answer": 0,
+   "tol": 0,
+   "traps": []
+  },
+  "Q052": {
+   "kind": "number",
+   "answer": -398321.61,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 398321.61,
+     "why": "Right size, wrong sign. Revenue is posted as credits, so in a signed Amount column it sums to a negative number."
+    }
+   ]
+  },
+  "Q053": {
+   "kind": "number",
+   "answer": 4981,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 4982,
+     "why": "You counted the header line as a data row."
+    }
+   ]
+  },
+  "Q054": {
+   "kind": "number",
+   "answer": 804,
+   "tol": 0,
+   "traps": []
+  },
+  "Q055": {
+   "kind": "number",
+   "answer": 1194,
+   "tol": 0,
+   "traps": []
+  },
+  "Q057": {
+   "kind": "number",
+   "answer": 397979.46,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 395080.3,
+     "why": "You summed Reg_Pay only. Gross pay is Reg_Pay plus OT_Pay."
+    }
+   ]
+  },
+  "Q058": {
+   "kind": "number",
+   "answer": 0,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q059": {
+   "kind": "number",
+   "answer": 132294.35,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q060": {
+   "kind": "number",
+   "answer": 266055.56,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 280588.59,
+     "why": "You compared 2016 gross wages with 2015 regular pay. The two files measure pay differently: 2016 has one Gross_Wages column, 2015 splits Reg_Pay and OT_Pay. Build the same measure in both years before you subtract."
+    }
+   ]
+  },
+  "Q061": {
+   "kind": "number",
+   "answer": 9.66,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Average of ratios",
+     "value": 16.24,
+     "why": "You averaged the pay per hour of each row. Rows with few hours count as much as rows with many, so the mean of ratios is not the pay per hour. Divide total gross pay by total hours."
+    }
+   ]
+  },
+  "Q065": {
+   "kind": "number",
+   "answer": 103,
+   "tol": 0,
+   "traps": []
+  },
+  "Q066": {
+   "kind": "number",
+   "answer": 1486454.83,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 1352789.75,
+     "why": "You summed Gross_Wages only. Employee cost also includes SocSec_Medicare, FUTA, SUTA and Work_Comp."
+    }
+   ]
+  },
+  "Q067": {
+   "kind": "number",
+   "answer": 456261.53,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q068": {
+   "kind": "number",
+   "answer": 630472.66,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q069": {
+   "kind": "number",
+   "answer": 30.84,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Average of ratios",
+     "value": 26.0,
+     "why": "You averaged each row's pay per hour. That weights a two-hour row like a forty-hour row. Divide total Gross_Wages by total hours."
+    }
+   ]
+  },
+  "Q070": {
+   "kind": "number",
+   "answer": 100,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q072": {
+   "kind": "number",
+   "answer": 220640.06,
+   "tol": 0.0051,
+   "traps": []
+  },
+  "Q073": {
+   "kind": "number",
+   "answer": 159,
+   "tol": 0,
+   "traps": []
+  },
+  "Q075": {
+   "kind": "number",
+   "answer": 3252,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 20.0,
+     "why": "You looked the date up and got one menu item's netTotal. salesData has one row per menu item per day, so a daily total needs SUMIFS or a pivot, not VLOOKUP."
+    }
+   ]
+  },
+  "Q076": {
+   "kind": "number",
+   "answer": 2841,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 24.0,
+     "why": "You looked the date up and got one menu item's netTotal. salesData has one row per menu item per day, so a daily total needs SUMIFS or a pivot, not VLOOKUP."
+    }
+   ]
+  },
+  "Q079": {
+   "kind": "number",
+   "answer": 84.02,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 82.94,
+     "why": "You took the date of the single biggest menu-item row. The question is about the biggest day, so sum netTotal per date first, then find the maximum."
+    }
+   ]
+  },
+  "Q080": {
+   "kind": "number",
+   "answer": 4627.38,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 310.08,
+     "why": "You averaged menu-item rows, not days. Sum netTotal per date first, then average the daily totals."
+    }
+   ]
+  },
+  "Q081": {
+   "kind": "number",
+   "answer": 3191.08,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 216.06,
+     "why": "You averaged menu-item rows, not days. Sum netTotal per date first, then average the daily totals."
+    }
+   ]
+  },
+  "Q082": {
+   "kind": "number",
+   "answer": 5,
+   "tol": 0,
+   "traps": []
+  },
+  "Q083": {
+   "kind": "number",
+   "answer": 13,
+   "tol": 0,
+   "traps": []
+  },
+  "Q084": {
+   "kind": "text",
+   "answer": "Czech Republic",
+   "tol": 0,
+   "traps": []
+  },
+  "Q085": {
+   "kind": "text",
+   "answer": "Bernard",
+   "tol": 0,
+   "traps": []
+  },
+  "Q086": {
+   "kind": "number",
+   "answer": 412,
+   "tol": 0,
+   "traps": []
+  },
+  "Q087": {
+   "kind": "number",
+   "answer": 4,
+   "tol": 0,
+   "traps": []
+  },
+  "Q088": {
+   "kind": "number",
+   "answer": 11,
+   "tol": 0,
+   "traps": []
+  },
+  "Q089": {
+   "kind": "number",
+   "answer": 60,
+   "tol": 0,
+   "traps": []
+  },
+  "Q090": {
+   "kind": "number",
+   "answer": 49,
+   "tol": 0,
+   "traps": []
+  },
+  "Q091": {
+   "kind": "number",
+   "answer": 70,
+   "tol": 0,
+   "traps": []
+  },
+  "Q092": {
+   "kind": "number",
+   "answer": 77,
+   "tol": 0,
+   "traps": []
+  },
+  "Q093": {
+   "kind": "number",
+   "answer": 112,
+   "tol": 0,
+   "traps": []
+  },
+  "Q094": {
+   "kind": "number",
+   "answer": 10,
+   "tol": 0,
+   "traps": []
+  },
+  "Q095": {
+   "kind": "number",
+   "answer": 8,
+   "tol": 0,
+   "traps": []
+  },
+  "Q097": {
+   "kind": "number",
+   "answer": 8,
+   "tol": 0,
+   "traps": []
+  },
+  "Q098": {
+   "kind": "number",
+   "answer": 2,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 1,
+     "why": "You used '1' for Sunday, as in Excel's WEEKDAY. In SQLite strftime('%w') Sunday is '0' and Monday is '1'."
+    }
+   ]
+  },
+  "Q099": {
+   "kind": "number",
+   "answer": 1,
+   "tol": 0,
+   "traps": []
+  },
+  "Q100": {
+   "kind": "number",
+   "answer": 55.6,
+   "tol": 0.051,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 56,
+     "why": "You subtracted the years only. That ignores whether the birthday had passed at the hire date. Use the day difference divided by 365.25."
+    }
+   ]
+  },
+  "Q102": {
+   "kind": "number",
+   "answer": 2240,
+   "tol": 0,
+   "traps": []
+  },
+  "Q103": {
+   "kind": "number",
+   "answer": 2,
+   "tol": 0,
+   "traps": []
+  },
+  "Q108": {
+   "kind": "number",
+   "answer": 41,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "value": 49,
+     "why": "This is the number of invoice and album pairs. 8 albums were downloaded complete on two invoices, so they are counted twice. The question asks for distinct albums. The course answer sheet also says 49, which is why this question is marked disputed."
+    }
+   ]
+  },
+  "Q112": {
+   "kind": "number",
+   "answer": 1963,
+   "tol": 0,
+   "traps": []
+  },
+  "Q114": {
+   "kind": "number",
+   "answer": 1297,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 1890,
+     "why": "You used >= instead of >. 593 movies are rated exactly 9.0."
+    }
+   ]
+  },
+  "Q115": {
+   "kind": "number",
+   "answer": 195,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 252,
+     "why": "You used >= instead of >. 57 movies are rated exactly 9.5."
+    }
+   ]
+  },
+  "Q118": {
+   "kind": "number",
+   "answer": 6.23,
+   "tol": 0.051,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 3.54,
+     "why": "You counted movies without a rating as zero (LEFT JOIN with COALESCE, or SUM divided by COUNT(*)). AVG(rating) skips missing ratings; a missing rating is unknown, not zero."
+    }
+   ]
+  },
+  "Q119": {
+   "kind": "number",
+   "answer": 6.25,
+   "tol": 0.051,
+   "traps": [
+    {
+     "category": "Wrong definition",
+     "value": 3.58,
+     "why": "You counted movies without a rating as zero (LEFT JOIN with COALESCE, or SUM divided by COUNT(*)). AVG(rating) skips missing ratings; a missing rating is unknown, not zero."
+    }
+   ]
+  },
+  "Q131": {
+   "kind": "number",
+   "answer": 119.9,
+   "tol": 0.051,
+   "traps": []
+  },
+  "Q134": {
+   "kind": "number",
+   "answer": 0.61,
+   "tol": 0.051,
+   "traps": []
+  },
+  "Q135": {
+   "kind": "number",
+   "answer": 0.49,
+   "tol": 0.051,
+   "traps": []
+  },
+  "Q140": {
+   "kind": "text",
+   "answer": "London",
+   "tol": 0,
+   "traps": []
+  },
+  "Q141": {
+   "kind": "text",
+   "answer": "Ernest",
+   "tol": 0,
+   "traps": []
+  },
+  "Q142": {
+   "kind": "text",
+   "answer": "Berthold",
+   "tol": 0,
+   "traps": []
+  },
+  "Q147": {
+   "kind": "number",
+   "answer": 489178,
+   "tol": 0,
+   "traps": []
+  },
+  "Q148": {
+   "kind": "number",
+   "answer": 1187,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 1098,
+     "why": "You used > instead of >=. 89 transactions are exactly $5,000, and 'or more' includes them."
+    }
+   ]
+  },
+  "Q149": {
+   "kind": "number",
+   "answer": -157882.08,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": -317758.7,
+     "why": "You took the month from the first character of TransactionDate. That also catches October, November and December, because '10/', '11/' and '12/' start with 1. Take everything before the first '/' as the month."
+    }
+   ]
+  },
+  "Q150": {
+   "kind": "number",
+   "answer": -247593.47,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": -406685.97,
+     "why": "You took the month from the first character of TransactionDate. That also catches October, November and December. Take everything before the first '/' as the month."
+    }
+   ]
+  },
+  "Q163": {
+   "kind": "number",
+   "answer": 2632.8,
+   "tol": 0.0051,
+   "traps": [
+    {
+     "category": "Boundary or parsing",
+     "value": 2622.25,
+     "why": "You matched the vendor name with exact case. The vendor is also written in other cases, and the question says any letter case: use LOWER(Vendor) = 'amazon.com'."
+    },
+    {
+     "category": "Wrong definition",
+     "value": 2593.74,
+     "why": "You included returns. Earnings are on purchases only (Amount above 0); a return would reduce them twice."
+    }
+   ]
+  }
+ }
+}

@@ -44,6 +44,16 @@ def time_up(page):
     page.wait_for_timeout(600)
 
 
+def bank_filtered(page):
+    page.select_option("#f-subject", "SQL")
+    page.fill("#f-text", "invoice")
+
+
+def tab_focus(page):
+    page.keyboard.press("Tab")
+    page.get_by_role("button", name="2 Excel").focus()
+
+
 SHOTS = [
     ("home", "#/", None),
     ("manip-exams", "#/manipulation/exams", None),
@@ -53,6 +63,8 @@ SHOTS = [
     ("bank-Q045", "#/manipulation/questions/Q045", None),
     ("interp-R004-answer", "#/interpretation/exams/R004", show_answer),
     ("exam-E012-timeup", "#/manipulation/exams/E012", time_up),
+    ("bank-filtered", "#/manipulation/questions", bank_filtered),
+    ("exam-E012-tab-focus", "#/manipulation/exams/E012", tab_focus),
 ]
 
 
@@ -78,12 +90,14 @@ def main():
                     page.evaluate("document.fonts.ready")
                     if action:
                         action(page)
-                    if action is not started_scrolled:
+                    if action not in (started_scrolled, tab_focus):
                         page.evaluate("window.scrollTo(0, 0)")
                     if page.evaluate("document.documentElement.scrollWidth > window.innerWidth"):
                         problems.append(f"{name} {w} {scheme}: horizontal scroll")
                     problems += [f"{name} {w} {scheme}: console {e}" for e in errors]
-                    page.screenshot(path=str(OUT / f"{name}-{w}-{scheme}.png"), full_page=action is not started_scrolled)
+                    if action not in (started_scrolled, tab_focus):
+                        page.set_viewport_size({"width": w, "height": page.evaluate("document.documentElement.scrollHeight")})
+                    page.screenshot(path=str(OUT / f"{name}-{w}-{scheme}.png"), full_page=action not in (started_scrolled, tab_focus))
                     page.close()
                 ctx.close()
         browser.close()

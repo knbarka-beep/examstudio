@@ -259,6 +259,56 @@ Critique, comparing `runs/screens-run4/` with `runs/screens/`:
 
 Failed: nothing.
 
+### Run 6
+
+Start: 27.10.2026 15:15:13 (Python `datetime`, Europe/Copenhagen).
+
+- [x] 1 workbook frame and tokens
+- [x] 2 formula bar and name box
+- [x] 3 grid content and selection style
+- [x] 4 sheet tabs and status bar
+- [x] 5 view by view
+- [x] 6 mobile
+- [x] 7 screenshots, critique
+- [x] 8 tests, commit, push, log
+
+End: 27.10.2026 15:27:04. Duration: 12 minutes. Steps 1 to 6 were built in one pass and committed together with the screenshots, not after each step.
+
+Done:
+- Every page is a workbook frame: name box, italic `fx`, formula bar (the prompt in Plex Serif 24px / 19px, or a one-line page description), sheet body with aria-hidden column letters and row numbers, sheet tabs and a status bar. Run 5 ledger margin and ruled lines removed.
+- Content is laid out in cells: label and value rows with CSS grid (`cells()`), real data in `<table>` drawn as sheet cells (`xl()`). Row numbers are generated per content row and continue across blocks on a page (the bank numbers its rows by position in the filtered list, starting at 3 under the header and filter rows).
+- Selection style: 2px `--select` outline with a 6x6px fill handle on focused links, buttons and summaries, on the active nav link and on the current sheet tab; table rows show the same outline when something inside them has focus.
+- Exam pages: the clock is a frozen row under the formula bar (sticky top, shadow only when stuck); tabs, Previous, Next and the status bar stick to the bottom. Interpretation tabs are "Question 1" to "Question 4".
+- Home: name box "Start", the first question of a random manipulation exam in the formula bar, the exam laid out as a table (question, subject, case, estimated time), a final row with "Start exam Exxx", "Show another exam" and 8:00 in large mono, then rows for both exam types with real counts and links.
+- Home note replaced with Knut's text: "In the oral exam you get one full data manipulation exam and one full data interpretation exam. Practise both here, with the same files and time limits." It is styled as a cell comment.
+- Question bank: a spreadsheet table (Id, Prompt, Subject, Case, Skills, Source file) with an autofilter row under the header, green-bar banding and paging in the status bar.
+- Interpretation: regression summary sheet with "Regression statistics" (model, R squared, adjusted R squared, observations), "Variables" and "Coefficients" (Parameter, Term, Coefficient, Standard error, p-value), numbers right-aligned, no highlighting. The equation is the formula bar's second line.
+- `scripts/screenshots.py`: added the bank with a filter applied and keyboard focus on a sheet tab. Full-page shots now set the viewport to the page height, so the sticky bars sit where they belong.
+- `py scriptsuild_site.py` rerun so the `?v=` stamp changes with this run (it is the data version, which only changes when the site is rebuilt).
+- `py tests\smoke.py` passed; `py testsalidate.py`: 228 checked, 222 validated, 4 manual_check, 2 disputed, 0 failed. No em dashes in `docs/`. The smoke test did not need changes.
+
+Choices logged:
+- The bank gets a sixth column, "Source file". The source file filter already existed and had no column to sit in; dropping it would have removed a working filter.
+- Interpretation tabs now use the same markup as manipulation tabs (buttons with `aria-current`, Tab key moves between them) instead of `role="tab"` with arrow keys. The question now lives partly in the formula bar and partly in the sheet, so there is no single tab panel to point to. They also get Previous and Next, as in the tab row of the brief.
+- Fill handles are drawn on links, buttons and summaries only. Inputs and selects cannot have pseudo-elements, so they show the 2px selection border without the handle.
+- The bank header row is not frozen: sticky table rows need fixed row heights and break inside the sideways-scrolling container on mobile. A page has at most 25 rows.
+- The comment marker on the home note uses `--red-pencil`, as the brief asks. It is the only use of red outside time-up and errors.
+- "Dataset reference" and "Report an issue" span both cells of their row instead of repeating their own name as a label.
+- On mobile the bank table and the model tables scroll sideways inside their containers; the home exam table fits at 375px.
+
+Critique, comparing `runs/screens-run5/` with `runs/screens/`:
+- Reads as a worksheet within one second: yes on every page at 1280. Name box, `fx`, column letters, row numbers, gridlines, tabs and status bar are all there. At 375px the letters and row numbers are hidden as asked; the formula bar, cells, tabs and status bar still carry the idea.
+- Calm or noisy: calm at 1280. The head cells are pale and small. Chrome that carried nothing was removed: the duplicate site footer (see below) and, under 700px, Previous and Next on exam pages, because the tabs do the same job and the sticky footer had grown to about 130px.
+- Prompt first, clock second: the prompt sits first, at the top in 24px serif, and is the first thing read. The dark clock with 64px digits is still the heavier shape on the page; I kept it at the size the brief asks for. [[KNUT: say if the clock should shrink so the prompt clearly wins]]
+- Row numbers: aligned with their rows in both themes after one fix. They were top-left in tables and are now centred to the first text line. Hidden under 700px.
+- Commercial look-alikes: none. No green chrome, no ribbon, no icons, no product names. Gridlines are the Run 5 grey-green, and the selection colour is the site's pen blue.
+- Contrast: head text on head cells 5.35 (light) and 6.52 (dark); pen on head cells 7.18 and 7.57; clock figures as in Run 5. The selection is visible in both themes (light screenshots and the dark time-up shot).
+- No horizontal page scroll at 375px (script). No all-caps, eyebrows, middle dots, arrows, em dashes, pills or emoji. No gradients at all now that the ruled lines are gone.
+- Fixed during review: row numbers not centred in tables; letter-by-letter wrapping in mobile tables (`overflow-wrap: anywhere` with automatic table layout); the home exam table and its Start row clipped at 375px; the sticky footer caught mid-page in full-page screenshots.
+- Removed one thing: the site footer. Its data version is now in every status bar, and its sentence repeated the home page.
+
+Failed: nothing.
+
 ## Cost statement
 
 [[KNUT: cost figures]]
