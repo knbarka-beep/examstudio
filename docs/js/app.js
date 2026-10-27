@@ -43,9 +43,9 @@ function heading(text) {
 }
 
 function datasetLink(d) {
-  const size = d.download_size_bytes ? `zip, ${mb(d.download_size_bytes)}` : mb(d.size_bytes);
-  return el("a", { class: "button", href: d.download, download: d.download.startsWith("files/") ? d.file : null },
-    `Download ${d.label} (${d.file}, ${size})`);
+  const size = d.download_size_bytes ? `zip, ${mb(d.download_size_bytes)}` : `${d.file.split(".").pop()}, ${mb(d.size_bytes)}`;
+  return el("a", { class: "button secondary", href: d.download, download: d.download.startsWith("files/") ? d.file : null },
+    `Download ${d.label}`, el("span", { class: "muted" }, size));
 }
 
 function downloads(ids) {
@@ -71,8 +71,10 @@ function timer(minutes) {
   const pause = el("button", { type: "button", class: "secondary" }, "Pause");
   const reset = el("button", { type: "button", class: "secondary" }, "Reset");
   const box = el("section", { class: "timer", "aria-label": "Timer" },
-    el("p", {}, "Time remaining ", remainingOut, " | Elapsed ", elapsedOut),
-    el("div", { class: "buttons" }, start, pause, reset), status);
+    el("p", { class: "remaining" }, remainingOut, " remaining"),
+    el("p", { class: "muted" }, "Elapsed ", elapsedOut),
+    status,
+    el("div", { class: "buttons" }, start, pause, reset));
 
   const fmt = (ms) => {
     const s = Math.round(ms / 1000);
@@ -126,14 +128,14 @@ function datasetReference(q) {
     if (d.sheets) {
       const sheets = d.sheets.filter((s) => !req.sheets?.length || has(req.sheets, s.name));
       for (const s of sheets) {
-        parts.push(el("p", {}, `Sheet "${s.name}", headers in row ${s.header_row}, ${num(s.rows, 0)} data rows:`),
+        parts.push(el("p", {}, "Sheet ", el("code", {}, s.name), `, headers in row ${s.header_row}, ${num(s.rows, 0)} data rows:`),
           el("ul", { class: "fields" }, s.headers.filter((h) => h !== null).map((h) =>
             el("li", {}, has(req.headers, h) ? el("strong", {}, h) : h))));
       }
     } else if (d.tables) {
       const tables = d.tables.filter((t) => !req.tables?.length || has(req.tables, t.name));
       for (const t of tables) {
-        parts.push(el("p", {}, `Table ${t.name}, ${num(t.rows, 0)} rows:`),
+        parts.push(el("p", {}, "Table ", el("code", {}, t.name), `, ${num(t.rows, 0)} rows:`),
           el("ul", { class: "fields" }, t.columns.map((c) =>
             el("li", {}, has(req.columns, `${t.name}.${c.split(" ")[0]}`) ? el("strong", {}, c) : c))));
       }
@@ -163,17 +165,16 @@ function runImprovement(question, exam, slot) {
   initImprovement({ question, exam, datasets, config: S.config, slot });
 }
 
-function questionPanel(q, exam) {
+function questionPanel(q, exam, nav) {
   const slot = el("section", { id: "improvement-slot", hidden: true });
-  const panel = el("article", { class: "question" },
-    el("p", { class: "meta" }, `${q.subject} | ${q.id} | about ${num(q.estimated_minutes, 1)} min | ${q.case}`),
-    el("h2", {}, `Question ${q.id}`),
+  const panel = el("article", { class: exam ? "sheet tabbed" : "sheet" },
+    el("h2", { class: "meta" }, `${q.id}, ${q.case}, about ${num(q.estimated_minutes, 1)} min`),
     el("p", { class: "prompt" }, q.prompt),
     slot,
-    q.expected_answer_hint ? el("p", { class: "muted" }, `Answer format: ${q.expected_answer_hint}`) : null,
+    q.expected_answer_hint ? el("p", {}, `Answer format: ${q.expected_answer_hint}`) : null,
     datasetReference(q),
     S.config.showReferenceSolutions && q.reference ? referenceSolution(q.reference) : null,
-    issueLink(q.id, exam));
+    el("div", { class: "sheet-foot" }, issueLink(q.id, exam), nav));
   return { panel, slot };
 }
 
@@ -189,53 +190,66 @@ function equation(m) {
 function modelBlock(m) {
   const vars = Object.entries(m.variables);
   const dummies = Object.entries(m.dummy_coding || {});
+  const cols = (names, numeric) => el("thead", {}, el("tr", {}, names.map((h, i) =>
+    el("th", { scope: "col", class: i >= numeric ? "num" : null }, h))));
   return el("div", { class: "model" },
-    el("h3", {}, `Model ${m.id}: ${m.formula}`),
+    el("h2", {}, "Model ", el("code", {}, m.id), ": ", el("code", {}, m.formula)),
     el("p", {}, `OLS, n = ${m.n}, R squared = ${m.r_squared}, adjusted R squared = ${m.adj_r_squared}.`),
-    el("p", { class: "equation" }, equation(m)),
-    el("h4", {}, "Variables"),
-    el("div", { class: "table-wrap" }, el("table", {},
-      el("thead", {}, el("tr", {}, ["Variable", "Definition", "Unit", "Observed range"].map((h) => el("th", { scope: "col" }, h)))),
+    el("h3", {}, "Variables"),
+    el("div", { class: "table-wrap" }, el("table", { class: "stats" },
+      cols(["Variable", "Definition", "Unit", "Observed range"], 3),
       el("tbody", {}, vars.map(([name, v]) => el("tr", {},
         el("th", { scope: "row" }, name), el("td", {}, v.definition), el("td", {}, v.unit || ""),
-        el("td", {}, `${num(v.min)} to ${num(v.max)}`)))))),
+        el("td", { class: "num" }, `${num(v.min)} to ${num(v.max)}`)))))),
     dummies.length ? el("ul", {}, dummies.map(([name, codes]) =>
-      el("li", {}, `${name}: ` + Object.entries(codes).map(([k, v]) => `${k} = ${v}`).join("; ")))) : null,
-    el("h4", {}, "Regression output"),
-    el("div", { class: "table-wrap" }, el("table", {},
-      el("thead", {}, el("tr", {}, ["Parameter", "Term", "Estimate", "Std. error", "p-value"].map((h) => el("th", { scope: "col" }, h)))),
+      el("li", {}, el("code", {}, name), ": " + Object.entries(codes).map(([k, v]) => `${k} = ${v}`).join("; ")))) : null,
+    el("h3", {}, "Regression output"),
+    el("div", { class: "table-wrap" }, el("table", { class: "stats" },
+      cols(["Parameter", "Term", "Estimate", "Std. error", "p-value"], 2),
       el("tbody", {}, Object.entries(m.coefficients).map(([term, c], i) => el("tr", {},
         el("td", {}, `b${i}`), el("th", { scope: "row" }, term), el("td", { class: "num" }, num(c.coef, 4)),
-        el("td", { class: "num" }, num(c.se, 4)), el("td", { class: "num" }, pval(c.p))))))));
+        el("td", { class: "num" }, num(c.se, 4)), el("td", { class: "num" }, pval(c.p))))))),
+    el("p", { class: "equation" }, equation(m)));
 }
 
 function interpretationPanel(q, exam) {
   const slot = el("section", { id: "improvement-slot", hidden: true });
-  const panel = el("article", { class: "question" },
+  const panel = el("article", { class: "sheet tabbed" },
     modelBlock(S.mById[q.model_id]),
-    el("p", { class: "meta" }, `Interpretation | ${q.id} | ${q.kind}`),
-    el("p", { class: "prompt" }, q.prompt),
-    slot,
-    el("details", { class: "reference" }, el("summary", {}, "Show answer"), el("p", {}, q.worked_answer)),
-    issueLink(q.id, exam));
+    el("div", { class: "question-part" },
+      el("h2", { class: "meta" }, `${q.id}, ${q.kind} question`),
+      el("p", { class: "prompt" }, q.prompt),
+      slot,
+      el("details", { class: "reference" }, el("summary", {}, "Show answer"),
+        el("div", { class: "answer" }, el("p", {}, q.worked_answer)))),
+    el("div", { class: "sheet-foot" }, issueLink(q.id, exam)));
   return { panel, slot };
 }
 
 // ---------- views ----------
 
+function homePart(type, title, about, samples, links) {
+  const exams = S.exams.filter((e) => e.type === type);
+  const base = `#/${type}/exams/`;
+  return el("section", { class: "home-part" },
+    el("h2", {}, title),
+    el("p", {}, `${exams[0].question_ids.length} questions, `, el("span", { class: "mono" }, `${exams[0].time_limit_minutes}:00`)),
+    el("p", {}, about),
+    el("p", { class: "muted" }, "One question from the bank:"),
+    el("blockquote", {}, el("p", {}, pick(samples).prompt)),
+    el("div", { class: "buttons" },
+      el("button", { type: "button", onclick: () => { location.hash = base + pick(exams, lastExam).id; } }, "Start a random exam")),
+    el("ul", { class: "links" }, el("li", {}, el("a", { href: base }, `Browse ${exams.length} exams`)), links));
+}
+
 function home() {
   main.append(
-    el("p", { class: "knut" }, "[[KNUT: one or two sentences on what the oral exam asks for, in my words]]"),
     heading("Practice for Data Analytics in Accounting"),
-    el("section", { class: "home-part" },
-      el("h2", {}, "Data manipulation"),
-      el("p", {}, "Exams of five questions in 8 minutes, three on a spreadsheet file and two on a SQLite database from the course cases, plus the full question bank."),
-      el("p", { class: "buttons" }, el("a", { class: "button", href: "#/manipulation/exams" }, "Manipulation exams"),
-        el("a", { class: "button secondary", href: "#/manipulation/questions" }, "Question bank"))),
-    el("section", { class: "home-part" },
-      el("h2", {}, "Data interpretation"),
-      el("p", {}, "Exams of four questions in 5 minutes on regression models fitted to the restaurant data from Excel Part 4."),
-      el("p", { class: "buttons" }, el("a", { class: "button", href: "#/interpretation/exams" }, "Interpretation exams"))));
+    el("p", { class: "knut" }, "[[KNUT: one or two sentences on what the oral exam asks for, in my words]]"),
+    el("div", { class: "home-parts" },
+      homePart("manipulation", "Data manipulation", "Excel and SQL on two files from the course cases.", S.questions,
+        el("li", {}, el("a", { href: "#/manipulation/questions" }, `Question bank (${S.questions.length})`))),
+      homePart("interpretation", "Data interpretation", "Regression output from the restaurant case.", S.interp, null)));
 }
 
 function examList(type) {
@@ -248,7 +262,7 @@ function examList(type) {
       ? `${exams.length} exams. Each has five questions and two data files, with 8 minutes in total.`
       : `${exams.length} exams. Each has four questions on regression output, with 5 minutes in total.`),
     el("p", {}, el("button", { type: "button", onclick: () => { location.hash = base + pick(exams, lastExam).id; } }, "Pick an exam for me")),
-    el("div", { class: "table-wrap" }, el("table", {},
+    el("div", { class: "table-wrap" }, el("table", { class: "banded" },
       el("thead", {}, el("tr", {}, (manip ? ["Exam", "Spreadsheet file", "Database", "Time"] : ["Exam", "Models", "Time"])
         .map((h) => el("th", { scope: "col" }, h)))),
       el("tbody", {}, exams.map((e) => el("tr", {},
@@ -262,13 +276,13 @@ function examView(e) {
   lastExam = e.id;
   const qs = e.question_ids.map((id) => S.qById[id]);
   let active = 0;
-  const host = el("div", { class: "panel-host" });
-  const nav = el("ol", { class: "qnav" });
+  const host = el("div");
+  const nav = el("ol", { class: "sheet-tabs" });
   const prev = el("button", { type: "button", class: "secondary" }, "Previous");
   const next = el("button", { type: "button", class: "secondary" }, "Next");
   const show = (i) => {
     active = i;
-    const { panel, slot } = questionPanel(qs[i], e);
+    const { panel, slot } = questionPanel(qs[i], e, el("div", { class: "buttons" }, prev, next));
     host.replaceChildren(panel);
     nav.querySelectorAll("button").forEach((b, j) => b.setAttribute("aria-current", j === i ? "true" : "false"));
     prev.disabled = i === 0;
@@ -276,19 +290,24 @@ function examView(e) {
     runImprovement(qs[i], e, slot);
   };
   qs.forEach((q, i) => nav.append(el("li", {}, el("button", { type: "button", onclick: () => show(i) },
-    `${i + 1}. ${q.subject}, ${q.id}`))));
+    `${i + 1} ${q.subject}`))));
   prev.addEventListener("click", () => show(active - 1));
   next.addEventListener("click", () => show(active + 1));
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/manipulation/exams" }, "All manipulation exams")),
-    heading(`Exam ${e.id}`),
-    el("p", {}, `Duration ${e.time_limit_minutes} minutes, ${qs.length} questions.`),
+    examHeading(e, qs.length, ""),
     downloads(e.files),
     timer(e.time_limit_minutes),
-    el("div", { class: "exam-layout" },
-      el("nav", { "aria-label": "Questions in this exam" }, nav),
-      el("div", {}, host, el("p", { class: "buttons" }, prev, next))));
+    el("nav", { "aria-label": "Questions in this exam" }, nav),
+    host);
   show(0);
+}
+
+function examHeading(e, n, about) {
+  const h = heading(`Exam ${e.id}`);
+  h.classList.add("compact");
+  return [h, el("p", {}, `${n} questions, ${e.time_limit_minutes} minutes${about}. `,
+    `Open ${e.files.length > 1 ? "both files" : "the file"} before you start the clock.`)];
 }
 
 function filtered() {
@@ -316,14 +335,15 @@ function bankView() {
     const shown = list.slice((bank.page - 1) * PAGE_SIZE, bank.page * PAGE_SIZE);
     const go = (p) => { bank.page = p; draw(); results.querySelector("h2").focus(); };
     results.replaceChildren(
-      el("h2", { tabindex: "-1" }, `${list.length} questions, page ${bank.page} of ${pages}`),
+      el("h2", { tabindex: "-1" }, `${list.length} questions`),
       el("ul", { class: "qlist" }, shown.map((q) => el("li", {},
         el("a", { href: `#/manipulation/questions/${q.id}` }, q.id),
-        el("span", { class: "muted" }, ` ${q.subject} | ${q.case} | about ${num(q.estimated_minutes, 1)} min`),
-        el("p", {}, q.prompt)))),
-      el("p", { class: "buttons" },
-        el("button", { type: "button", class: "secondary", disabled: bank.page === 1, onclick: () => go(bank.page - 1) }, "Previous page"),
-        el("button", { type: "button", class: "secondary", disabled: bank.page === pages, onclick: () => go(bank.page + 1) }, "Next page")));
+        el("p", {}, q.prompt),
+        el("p", { class: "muted" }, `${q.case}, ${q.skills.join(", ")}, about ${num(q.estimated_minutes, 1)} min`)))),
+      el("div", { class: "pager" },
+        el("button", { type: "button", class: "secondary", disabled: bank.page === 1, onclick: () => go(bank.page - 1) }, "Previous"),
+        el("p", {}, `Page ${bank.page} of ${pages}`),
+        el("button", { type: "button", class: "secondary", disabled: bank.page === pages, onclick: () => go(bank.page + 1) }, "Next")));
   };
   main.append(
     heading("Question bank"),
@@ -343,15 +363,16 @@ function bankView() {
 function bankQuestion(q) {
   const list = filtered();
   const i = list.indexOf(q);
-  const { panel, slot } = questionPanel(q, null);
+  const { panel, slot } = questionPanel(q, null, i >= 0 ? el("div", { class: "buttons" },
+    i > 0 ? el("a", { class: "button secondary", href: `#/manipulation/questions/${list[i - 1].id}` }, "Previous") : null,
+    i < list.length - 1 ? el("a", { class: "button secondary", href: `#/manipulation/questions/${list[i + 1].id}` }, "Next") : null) : null);
+  const h = heading(`${q.id}${q.optional ? " (optional)" : ""}`);
+  h.classList.add("compact");
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/manipulation/questions" }, "Question bank")),
-    heading(`${q.id}${q.optional ? " (optional)" : ""}`),
+    h,
     downloads(q.dataset_ids),
-    panel,
-    i >= 0 ? el("p", { class: "buttons" },
-      i > 0 ? el("a", { class: "button secondary", href: `#/manipulation/questions/${list[i - 1].id}` }, "Previous") : null,
-      i < list.length - 1 ? el("a", { class: "button secondary", href: `#/manipulation/questions/${list[i + 1].id}` }, "Next") : null) : null);
+    panel);
   runImprovement(q, null, slot);
 }
 
@@ -359,7 +380,7 @@ function interpretationExam(e) {
   lastExam = e.id;
   const qs = e.question_ids.map((id) => S.iById[id]);
   const tabs = qs.map((q, i) => el("button", { type: "button", role: "tab", id: `tab-${i}`, "aria-controls": "tabpanel" }, `Question ${i + 1}`));
-  const tabpanel = el("div", { role: "tabpanel", id: "tabpanel", tabindex: "0" });
+  const tabpanel = el("div", { role: "tabpanel", id: "tabpanel", tabindex: "0", class: "sheet-host" });
   const show = (i, focus) => {
     tabs.forEach((t, j) => { t.setAttribute("aria-selected", j === i ? "true" : "false"); t.tabIndex = j === i ? 0 : -1; });
     tabpanel.setAttribute("aria-labelledby", `tab-${i}`);
@@ -378,11 +399,10 @@ function interpretationExam(e) {
   });
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/interpretation/exams" }, "All interpretation exams")),
-    heading(`Exam ${e.id}`),
-    el("p", {}, `Duration ${e.time_limit_minutes} minutes, ${qs.length} questions on the restaurant data.`),
+    examHeading(e, qs.length, " on the restaurant data"),
     downloads(e.files),
     timer(e.time_limit_minutes),
-    el("div", { role: "tablist", "aria-label": "Questions", class: "tabs" }, tabs),
+    el("div", { role: "tablist", "aria-label": "Questions", class: "sheet-tabs" }, tabs),
     tabpanel);
   show(0);
 }

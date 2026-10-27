@@ -177,6 +177,19 @@ What Knut still has to do:
 - Decide on the disputed questions Q015 and Q108.
 - Enter active time and cost figures below.
 
+### Run 4
+
+Start: 27.10.2026 14:36:54 (Python `datetime`, Europe/Copenhagen).
+
+- [x] 1 read the current site
+- [x] 2 fonts and tokens
+- [x] 3 shell: header, footer, home
+- [x] 4 exam view and timer
+- [x] 5 question bank and exam lists
+- [x] 6 interpretation view
+- [ ] 7 screenshots and self-critique
+- [ ] 8 tests, commit, push and log
+
 ## Cost statement
 
 [[KNUT: cost figures]]
