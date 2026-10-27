@@ -219,6 +219,18 @@ Self-critique (first round of screenshots):
 
 Failed: nothing.
 
+### Run 5
+
+Start: 27.10.2026 15:00:29 (Python `datetime`, Europe/Copenhagen).
+
+- [x] 1 type
+- [x] 2 timer bar
+- [x] 3 question sheet
+- [x] 4 home
+- [x] 5 cache busting
+- [ ] 6 screenshots, before and after, critique
+- [ ] 7 tests, commit, push, log
+
 ## Cost statement
 
 [[KNUT: cost figures]]

@@ -59,6 +59,10 @@ def main():
     for q in items.values():
         check(q["model_id"] in models, f"{q['id']}: model {q['model_id']} missing")
 
+    index = (DOCS / "index.html").read_text(encoding="utf-8")
+    for url in ("css/style.css", "js/app.js"):
+        check(f'{url}?v={cfg["version"]}"' in index, f"index.html: {url} has no ?v={cfg['version']}")
+
     readme = (ROOT / "README.md").read_text(encoding="utf-8") if (ROOT / "README.md").exists() else ""
     manual = readme.split("Manual step: upload release assets", 1)[1] if "Manual step: upload release assets" in readme else ""
     linked = set()

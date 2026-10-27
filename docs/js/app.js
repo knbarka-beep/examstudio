@@ -70,11 +70,17 @@ function timer(minutes) {
   const start = el("button", { type: "button" }, "Start");
   const pause = el("button", { type: "button", class: "secondary" }, "Pause");
   const reset = el("button", { type: "button", class: "secondary" }, "Reset");
+  const used = el("span");
   const box = el("section", { class: "timer", "aria-label": "Timer" },
-    el("p", { class: "remaining" }, remainingOut, " remaining"),
-    el("p", { class: "muted" }, "Elapsed ", elapsedOut),
+    el("p", { class: "remaining" }, remainingOut, el("span", {}, "remaining")),
+    el("p", { class: "elapsed" }, "Elapsed ", elapsedOut),
     status,
-    el("div", { class: "buttons" }, start, pause, reset));
+    el("div", { class: "buttons" }, start, pause, reset),
+    el("div", { class: "progress", "aria-hidden": "true" }, used));
+  const sentinel = el("div", { "aria-hidden": "true", style: "height: 1px" });
+  const watch = new IntersectionObserver(([en]) =>
+    box.classList.toggle("stuck", !en.isIntersecting && en.boundingClientRect.top < 0));
+  watch.observe(sentinel);
 
   const fmt = (ms) => {
     const s = Math.round(ms / 1000);
@@ -85,6 +91,7 @@ function timer(minutes) {
     const e = now();
     remainingOut.textContent = fmt(total - e);
     elapsedOut.textContent = fmt(e);
+    used.style.width = `${(e / total) * 100}%`;
     if (e >= total && !box.classList.contains("timeup")) {
       halt();
       box.classList.add("timeup");
@@ -112,9 +119,11 @@ function timer(minutes) {
     status.textContent = "";
     draw();
   });
-  stopTimer = halt;
+  stopTimer = () => { halt(); watch.disconnect(); };
   draw();
-  return box;
+  const out = new DocumentFragment();
+  out.append(sentinel, box);
+  return out;
 }
 
 // ---------- question panels ----------
@@ -228,28 +237,46 @@ function interpretationPanel(q, exam) {
 
 // ---------- views ----------
 
-function homePart(type, title, about, samples, links) {
+function hero(exams, avoid) {
+  const e = pick(exams, avoid);
+  const qs = e.question_ids.map((id) => S.qById[id]);
+  const subjects = [...new Set(qs.map((q) => q.subject))].join(" and ");
+  const box = el("div", { class: "hero" },
+    el("article", { class: "sheet" },
+      el("h2", { class: "meta" }, `Exam ${e.id}, question 1 of ${qs.length}`),
+      el("p", { class: "prompt" }, qs[0].prompt)),
+    el("div", { class: "hero-clock" },
+      el("p", { class: "big" }, `${e.time_limit_minutes}:00`),
+      el("p", {}, `${qs.length} questions, ${subjects}`),
+      el("p", {}, `${e.files.length} data files`),
+      el("div", { class: "buttons" }, el("a", { class: "button", href: `#/manipulation/exams/${e.id}` }, `Start exam ${e.id}`)),
+      el("p", {}, el("button", { type: "button", class: "link-button", onclick: () => box.replaceWith(hero(exams, e.id)) },
+        "Show another exam"))));
+  return box;
+}
+
+function homePart(type, title, about, links) {
   const exams = S.exams.filter((e) => e.type === type);
   const base = `#/${type}/exams/`;
   return el("section", { class: "home-part" },
     el("h2", {}, title),
-    el("p", {}, `${exams[0].question_ids.length} questions, `, el("span", { class: "mono" }, `${exams[0].time_limit_minutes}:00`)),
-    el("p", {}, about),
-    el("p", { class: "muted" }, "One question from the bank:"),
-    el("blockquote", {}, el("p", {}, pick(samples).prompt)),
-    el("div", { class: "buttons" },
-      el("button", { type: "button", onclick: () => { location.hash = base + pick(exams, lastExam).id; } }, "Start a random exam")),
+    el("p", {}, `${exams[0].question_ids.length} questions in ${exams[0].time_limit_minutes} minutes ${about}`),
+    el("div", { class: "buttons" }, el("button", { type: "button", class: "secondary",
+      onclick: () => { location.hash = base + pick(exams, lastExam).id; } }, "Start a random exam")),
     el("ul", { class: "links" }, el("li", {}, el("a", { href: base }, `Browse ${exams.length} exams`)), links));
 }
 
 function home() {
+  const h = heading("Practice for Data Analytics in Accounting");
+  h.classList.add("home-title");
   main.append(
-    heading("Practice for Data Analytics in Accounting"),
+    h,
     el("p", { class: "knut" }, "[[KNUT: one or two sentences on what the oral exam asks for, in my words]]"),
+    hero(S.exams.filter((e) => e.type === "manipulation")),
     el("div", { class: "home-parts" },
-      homePart("manipulation", "Data manipulation", "Excel and SQL on two files from the course cases.", S.questions,
+      homePart("manipulation", "Data manipulation", "on Excel and SQL, with two files from the course cases.",
         el("li", {}, el("a", { href: "#/manipulation/questions" }, `Question bank (${S.questions.length})`))),
-      homePart("interpretation", "Data interpretation", "Regression output from the restaurant case.", S.interp, null)));
+      homePart("interpretation", "Data interpretation", "on regression output from the restaurant case.", null)));
 }
 
 function examList(type) {
@@ -298,6 +325,7 @@ function examView(e) {
     ...examHeading(e, qs.length, ""),
     downloads(e.files),
     timer(e.time_limit_minutes),
+    el("p", { class: "tab-count muted" }, `${qs.length} questions`),
     el("nav", { "aria-label": "Questions in this exam" }, nav),
     host);
   show(0);
@@ -402,6 +430,7 @@ function interpretationExam(e) {
     ...examHeading(e, qs.length, " on the restaurant data"),
     downloads(e.files),
     timer(e.time_limit_minutes),
+    el("p", { class: "tab-count muted" }, `${qs.length} questions`),
     el("div", { role: "tablist", "aria-label": "Questions", class: "sheet-tabs" }, tabs),
     tabpanel);
   show(0);

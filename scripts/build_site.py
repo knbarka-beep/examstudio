@@ -7,9 +7,11 @@ missing; values already there are kept). Solution fields are left out unless con
 "showReferenceSolutions": true; then they go into a "reference" object on each question.
 Data files under 50 MB are copied to docs/files/; larger ones are zipped into release-assets/ and linked to the
 GitHub release datasets-v1. Copying needs materials/; without it only the JSON is rebuilt.
+Also stamps ?v=<version> on the css/style.css and js/app.js URLs in docs/index.html.
 """
 import datetime
 import json
+import re
 import shutil
 import subprocess
 import zipfile
@@ -109,6 +111,12 @@ def main():
     interp = [{k: x for k, x in q.items() if k != "status"} for q in load(BANK / "interpretation.json")
               if q["status"] in ("validated", "manual_check")]
     write("interpretation.json", {"version": v, "models": load(BANK / "models.json"), "questions": interp})
+
+    # Cache busting: the stylesheet and script URLs carry the data version, so a new build is never served stale.
+    index = ROOT / "docs" / "index.html"
+    html = re.sub(r'(href="css/style\.css|src="js/app\.js)(\?v=[^"]*)?"', rf'\g<1>?v={v}"',
+                  index.read_text(encoding="utf-8"))
+    index.write_text(html, encoding="utf-8")
 
     print(f"version {v}: {len(questions)} questions, {len(interp)} interpretation items, "
           f"{len(items)} datasets, reference solutions {'shown' if show else 'hidden'}")
