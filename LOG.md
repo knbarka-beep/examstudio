@@ -228,8 +228,36 @@ Start: 27.10.2026 15:00:29 (Python `datetime`, Europe/Copenhagen).
 - [x] 3 question sheet
 - [x] 4 home
 - [x] 5 cache busting
-- [ ] 6 screenshots, before and after, critique
-- [ ] 7 tests, commit, push, log
+- [x] 6 screenshots, before and after, critique
+- [x] 7 tests, commit, push, log
+
+End: 27.10.2026 15:08:18. Duration: 8 minutes.
+
+Done:
+- Type: IBM Plex Sans (interface), Plex Serif (prompts and h1), Plex Mono (timer, formulas, equation, sheet, table, column and variable names). All three exist on Google Fonts (CSS fetched with Python). No substitution.
+- Timer bar: solid ink bar (`#0E141E` with a rule border in dark mode), 64px / 44px mono digits, a 4px progress rule updated by the existing tick, paper-coloured buttons, `stuck` class from an `IntersectionObserver` on a 1px sentinel (disconnected on route change). The only shadow on the site is on the stuck bar.
+- Question sheet: rose double margin rule at 40px (16px on mobile), faint ruling behind the prompt with a hard-stop `repeating-linear-gradient` (lines in `--band`, aligned to the 1.6 line-height; it stays aligned at both widths, so it was kept), prompt in Plex Serif 26px / 21px, meta in Sans 15px. Tabs: active tab has a 3px pen top edge; a "5 questions" count shows before the strip under 600px.
+- Home: real random manipulation exam as the hero (first question on the ledger sheet, time in 64px mono, question and file counts, "Start exam Exxx", "Show another exam" re-picks in place). The two sections below are plain columns under one rule. No interpretation sample.
+- Cache busting: `scripts/build_site.py` stamps `?v=<version>` on `css/style.css` and `js/app.js` in `docs/index.html`; `tests/smoke.py` checks it matches `config.json`.
+- `py tests\smoke.py` passed; `py testsalidate.py`: 228 checked, 222 validated, 4 manual_check, 2 disputed, 0 failed. No em dashes in `docs/`.
+
+Choices logged:
+- In dark mode the progress fill and the bar's focus outline use the bar text colour (`#E6EAF0`), not `--paper`, because dark `--paper` (`#141A24`) would disappear on the dark bar. In light mode they are the same colour as `--paper`.
+- Contrast on the bar: text 13.23 (light) and 15.29 (dark); "remaining" at 75 % opacity 8.12 and 8.88; time-up `#FF8A80` 6.25 and 8.09; disabled buttons at 55 % opacity about 5.1 and 5.3. All pass AA.
+- The mono digits get letter-spacing -0.06em so the colon does not look spaced out (Plex Mono gives the colon a full cell).
+- Under 600px the stuck bar is about 140px high, because the buttons wrap below the digits.
+- The stuck-bar screenshot uses a 560px-high viewport, because the exam page is too short at 800px to scroll the bar to the top.
+- A regex escaping slip while editing `build_site.py` briefly wrote a control character into `index.html`; found on the first build, repaired, and the script was run twice to confirm it is idempotent.
+
+Critique, comparing `runs/screens-run4/` with `runs/screens/`:
+- Noticeable within two seconds: yes. The exam page now has a dark clock bar with 64px digits where Run 4 had a white strip with 33px digits, the prompt is in a serif on a ruled sheet with a margin, and home opens with a real exam and a big clock instead of two cards.
+- Clock first, question second: yes at both widths and in both themes.
+- Ledger margin: it reads as ruling, not an error line. At 1px the rose is soft, close to grey; it was not muted further.
+- No horizontal scroll at 375px (checked by the script). AA on the bar in both themes (figures above). Focus outlines on the bar use the bar text colour.
+- No all-caps, eyebrows, middle dots, arrows, em dashes, pills or emoji. The only gradient is the ruled-line pattern, which has hard stops and no colour blend.
+- Removed one thing: the "5 questions, 8 minutes." part of the exam intro. The clock shows the time and the tabs show the questions, so the line now only says to open the files before starting the clock.
+
+Failed: nothing.
 
 ## Cost statement
 

@@ -25,8 +25,10 @@ def start(page):
 
 
 def started_scrolled(page):
+    page.get_by_role("button", name="4 SQL").click()
     page.locator("summary", has_text="Dataset reference").click()
     start(page)
+    page.set_viewport_size({"width": page.viewport_size["width"], "height": 560})
     page.wait_for_timeout(1500)
     page.mouse.wheel(0, 600)
     page.wait_for_timeout(300)

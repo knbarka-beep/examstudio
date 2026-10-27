@@ -274,7 +274,7 @@ function home() {
     el("p", { class: "knut" }, "[[KNUT: one or two sentences on what the oral exam asks for, in my words]]"),
     hero(S.exams.filter((e) => e.type === "manipulation")),
     el("div", { class: "home-parts" },
-      homePart("manipulation", "Data manipulation", "on Excel and SQL, with two files from the course cases.",
+      homePart("manipulation", "Data manipulation", "on Excel and SQL, with files from the course cases.",
         el("li", {}, el("a", { href: "#/manipulation/questions" }, `Question bank (${S.questions.length})`))),
       homePart("interpretation", "Data interpretation", "on regression output from the restaurant case.", null)));
 }
@@ -322,7 +322,7 @@ function examView(e) {
   next.addEventListener("click", () => show(active + 1));
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/manipulation/exams" }, "All manipulation exams")),
-    ...examHeading(e, qs.length, ""),
+    ...examHeading(e),
     downloads(e.files),
     timer(e.time_limit_minutes),
     el("p", { class: "tab-count muted" }, `${qs.length} questions`),
@@ -331,11 +331,10 @@ function examView(e) {
   show(0);
 }
 
-function examHeading(e, n, about) {
+function examHeading(e) {
   const h = heading(`Exam ${e.id}`);
   h.classList.add("compact");
-  return [h, el("p", {}, `${n} questions, ${e.time_limit_minutes} minutes${about}. `,
-    `Open ${e.files.length > 1 ? "both files" : "the file"} before you start the clock.`)];
+  return [h, el("p", {}, `Open ${e.files.length > 1 ? "both files" : "the file"} before you start the clock.`)];
 }
 
 function filtered() {
@@ -427,7 +426,7 @@ function interpretationExam(e) {
   });
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/interpretation/exams" }, "All interpretation exams")),
-    ...examHeading(e, qs.length, " on the restaurant data"),
+    ...examHeading(e),
     downloads(e.files),
     timer(e.time_limit_minutes),
     el("p", { class: "tab-count muted" }, `${qs.length} questions`),

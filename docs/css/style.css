@@ -138,7 +138,7 @@ select, input {
 @media (min-width: 800px) { .hero { grid-template-columns: minmax(0, 1fr) 16rem; } }
 .hero .prompt { font-size: 33px; }
 .hero-clock p { margin: 0 0 4px; }
-.hero-clock .big { font-family: var(--mono); font-weight: 600; font-size: 64px; line-height: 1; margin-bottom: 12px; }
+.hero-clock .big { font-family: var(--mono); font-weight: 600; font-size: 64px; line-height: 1; margin-bottom: 12px; letter-spacing: -0.06em; }
 .hero-clock .buttons { margin-top: 16px; }
 .link-button { background: none; border: 0; padding: 0; color: var(--pen); text-decoration: underline; text-underline-offset: 2px; }
 .home-parts { display: grid; gap: 24px 40px; border-top: 1px solid var(--rule); padding-top: 8px; }
@@ -184,7 +184,7 @@ table.stats tbody th { font-family: var(--mono); font-weight: 400; }
 .time { font-family: var(--mono); }
 .remaining { font-size: 15px; }
 .remaining span:not(.time) { opacity: 0.75; }
-.remaining .time { font-size: 64px; font-weight: 600; line-height: 1.05; margin-right: 8px; }
+.remaining .time { font-size: 64px; font-weight: 600; line-height: 1.05; margin-right: 8px; letter-spacing: -0.06em; }
 .elapsed { font-size: 15px; opacity: 0.75; }
 .timer-status { font-weight: 600; }
 .timer-status:empty { display: none; }
