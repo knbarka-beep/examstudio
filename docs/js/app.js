@@ -344,7 +344,7 @@ function homeBook(manip, avoid) {
 function home() {
   main.append(
     title("Practice for Data Analytics in Accounting"),
-    el("p", { class: "comment" }, "In the oral exam you get one full data manipulation exam and one full data interpretation exam. Practise both here, with the same files and time limits."),
+    el("p", { class: "comment" }, "The exams here are built from the course cases, with the same files and a fixed time limit. Practise both kinds: data manipulation and data interpretation."),
     homeBook(S.exams.filter((e) => e.type === "manipulation")));
 }
 
