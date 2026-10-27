@@ -193,7 +193,7 @@ function modelBlock(m) {
   const cols = (names, numeric) => el("thead", {}, el("tr", {}, names.map((h, i) =>
     el("th", { scope: "col", class: i >= numeric ? "num" : null }, h))));
   return el("div", { class: "model" },
-    el("h2", {}, "Model ", el("code", {}, m.id), ": ", el("code", {}, m.formula)),
+    el("h2", {}, `Model ${m.id}: `, el("code", {}, m.formula)),
     el("p", {}, `OLS, n = ${m.n}, R squared = ${m.r_squared}, adjusted R squared = ${m.adj_r_squared}.`),
     el("h3", {}, "Variables"),
     el("div", { class: "table-wrap" }, el("table", { class: "stats" },
@@ -295,7 +295,7 @@ function examView(e) {
   next.addEventListener("click", () => show(active + 1));
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/manipulation/exams" }, "All manipulation exams")),
-    examHeading(e, qs.length, ""),
+    ...examHeading(e, qs.length, ""),
     downloads(e.files),
     timer(e.time_limit_minutes),
     el("nav", { "aria-label": "Questions in this exam" }, nav),
@@ -399,7 +399,7 @@ function interpretationExam(e) {
   });
   main.append(
     el("p", { class: "crumb" }, el("a", { href: "#/interpretation/exams" }, "All interpretation exams")),
-    examHeading(e, qs.length, " on the restaurant data"),
+    ...examHeading(e, qs.length, " on the restaurant data"),
     downloads(e.files),
     timer(e.time_limit_minutes),
     el("div", { role: "tablist", "aria-label": "Questions", class: "sheet-tabs" }, tabs),

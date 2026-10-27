@@ -187,8 +187,37 @@ Start: 27.10.2026 14:36:54 (Python `datetime`, Europe/Copenhagen).
 - [x] 4 exam view and timer
 - [x] 5 question bank and exam lists
 - [x] 6 interpretation view
-- [ ] 7 screenshots and self-critique
-- [ ] 8 tests, commit, push and log
+- [x] 7 screenshots and self-critique
+- [x] 8 tests, commit, push and log
+
+End: 27.10.2026 14:51:57. Duration: 15 minutes.
+
+Done:
+- Tokens, light and dark theme, as in the brief. Contrast checked: muted is 5.77 on paper and 6.22 on sheet (light), 7.63 and 6.90 (dark); pen on sheet is 8.34 (light) and 7.29 (dark).
+- Fonts: Atkinson Hyperlegible Next and Atkinson Hyperlegible Mono both exist on Google Fonts (CSS fetched with Python, 200). No substitution.
+- New header, home (two blocks with a random sample question and "Start a random exam"), sticky timer bar, sheet tabs, sheet panel, banded exam lists and bank list with "Previous / Page 1 of 8 / Next", interpretation view in statistical output style, footer on one line.
+- `scripts/screenshots.py`: 64 PNGs in `runs/screens/` (8 routes, 2 widths, 2 colour schemes). Time-up is reached by shifting `Date.now` from the script, with no change to the site.
+- `py tests\smoke.py` passed; `py testsalidate.py`: 228 checked, 222 validated, 4 manual_check, 2 disputed, 0 failed. No em dashes in `docs/`.
+
+Readings taken where the brief was open (the quieter option each time):
+- No shadow at all, not even on the stuck timer bar; detecting "stuck" would need extra JavaScript. The bar has a 3px rule top border that turns red-pencil at time-up.
+- The timer bar sits directly above the sheet tabs, not on the heading line, so it can stick within `main` and stays next to the question.
+- On exam pages the h1 is 21px, the same size as the prompt, so the prompt is not outranked by the heading.
+- Numbers stay in en-GB format (39.4 MB), as in Run 3.
+- Interpretation sheet shows the model first, then the question, as the brief orders it.
+
+Self-critique (first round of screenshots):
+- Generic template look: no. Two bordered blocks on home only, no shadows, gradients, pills or slogan.
+- Prompt and timer clearest on the exam page: yes at both widths. The timer bar takes about 100px at 375px because the buttons wrap; acceptable.
+- Horizontal page scroll at 375px: none (checked by script). Model tables scroll inside their own box.
+- Red: only time-up (digits, top border, "Time is up").
+- Mono: timer, formulas, equation, sheet, table, column and variable names. The first version also set the model id (M1) in mono; fixed.
+- All-caps, eyebrows, middle dots, arrows, em dashes: none.
+- Dark mode: reads as well as light.
+- Fixed after the first round: a bug where exam pages printed "[object HTMLHeadingElement]" instead of the heading (found because the screenshot script timed out), extra gaps in the home blocks, download size wrapping inside the label on mobile, 3-line h1 on mobile (now 26.5px under 600px), wide sheet padding on mobile, sticky bar caught mid-page in full-page shots (script now scrolls to top).
+- Removed one thing: the hover colour change on header links; the underline on the current section is enough.
+
+Failed: nothing.
 
 ## Cost statement
 
