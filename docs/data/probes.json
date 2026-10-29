@@ -1,0 +1,60 @@
+{
+ "about": "Probe bank for exam mode (docs/js/examiner.js). Hand-written. kind: trap = asked when the answer box or a number in the transcript matches a computed trap answer with this tag (docs/data/checks.json); question = tied to questions by skills, interpretation kinds, ids or number of tables; trigger = asked when the transcript or answer box matches one of the triggers (regular expressions, case-insensitive); generic = asked when nothing else applies. topic: Excel, SQL, Regression or any. pushback: said once when the answer to this probe is thin.",
+ "tags": {
+  "grain": { "label": "Wrong grain", "hint": "Before you aggregate, say what one row of the data represents and what one row of your answer should represent." },
+  "key": { "label": "Non-unique key", "hint": "Check whether the value you look up or count by is unique in that column. If it is not, what else identifies a row?" },
+  "join": { "label": "Rows duplicated by a join", "hint": "After a join, count the rows. If the count went up, the join key is not unique on one side." },
+  "ratio": { "label": "Average of ratios", "hint": "An average of rates weights every row equally. Is that what the question asks, or is it total over total?" },
+  "confound": { "label": "Confounding", "hint": "A coefficient shows an association in this data. Think about what else differs between the groups or days you compare." },
+  "population": { "label": "Wrong population", "hint": "Say your filter out loud: which rows are in, and does that match the group the question names?" },
+  "definition": { "label": "Wrong definition", "hint": "Read the question's definition again, word by word, and compare it with what your formula or query counts." },
+  "boundary": { "label": "Boundary or parsing", "hint": "Check the edges: values exactly on a limit, codes written in more than one way, and how dates and text are parsed." }
+ },
+ "probes": [
+  { "id": "T-grain", "kind": "trap", "tag": "grain", "topic": "any", "text": "What does one row in the data you used represent? Is that the level the question asks about?", "pushback": "Be specific. One row is one what? And one row of your answer is one what?" },
+  { "id": "T-grain-2", "kind": "trap", "tag": "grain", "topic": "any", "text": "If you summed or averaged directly over the rows, would a day with many rows count more than a day with few?", "pushback": "Walk me through how the rows add up to the number you gave." },
+  { "id": "T-key", "kind": "trap", "tag": "key", "topic": "any", "text": "Is the value you looked up or counted by unique in that column? How do you know?", "pushback": "How would you check that in the file, right now?" },
+  { "id": "T-ratio", "kind": "trap", "tag": "ratio", "topic": "any", "text": "Did every row count equally in your average? Should a row with two hours count as much as a row with forty?", "pushback": "So is the average of the rates the same as total over total here? Why or why not?" },
+  { "id": "T-population", "kind": "trap", "tag": "population", "topic": "any", "text": "Which rows did you include? Say your filter out loud and compare it with the question.", "pushback": "Which group does the question name, exactly?" },
+  { "id": "T-definition", "kind": "trap", "tag": "definition", "topic": "any", "text": "Read the question's definition back to me. Does your number count exactly that, nothing more and nothing less?", "pushback": "Which part of the definition did your formula or query leave out or add?" },
+  { "id": "T-boundary", "kind": "trap", "tag": "boundary", "topic": "any", "text": "What happens at the edges? Values exactly on the limit, codes written in another way, and how the dates or text were parsed.", "pushback": "Take the boundary value itself. Is it in or out, and why?" },
+
+  { "id": "Q-join", "kind": "question", "tag": "join", "topic": "SQL", "skills": ["join"], "min_tables": 2, "text": "What is the grain of the result after your join? Can the join duplicate rows?", "pushback": "Which side of the join could have more than one match per key?" },
+  { "id": "Q-lookup", "kind": "question", "tag": "key", "topic": "Excel", "skills": ["lookup"], "text": "Is the value you look up unique in the lookup column? What happens if it is not?", "pushback": "Which match would VLOOKUP return if there were two?" },
+  { "id": "Q-group", "kind": "question", "tag": "grain", "topic": "any", "skills": ["group by", "pivot"], "text": "After grouping, what does one row represent?", "pushback": "One row is one what, and why is that the level the question needs?" },
+  { "id": "Q-ratio", "kind": "question", "tag": "ratio", "topic": "any", "skills": ["ratio", "average"], "text": "Is your figure an average of ratios or a ratio of totals? Which one does the question want?", "pushback": "Why does the difference matter here?" },
+  { "id": "Q-distinct", "kind": "question", "tag": "key", "topic": "any", "skills": ["distinct values", "duplicates"], "text": "Distinct on which columns? Is one column alone enough to identify a row?", "pushback": "How would you prove there are no hidden duplicates?" },
+  { "id": "Q-filter", "kind": "question", "tag": "population", "topic": "any", "skills": ["filter", "conditional count", "conditional sum"], "text": "Say your condition out loud. Which rows are in and which are out?", "pushback": "Does that match the group the question names?" },
+  { "id": "Q-dates", "kind": "question", "tag": "boundary", "topic": "any", "skills": ["date parsing", "date arithmetic", "text functions"], "text": "How did you turn that text or date into something you can compare? What could go wrong for some rows?", "pushback": "Give me one row where your method would fail." },
+  { "id": "Q-predict", "kind": "question", "tag": null, "topic": "Regression", "kinds": ["predict"], "text": "Walk me through the equation with the numbers in. Is every input inside the observed range?", "pushback": "Why does it matter whether the input is inside the observed range?" },
+  { "id": "Q-signif", "kind": "question", "tag": null, "topic": "Regression", "kinds": ["significance"], "text": "What is the null hypothesis, and at what level are you testing it?", "pushback": "So what does that p-value let you say, and what does it not let you say?" },
+  { "id": "Q-coef", "kind": "question", "tag": "confound", "topic": "Regression", "kinds": ["coefficient"], "text": "Would you read that coefficient as a cause? Could a third variable explain the relationship?", "pushback": "Name one variable that is not in the model and could drive both." },
+  { "id": "Q-dummy", "kind": "question", "tag": "confound", "topic": "Regression", "kinds": ["dummy"], "text": "Compared with which group? And do game days differ from other days in ways the model does not see?", "pushback": "Name one thing that differs on game days apart from the game." },
+
+  { "id": "G-vlookup", "kind": "trigger", "tag": "key", "topic": "any", "triggers": ["\\b[vhx]?lookup\\b", "\\blook(ed|ing)? (it )?up\\b", "index ?/? ?match"], "text": "Why that lookup and not another? Is the value you look up unique?", "pushback": "What would happen with a duplicate in the lookup column?" },
+  { "id": "G-join", "kind": "trigger", "tag": "join", "topic": "any", "triggers": ["\\b(inner |left |right )?join(s|ed|ing)?\\b"], "text": "What is the grain of the result after that join? Can it duplicate rows?", "pushback": "How would you check the row count before and after?" },
+  { "id": "G-avg-ratio", "kind": "trigger", "tag": "ratio", "topic": "any", "triggers": ["\\b(average|avg|mean)\\b[^.?!]{0,40}\\b(percent\\w*|rates?|ratios?|per (hour|day|unit|item))\\b", "\\b(percent\\w*|rates?|ratios?)\\b[^.?!]{0,30}\\b(average|avg|mean)\\b"], "text": "Is an average of percentages the same as the overall percentage here?", "pushback": "Which rows get more weight in one than in the other?" },
+  { "id": "G-group", "kind": "trigger", "tag": "grain", "topic": "any", "triggers": ["\\bgroup(ed|ing)? by\\b"], "text": "What does one row represent now?", "pushback": "One row is one what?" },
+  { "id": "G-pivot", "kind": "trigger", "tag": "key", "topic": "any", "triggers": ["\\bpivot\\b"], "text": "Which field is your key in that pivot, and is it unique?", "pushback": "What would the pivot do with two rows that share the key?" },
+  { "id": "G-distinct", "kind": "trigger", "tag": "key", "topic": "any", "triggers": ["\\bdistinct\\b", "remove duplicates", "\\bunique\\b"], "text": "Distinct on which columns? Is that column alone a key?", "pushback": "Could two different things share that value?" },
+  { "id": "G-filter", "kind": "trigger", "tag": "population", "topic": "any", "triggers": ["\\bwhere\\b", "\\bfilter(ed|ing)?\\b", "\\bcountifs?\\b", "\\bsumifs?\\b"], "text": "Say your filter out loud. Which rows are in, and which are out?", "pushback": "Does that match the group the question names?" },
+  { "id": "G-boundary", "kind": "trigger", "tag": "boundary", "topic": "any", "triggers": ["\\b(greater|more|less|fewer) than\\b", "\\bat least\\b", "\\bor more\\b", ">=?", "<=?"], "text": "Is the boundary value itself included? Check the wording of the question.", "pushback": "Take a row exactly on the limit. In or out?" },
+  { "id": "G-count", "kind": "trigger", "tag": "definition", "topic": "any", "triggers": ["count ?\\(\\*\\)", "count star", "\\bcounta\\b"], "text": "Does that count include blanks or missing values? Should it?", "pushback": "What does a blank mean in this column?" },
+  { "id": "G-cause", "kind": "trigger", "tag": "confound", "topic": "any", "triggers": ["\\bcaus(e|es|ed|ing)\\b", "\\blead(s)? to\\b", "\\bdrives?\\b", "\\bbecause of\\b", "\\beffect of\\b", "\\bimpact of\\b", "\\bincreases? sales\\b"], "text": "Could a third variable explain that relationship?", "pushback": "Name one variable that is not in the model and could move both." },
+  { "id": "G-signif", "kind": "trigger", "tag": null, "topic": "Regression", "triggers": ["\\bsignifican\\w*\\b", "p[- ]?value"], "text": "Significant at which level? And what does that p-value tell you, in plain words?", "pushback": "What would you tell a partner who asks whether the effect is big?" },
+  { "id": "G-r2", "kind": "trigger", "tag": null, "topic": "Regression", "triggers": ["r[- ]?squared", "\\br2\\b"], "text": "What does R squared tell you here, and what does it not tell you?", "pushback": "Does a low R squared make the coefficients wrong?" },
+  { "id": "G-dummy", "kind": "trigger", "tag": "confound", "topic": "Regression", "triggers": ["\\bdummy\\b", "\\bgame ?day\\b", "\\bhome ?game\\b"], "text": "What is the reference group for that dummy, and is the comparison fair?", "pushback": "What else is different about those days?" },
+
+  { "id": "W-why", "kind": "generic", "tag": null, "topic": "any", "text": "Why did you do it that way?", "pushback": "That tells me what you did. Why?" },
+  { "id": "W-check", "kind": "generic", "tag": null, "topic": "any", "text": "What would you check to be sure the number is right?", "pushback": "Give me one concrete check you could do in the file." },
+  { "id": "W-partner", "kind": "generic", "tag": null, "topic": "any", "text": "How would you explain this result to a partner who does not use Excel?", "pushback": "Say it in one sentence, without the formula." },
+  { "id": "W-alt", "kind": "generic", "tag": null, "topic": "any", "text": "Is there another way to get the same number? Would you trust it more or less?", "pushback": "Why more, or why less?" }
+ ],
+ "lines": {
+  "thin_gentle": "Can you say a bit more?",
+  "thin_default": "That tells me what you did. Why?",
+  "challenge": "Are you sure? Convince me.",
+  "warning": "Two minutes left.",
+  "time_up": "Time is up. Let us stop there."
+ }
+}

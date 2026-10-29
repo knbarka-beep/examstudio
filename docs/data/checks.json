@@ -37,6 +37,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 13,
      "why": "You counted the blank ZipCodes as invalid too. LEN(blank) is 0, which is not 5, so a LEN test catches the 11 missing ones. The question asks for values that are present but wrong."
     }
@@ -85,6 +86,7 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 282,
      "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
     }
@@ -97,6 +99,7 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 147,
      "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
     }
@@ -109,6 +112,7 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 99,
      "why": "You counted every event type, not only shooting permits. Filter EventType first, then count."
     }
@@ -127,11 +131,13 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 0.0821,
      "why": "You divided by all shooting permits instead of the Manhattan ones. The denominator is the population the question names: shoots in Manhattan."
     },
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 0.2298,
      "why": "You kept every event type in Manhattan. Filter on shooting permits first."
     }
@@ -162,6 +168,7 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 20.5,
      "why": "You averaged every event type. Non-shooting events run longer, which pulls the mean up. Filter on shooting permits first."
     }
@@ -180,6 +187,7 @@
    "traps": [
     {
      "category": "Wrong population",
+     "tag": "population",
      "value": 6,
      "why": "You averaged every event type. Filter on shooting permits first."
     }
@@ -198,6 +206,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 0.1793,
      "why": "You counted permits that start on a Friday. The question counts permits that touch a Friday anywhere between start and end, so multi-day shoots that start on Wednesday or Thursday count too."
     }
@@ -210,6 +219,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 0.0518,
      "why": "You counted permits that start on a Saturday. The question counts permits that touch a Saturday anywhere between start and end, so shoots that start earlier in the week and run over count too."
     }
@@ -234,6 +244,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 2,
      "why": "You counted both copies. Remove Duplicates and COUNTIFS both see the original as well; the question asks how many rows repeat an earlier row."
     }
@@ -270,6 +281,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "key",
      "value": 17,
      "why": "You counted distinct PlantIDs. Plant 12 exists in several countries, so PlantID alone is not a key. The plant is only identified by Location and PlantID together."
     }
@@ -300,6 +312,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 158,
      "why": "You matched only 'M'. 181 employees are coded 'Mo', which also means monthly. Check the distinct values of a coded field before you count."
     }
@@ -318,6 +331,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "key",
      "value": 17,
      "why": "You counted distinct PlantIDs. The same plant number is used in several countries, so the key is Location and PlantID together."
     }
@@ -348,6 +362,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "key",
      "value": "Elizabeth Rees",
      "why": "You looked up PreparerID 102 alone and got the first match, which belongs to BusinessUnitID 1. PreparerID 102 appears 3 times, so the lookup needs both columns (INDEX/MATCH on two conditions, or a helper key)."
     }
@@ -378,6 +393,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 398321.61,
      "why": "Right size, wrong sign. Revenue is posted as credits, so in a signed Amount column it sums to a negative number."
     }
@@ -390,6 +406,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 4982,
      "why": "You counted the header line as a data row."
     }
@@ -414,6 +431,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 395080.3,
      "why": "You summed Reg_Pay only. Gross pay is Reg_Pay plus OT_Pay."
     }
@@ -438,6 +456,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 280588.59,
      "why": "You compared 2016 gross wages with 2015 regular pay. The two files measure pay differently: 2016 has one Gross_Wages column, 2015 splits Reg_Pay and OT_Pay. Build the same measure in both years before you subtract."
     }
@@ -450,6 +469,7 @@
    "traps": [
     {
      "category": "Average of ratios",
+     "tag": "ratio",
      "value": 16.24,
      "why": "You averaged the pay per hour of each row. Rows with few hours count as much as rows with many, so the mean of ratios is not the pay per hour. Divide total gross pay by total hours."
     }
@@ -468,6 +488,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 1352789.75,
      "why": "You summed Gross_Wages only. Employee cost also includes SocSec_Medicare, FUTA, SUTA and Work_Comp."
     }
@@ -492,6 +513,7 @@
    "traps": [
     {
      "category": "Average of ratios",
+     "tag": "ratio",
      "value": 26.0,
      "why": "You averaged each row's pay per hour. That weights a two-hour row like a forty-hour row. Divide total Gross_Wages by total hours."
     }
@@ -522,6 +544,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 20.0,
      "why": "You looked the date up and got one menu item's netTotal. salesData has one row per menu item per day, so a daily total needs SUMIFS or a pivot, not VLOOKUP."
     }
@@ -534,6 +557,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 24.0,
      "why": "You looked the date up and got one menu item's netTotal. salesData has one row per menu item per day, so a daily total needs SUMIFS or a pivot, not VLOOKUP."
     }
@@ -546,6 +570,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 82.94,
      "why": "You took the date of the single biggest menu-item row. The question is about the biggest day, so sum netTotal per date first, then find the maximum."
     }
@@ -558,6 +583,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 310.08,
      "why": "You averaged menu-item rows, not days. Sum netTotal per date first, then average the daily totals."
     }
@@ -570,6 +596,7 @@
    "traps": [
     {
      "category": "Wrong grain or key",
+     "tag": "grain",
      "value": 216.06,
      "why": "You averaged menu-item rows, not days. Sum netTotal per date first, then average the daily totals."
     }
@@ -672,6 +699,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 1,
      "why": "You used '1' for Sunday, as in Excel's WEEKDAY. In SQLite strftime('%w') Sunday is '0' and Monday is '1'."
     }
@@ -690,6 +718,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 56,
      "why": "You subtracted the years only. That ignores whether the birthday had passed at the hire date. Use the day difference divided by 365.25."
     }
@@ -720,6 +749,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 1890,
      "why": "You used >= instead of >. 593 movies are rated exactly 9.0."
     }
@@ -732,6 +762,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 252,
      "why": "You used >= instead of >. 57 movies are rated exactly 9.5."
     }
@@ -744,6 +775,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 3.54,
      "why": "You counted movies without a rating as zero (LEFT JOIN with COALESCE, or SUM divided by COUNT(*)). AVG(rating) skips missing ratings; a missing rating is unknown, not zero."
     }
@@ -756,6 +788,7 @@
    "traps": [
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 3.58,
      "why": "You counted movies without a rating as zero (LEFT JOIN with COALESCE, or SUM divided by COUNT(*)). AVG(rating) skips missing ratings; a missing rating is unknown, not zero."
     }
@@ -810,6 +843,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 1098,
      "why": "You used > instead of >=. 89 transactions are exactly $5,000, and 'or more' includes them."
     }
@@ -822,6 +856,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": -317758.7,
      "why": "You took the month from the first character of TransactionDate. That also catches October, November and December, because '10/', '11/' and '12/' start with 1. Take everything before the first '/' as the month."
     }
@@ -834,6 +869,7 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": -406685.97,
      "why": "You took the month from the first character of TransactionDate. That also catches October, November and December. Take everything before the first '/' as the month."
     }
@@ -846,11 +882,13 @@
    "traps": [
     {
      "category": "Boundary or parsing",
+     "tag": "boundary",
      "value": 2622.25,
      "why": "You matched the vendor name with exact case. The vendor is also written in other cases, and the question says any letter case: use LOWER(Vendor) = 'amazon.com'."
     },
     {
      "category": "Wrong definition",
+     "tag": "definition",
      "value": 2593.74,
      "why": "You included returns. Earnings are on purchases only (Amount above 0); a return would reduce them twice."
     }

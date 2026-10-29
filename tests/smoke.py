@@ -59,6 +59,26 @@ def main():
     for q in items.values():
         check(q["model_id"] in models, f"{q['id']}: model {q['model_id']} missing")
 
+    # Exam mode: every computed trap has a tag with at least one trap probe; probes point at real skills and kinds.
+    probes = data.get("probes", {})
+    tags = probes.get("tags", {})
+    trap_tags = {p["tag"] for p in probes.get("probes", []) if p["kind"] == "trap"}
+    for qid, c in data.get("checks", {}).get("checks", {}).items():
+        check(qid in questions, f"checks.json: {qid} is not on the site")
+        for t in c.get("traps", []):
+            check(t.get("tag") in tags and t.get("tag") in trap_tags, f"checks.json: trap on {qid} has no tag with a trap probe")
+    skills = {s for q in questions.values() for s in q["skills"]}
+    kinds = {q["kind"] for q in items.values()}
+    for p in probes.get("probes", []):
+        check(p.get("tag") is None or p["tag"] in tags, f"probe {p['id']}: unknown tag {p.get('tag')}")
+        check(not set(p.get("skills", [])) - skills, f"probe {p['id']}: unknown skill")
+        check(not set(p.get("kinds", [])) - kinds, f"probe {p['id']}: unknown interpretation kind")
+        for rx in p.get("triggers", []):
+            try:
+                re.compile(rx)
+            except re.error as e:
+                errors.append(f"probe {p['id']}: bad trigger {rx}: {e}")
+
     index = (DOCS / "index.html").read_text(encoding="utf-8")
     for url in ("css/style.css", "js/app.js"):
         check(f'{url}?v={cfg["version"]}"' in index, f"index.html: {url} has no ?v={cfg['version']}")

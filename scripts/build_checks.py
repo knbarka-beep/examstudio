@@ -101,6 +101,11 @@ def amazon(where):
 POP, GRAIN, MIX, EDGE, DEF = ("Wrong population", "Wrong grain or key", "Average of ratios",
                               "Boundary or parsing", "Wrong definition")
 
+# Trap tag per category, used by exam mode to pick the probe that exposes the mistake (docs/data/probes.json).
+# "Wrong grain or key" splits: a lookup or count on a non-unique key is "key", the rest is "grain".
+TAG = {POP: "population", GRAIN: "grain", MIX: "ratio", EDGE: "boundary", DEF: "definition"}
+KEY_TRAPS = {"Q037", "Q044", "Q048"}
+
 TRAPS = {
     "Q004": [(DEF, lambda: int(V.nyc().ZipCode.isna().sum()) + 2,
               "You counted the blank ZipCodes as invalid too. LEN(blank) is 0, which is not 5, so a LEN test "
@@ -295,7 +300,8 @@ def main():
             if same:
                 print(f"{q['id']}: trap equals the answer ({t}), dropped")
                 continue
-            entry["traps"].append({"category": cat, "value": t,
+            tag = "key" if cat == GRAIN and q["id"] in KEY_TRAPS else TAG[cat]
+            entry["traps"].append({"category": cat, "tag": tag, "value": t,
                                    "why": why.format(**{k: py(f()) for k, f in ev.items()})})
             cats[cat] += 1
         checks[q["id"]] = entry
