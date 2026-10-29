@@ -117,6 +117,10 @@ def main():
     html = re.sub(r'(href="css/style\.css|src="js/app\.js)(\?v=[^"]*)?"', rf'\g<1>?v={v}"',
                   index.read_text(encoding="utf-8"))
     index.write_text(html, encoding="utf-8")
+    # The same for module imports between the scripts, so a new app.js never meets an old improvement.js.
+    for js in (ROOT / "docs" / "js").glob("*.js"):
+        src = js.read_text(encoding="utf-8")
+        js.write_text(re.sub(r'(from "\./[\w-]+\.js)(\?v=[^"]*)?"', rf'\g<1>?v={v}"', src), encoding="utf-8")
 
     print(f"version {v}: {len(questions)} questions, {len(interp)} interpretation items, "
           f"{len(items)} datasets, reference solutions {'shown' if show else 'hidden'}")

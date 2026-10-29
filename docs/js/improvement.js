@@ -231,3 +231,4 @@ export function initImprovement(context) {
   });
 }
 export { grade, numberCandidates, dateKey }; // used by tests/check_answers.mjs
+export { loadChecks, addStyles, show, answerBlock }; // used by exam mode (examiner.js)

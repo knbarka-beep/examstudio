@@ -1,5 +1,5 @@
-import { initImprovement } from "./improvement.js";
-import { examMode } from "./examiner.js";
+import { initImprovement } from "./improvement.js?v=29.10.2026-3f89453";
+import { examMode } from "./examiner.js?v=29.10.2026-3f89453";
 
 const PAGE_SIZE = 25;
 const main = document.getElementById("main");
@@ -449,7 +449,7 @@ function route() {
   const improvement = S.config.improvementEnabled;
   if (!p.length) home();
   else if (p[0] === "about") about();
-  else if (p[0] === "exam-mode" && improvement) cleanup = examMode(main, ui);
+  else if (p[0] === "exam-mode" && improvement) cleanup = examMode(main, ui, p[1]);
   else if (key === "manipulation/exams" && !id) examList("manipulation");
   else if (key === "manipulation/exams" && S.eById[id]?.type === "manipulation") examView(S.eById[id]);
   else if (key === "manipulation/questions" && !id) bankView();
@@ -466,7 +466,7 @@ function route() {
 
 async function load() {
   const get = async (name) => {
-    const r = await fetch(`data/${name}.json`);
+    const r = await fetch(`data/${name}.json`, { cache: "no-cache" }); // revalidate, so the version is never stale
     if (!r.ok) throw new Error(`${name}.json: ${r.status}`);
     return r.json();
   };

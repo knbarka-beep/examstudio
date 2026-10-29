@@ -321,14 +321,20 @@ Failed: nothing.
 
 Start: 29.10.2026 12:14:50 (Python `datetime`, Europe/Copenhagen). Prompt: `prompts/RUN7_examiner.md`, with Knut's decisions from the section 0 report: no AI examiner (2.5), no stored sessions and no Progress page, topics Excel, SQL, Regression interpretation and Mixed (no Power BI, it is not in the materials), no in-browser workspace, no claim about the real exam format, both KNUT marker formats, CLAUDE.md rules 5, 7 and 8 updated, exam mode built on the answer check as the single improvement.
 
-- [ ] 0 read earlier runs, report (Run 6 was carried out: commit 9159337)
-- [ ] 1 redesign
-- [ ] 2 trap tags and probe bank
-- [ ] 3 exam mode
+- [x] 0 read earlier runs, report (Run 6 was carried out: commit 9159337)
+- [x] 1 redesign
+- [x] 2 trap tags and probe bank
+- [x] 3 exam mode
 - [ ] 4 debrief
 - [ ] 5 evidence table
 - [ ] 6 tests in Chrome, 390px, secret scan
 - [ ] 7 docs, commit, push, log
+
+Paused 29.10.2026 12:28:06 (usage limit). State for resuming:
+- Done and committed: redesign (white, system fonts, nav Practice, Exam mode, About; dark theme and workbook chrome removed), trap tags in `checks.json` (from `scripts/build_checks.py`; output unchanged apart from the tags), `docs/data/probes.json`, smoke test checks for probes, exam mode in `docs/js/examiner.js`.
+- Fixed on the way: module imports now carry `?v=` (stamped by `build_site.py`) and data JSON is fetched with `cache: "no-cache"`. Without this a browser could combine a new `app.js` with an old `improvement.js` or `config.json`.
+- Tested in Chrome, text only, Strict, Q080: a trigger term gives a probe after about 2 s; the trap answer 310,08 gives the grain trap probe; a thin answer gets its pushback exactly 20 s after the previous question.
+- Next: the debrief froze the Chrome tab when Done was pressed (screenshot timed out). Debug `debrief()` in `examiner.js` first. Then steps 5 to 7: `docs/improvement-evidence.md` (count from data), test Supportive and Standard, an SQL and a Regression task, voice on, 390px, secret scan, README and push.
 
 ## Cost statement
 

@@ -13,3 +13,33 @@
 .ic-traps strong { font-family: var(--mono); font-weight: 600; }
 .ic { background: var(--soft); border-radius: var(--radius-s); padding: 16px 18px; }
 .ic .ic-out { background: var(--card); }
+
+/* Exam mode */
+.setup { max-width: 760px; }
+.exam-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
+.exam-main > * + * { margin-top: 20px; }
+.exam-main .timer { margin-bottom: 0; }
+.exam-side { position: sticky; top: 64px; padding: 20px; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 80px); }
+.exam-side h2 { font-size: 19px; }
+.mic { color: var(--muted); margin: 0; }
+.transcript { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1 1 auto; min-height: 120px; font-size: 15px; }
+.transcript li { padding: 8px 0; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: 0 8px; }
+.transcript .ts { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; grid-row: span 2; padding-top: 2px; }
+.transcript .who { font-size: 13px; color: var(--muted); }
+.transcript li.examiner { background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; border-bottom: 0; margin: 4px 0; }
+.transcript li.examiner .who { color: var(--accent); font-weight: 600; }
+.transcript li.hint { background: var(--warn-soft); border-radius: 8px; padding: 8px 10px; border-bottom: 0; margin: 4px 0; }
+.interim { color: var(--muted); font-style: italic; font-size: 15px; margin: 0; min-height: 1.4em; }
+.say textarea { width: 100%; resize: vertical; margin-bottom: 8px; }
+.plain { margin: 0; padding-left: 1.1em; }
+.plain li + li { margin-top: 6px; }
+.flag { color: var(--warn); font-weight: 600; font-size: 13px; }
+.said-examiner { font-weight: 600; }
+.section-title { font-size: 24px; margin-bottom: 12px; }
+.self fieldset + fieldset { margin-top: 16px; }
+.self fieldset { margin-top: 16px; }
+@media (max-width: 900px) {
+  .exam-layout { grid-template-columns: 1fr; }
+  .exam-side { position: static; max-height: none; }
+  .transcript { max-height: 50vh; }
+}
