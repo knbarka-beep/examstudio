@@ -4,7 +4,7 @@ This repo is Knut's individual hand-in for Assignment 2 in AI in Accounting and 
 
 ## Paths
 
-- Repo root: `C:\Users\knbar\Documents\examstudio`
+- Repo root: `C:\Users\knbar\Documents\Assignment 2\examstudio`
 - Material source (read only, never modify): `MATERIALS_SRC = C:\Users\knbar\OneDrive\Skrivebord\AI in Accounting and Business\Assignment 2\1. ExamStudio\materials`
   - Path confirmed to exist on 23.10.2026, together with `ASSIGNMENT.md` and `IMPROVEMENTS.md` in its parent folder.
 - Local working copy of the materials: `materials/` in the repo root. It is gitignored and must never be committed.
@@ -28,10 +28,10 @@ Plain HTML, CSS and vanilla JavaScript in `docs/`, reading JSON from `docs/data/
 2. Never invent a reference solution and attribute it to the materials. Solutions taken from the materials get `solution_source: "materials"` with the file name. Solutions you write get `solution_source: "generated"` and must be verified in Run 2 before they count.
 3. Do not publish reference solutions, answer documents or case texts. Nothing from `materials/` goes into git except the dataset files students need, copied into `docs/files/`. `scripts/build_site.py` strips solution fields from the public JSON unless `docs/data/config.json` has `"showReferenceSolutions": true` (default false).
 4. No secrets anywhere. Never print, echo or commit a key, token or password. If any secret appears in a file, stop and log it.
-5. The improvement is built: the answer check with computed trap answers (`docs/js/improvement.js`, `scripts/build_checks.py`). Do not change it in a design run. Do not add AI tutoring, feedback storage, analytics or accounts.
+5. The improvement is a rules-based exam mode built on the answer check: the computed trap answers (`scripts/build_checks.py`, `docs/data/checks.json`, `docs/js/improvement.js`) drive the examiner's probes (`docs/data/probes.json`, `docs/js/examiner.js`). `"improvementEnabled"` in `docs/data/config.json` switches the whole of it on and off. No AI, no API keys, no stored data (nothing in localStorage or on a server), no analytics or accounts.
 6. Everything user facing is in English. British spelling. Dates as 31.12.2026.
-7. Design: quiet and functional, like a university tool. No purple or other gradients, no pill-shaped buttons, no emoji or decorative icons, no vague hero text, no scroll or cursor animations, no fake metrics, counters or testimonials, no stock or AI images, no em dashes in any copy, no "made with AI" tag.
-8. Where Knut's own wording is needed, insert a marker `[[KNUT: what is needed]]` instead of writing it.
+7. Design: polished, calm and modern, in the spirit of apple.com. Subtle shadows, soft rounded shapes and short gentle transitions are fine when used with restraint. No emoji or decorative icons, no vague hero text, no fake metrics, counters or testimonials, no stock or AI images, no em dashes in any copy, no "made with AI" tag.
+8. Where Knut's own wording is needed, insert a marker `[[KNUT: what is needed]]` instead of writing it. On site pages and in the README, also add `<!-- KNUT: write this yourself -->` with a visible `[KNUT: your text here]` line.
 9. Never force-push, never rewrite history, never delete files outside the repo.
 
 ## Logging and resuming

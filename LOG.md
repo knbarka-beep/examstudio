@@ -317,6 +317,19 @@ Failed: nothing.
 - Q015 and Q108 stay off the site as disputed; they are described in the materials paragraph.
 - Run 6 picked up the first version of these files in its commit; this entry covers the rest.
 
+### Run 7 (interactive session with Claude)
+
+Start: 29.10.2026 12:14:50 (Python `datetime`, Europe/Copenhagen). Prompt: `prompts/RUN7_examiner.md`, with Knut's decisions from the section 0 report: no AI examiner (2.5), no stored sessions and no Progress page, topics Excel, SQL, Regression interpretation and Mixed (no Power BI, it is not in the materials), no in-browser workspace, no claim about the real exam format, both KNUT marker formats, CLAUDE.md rules 5, 7 and 8 updated, exam mode built on the answer check as the single improvement.
+
+- [ ] 0 read earlier runs, report (Run 6 was carried out: commit 9159337)
+- [ ] 1 redesign
+- [ ] 2 trap tags and probe bank
+- [ ] 3 exam mode
+- [ ] 4 debrief
+- [ ] 5 evidence table
+- [ ] 6 tests in Chrome, 390px, secret scan
+- [ ] 7 docs, commit, push, log
+
 ## Cost statement
 
 [[KNUT: cost figures]]
