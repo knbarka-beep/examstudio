@@ -334,7 +334,8 @@ Paused 29.10.2026 12:28:06 (usage limit). State for resuming:
 - Done and committed: redesign (white, system fonts, nav Practice, Exam mode, About; dark theme and workbook chrome removed), trap tags in `checks.json` (from `scripts/build_checks.py`; output unchanged apart from the tags), `docs/data/probes.json`, smoke test checks for probes, exam mode in `docs/js/examiner.js`.
 - Fixed on the way: module imports now carry `?v=` (stamped by `build_site.py`) and data JSON is fetched with `cache: "no-cache"`. Without this a browser could combine a new `app.js` with an old `improvement.js` or `config.json`.
 - Tested in Chrome, text only, Strict, Q080: a trigger term gives a probe after about 2 s; the trap answer 310,08 gives the grain trap probe; a thin answer gets its pushback exactly 20 s after the previous question.
-- Next: the debrief froze the Chrome tab when Done was pressed (screenshot timed out). Debug `debrief()` in `examiner.js` first. Then steps 5 to 7: `docs/improvement-evidence.md` (count from data), test Supportive and Standard, an SQL and a Regression task, voice on, 390px, secret scan, README and push.
+- Debrief checked through the DOM: it renders time used, probes with reasons and tags, the thin answer, the trap answer (310.08, wrong grain) and the transcript. The Chrome screenshot tool timed out on that page; the page itself did not freeze. Still to check: how it looks, self-assessment, "Practise my weak spots".
+- Next: steps 5 to 7: `docs/improvement-evidence.md` (count from data), test Supportive and Standard, an SQL and a Regression task, voice on, 390px, secret scan, README and push.
 
 ## Cost statement
 
