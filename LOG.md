@@ -2,7 +2,16 @@
 
 ## Active time (Knut)
 
-[[KNUT: active time entries]]
+About 6 hours, estimated from the commit history. Commits are grouped into work sessions (a gap of more than 2 hours starts a new session), and each session gets 1 hour for reading and testing before its first commit.
+
+| Session | Commits (first to last) | Span | Estimate |
+|---|---|---:|---:|
+| 1 | 24.10.2026 08:28 (one commit; Runs 1 to 3 were squashed into it) | 0 min | 1 h |
+| 2 | 27.10.2026 14:44 to 15:43 (Runs 4 to 6, answer check) | 59 min | 2 h |
+| 3 | 29.10.2026 12:19 to 12:28 (Run 7) | 9 min | 1 h 10 min |
+| 4 | 01.11.2026 16:29 to 17:02 (Run 7 finish, Q015 and Q108, own text) | 33 min | 1.6 h |
+
+This is below the 8 to 10 hours it felt like. The commit history misses work that left no commit: the evening of 23.10.2026 when Runs 1 to 3 ran (21:42 to 00:03 in this log, with permissions approved by hand) was squashed into one commit, and writing the run prompts, reading the materials and testing by hand happened outside the commits.
 
 ## Unattended runs
 
@@ -299,7 +308,7 @@ Choices logged:
 Critique, comparing `runs/screens-run5/` with `runs/screens/`:
 - Reads as a worksheet within one second: yes on every page at 1280. Name box, `fx`, column letters, row numbers, gridlines, tabs and status bar are all there. At 375px the letters and row numbers are hidden as asked; the formula bar, cells, tabs and status bar still carry the idea.
 - Calm or noisy: calm at 1280. The head cells are pale and small. Chrome that carried nothing was removed: the duplicate site footer (see below) and, under 700px, Previous and Next on exam pages, because the tabs do the same job and the sticky footer had grown to about 130px.
-- Prompt first, clock second: the prompt sits first, at the top in 24px serif, and is the first thing read. The dark clock with 64px digits is still the heavier shape on the page; I kept it at the size the brief asks for. [[KNUT: say if the clock should shrink so the prompt clearly wins]]
+- Prompt first, clock second: the prompt sits first, at the top in 24px serif, and is the first thing read. The dark clock with 64px digits is still the heavier shape on the page; I kept it at the size the brief asks for. Knut's decision (01.11.2026): keep the current clock size.
 - Row numbers: aligned with their rows in both themes after one fix. They were top-left in tables and are now centred to the first text line. Hidden under 700px.
 - Commercial look-alikes: none. No green chrome, no ribbon, no icons, no product names. Gridlines are the Run 5 grey-green, and the selection colour is the site's pen blue.
 - Contrast: head text on head cells 5.35 (light) and 6.52 (dark); pen on head cells 7.18 and 7.57; clock figures as in Run 5. The selection is visible in both themes (light screenshots and the dark time-up shot).
@@ -355,10 +364,17 @@ Knut's decision after reading the disputes.
 - Q108 (PWC question 22): expected answer 41, `solution_source: "generated"`, with a `solution_note` that `PWC answers.docx` gives 49 because it counts complete-album purchases. 49 is a computed trap (Wrong grain or key, tag grain). New trap probe `T-grain-album`, tied to Q108 by a `questions` field; `examiner.js` now only asks a probe with `questions` on those questions.
 - `build_site.py` strips `solution_note` from the public JSON like the other solution fields; the smoke test checks it, and that probe `questions` are on the site.
 - Full build: 228 checked, 224 validated, 4 manual_check, 0 disputed, 0 failed. 179 questions on the site (82 Excel, 97 SQL), 49 interpretation items. Answer check 105 questions, 37 with traps, 39 traps. 303 manipulation exams (was 304: the shifted random stream gives payroll 2015 + P-card 3 exams instead of 4; that pair rarely fits in 8 minutes), 246 with a trap question; 30 interpretation exams. Smoke test passed; `check_answers.mjs` all passed (105 checks).
-- README counts and `docs/improvement-evidence.md` updated. The README paragraph on the materials is unchanged; [[KNUT: update the sentences on the two disputed answers and "222 of 228 match"]].
+- README counts and `docs/improvement-evidence.md` updated. The README paragraph on the materials was later replaced with Knut's own text.
+
+Failed: nothing.
+
+### Own text and markers (interactive session with Claude, 01.11.2026, ended 01.11.2026 17:02:53)
+
+- Knut's own text inserted verbatim: the improvement paragraph in the README exam mode section and on the About page ("Why I built it"); the materials paragraph in the README and in `MATERIALS_NOTES.md`. The empty KNUT marker in the About page's exam mode section was removed.
+- LOG.md: active time estimated from the commit history, cost statement, clock size decision.
 
 Failed: nothing.
 
 ## Cost statement
 
-[[KNUT: cost figures]]
+Claude Pro subscription only. No API cost: the site uses no AI, and no API key was used in any run.

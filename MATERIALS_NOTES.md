@@ -2,7 +2,7 @@
 
 Written 23.10.2026 by the unattended Run 1. Source: `MATERIALS_SRC`, copied to `materials/` with `scripts/copy_materials.py`. Full extraction per file: `bank/inventory.json` (kept local, see "Git warning" at the end).
 
-[[KNUT: one paragraph in your own words on why these materials were harder to build from than the earlier cases (Pokémon: one clean CSV; policies: one CSV; invoices: PDFs with JSON ground truth; P-cards: one SQLite table and one case document). The facts below are there to support it.]]
+In the earlier cases we got one clean dataset and a clear target. The invoice case even came with ground truth. Here the material is spread over Word and PowerPoint files, spreadsheets, CSV files and SQLite databases. The tasks sit in instruction documents, and the answers are in separate files, when they exist at all. Two datasets were too big for a normal repository, so they had to go in a GitHub release. I also could not trust the answers. NYC question 13 had two correct years because the 2018 data stops in February, so I limited it to full calendar years. The PWC answer key says 49 albums, but the data gives 41 distinct ones because 8 albums were bought complete twice. I use 41 and treat 49 as a trap answer. The questions also had to come only from the materials, so I could not write cleaner ones or copy the answers. I recomputed every answer from the data instead, and 224 of 228 could be confirmed that way. Most of the work ended up being about which material to trust, more than building the site.
 
 ## Overview in numbers
 

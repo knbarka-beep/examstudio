@@ -4,7 +4,7 @@
 // marking the answer wrong. Speech uses the browser's Web Speech API when it is there; the text box always works.
 // app.js only calls examMode when config.improvementEnabled is true.
 
-import { grade, loadChecks, addStyles, show, answerBlock } from "./improvement.js?v=01.11.2026-d4822f5";
+import { grade, loadChecks, addStyles, show, answerBlock } from "./improvement.js?v=01.11.2026-2856ff5";
 
 // Strictness presets. Times in milliseconds.
 //   probes: [fewest, most] follow-up questions per task (pushbacks are not counted)

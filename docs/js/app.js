@@ -1,5 +1,5 @@
-import { initImprovement } from "./improvement.js?v=01.11.2026-d4822f5";
-import { examMode } from "./examiner.js?v=01.11.2026-d4822f5";
+import { initImprovement } from "./improvement.js?v=01.11.2026-2856ff5";
+import { examMode } from "./examiner.js?v=01.11.2026-2856ff5";
 
 const PAGE_SIZE = 25;
 const main = document.getElementById("main");
@@ -415,7 +415,6 @@ function bankQuestion(q) {
 }
 
 function about() {
-  const marker = () => [document.createComment(" KNUT: write this yourself "), el("p", { class: "note" }, "[KNUT: your text here]")];
   main.append(
     pageHead("About", { lead: "A practice site for the course Data Analytics in Accounting at SDU." }),
     el("div", { class: "stack" },
@@ -423,9 +422,9 @@ function about() {
         el("p", {}, `Every question is built from the course cases and their data files, and checked against the data before it is published. There are ${S.questions.length} data manipulation questions in Excel and SQL, and ${S.interp.length} data interpretation questions on regression output.`),
         el("p", {}, "The answer check compares a typed result with the answer computed from the data. Where a common wrong method gives a different number, that number is computed too, so the site can name the mistake.")),
       S.config.improvementEnabled ? el("section", { class: "soft" }, el("h2", {}, "Exam mode"),
-        el("p", {}, "Exam mode gives one task at a time with a countdown. An examiner reads the task aloud and asks follow-up questions while you work. The questions are chosen by fixed rules from what you say or type and from the answer you enter; when your answer matches a known wrong method, the examiner asks about that mistake. No AI model is used and nothing is stored."),
-        marker()) : null,
-      el("section", { class: "soft" }, el("h2", {}, "Why I built it"), marker()),
+        el("p", {}, "Exam mode gives one task at a time with a countdown. An examiner reads the task aloud and asks follow-up questions while you work. The questions are chosen by fixed rules from what you say or type and from the answer you enter; when your answer matches a known wrong method, the examiner asks about that mistake. No AI model is used and nothing is stored.")) : null,
+      el("section", { class: "soft" }, el("h2", {}, "Why I built it"),
+        el("p", {}, "My improvement is an exam mode. The original site lets you open an exam and start a timer, but nobody asks you why you did what you did. When I practise, I usually know a formula exists. The problem is remembering which one to use under time pressure, for example to pull a value out of the middle of a cell, and then explaining it while someone listens. Exam mode reads the task aloud and listens while you work. Then it interrupts with follow-up questions. Those questions come from typical mistakes in accounting data work, like the wrong grain after a join, counting the same album twice, averaging percentages, or keeping a dummy term that should be zero. In total, 105 questions have an answer check, and 39 known trap answers each trigger a question aimed at that mistake. If you answer 49 on Q108, the examiner asks what one row in your result represents. Everything is rules-based, so there is no AI and nothing is stored. I would not use it every day. It feels a bit impractical for normal practice, and I think that is fine, because it is meant as a dress rehearsal for the last week before the exam. That fits what the site is for in the first place: showing students what to expect so the exam feels less scary.")),
       el("section", { class: "soft" }, el("h2", {}, "Source and issues"),
         el("p", {}, el("a", { href: S.config.repoUrl }, "Source code on GitHub"), `. Data version ${S.version}.`))));
 }
