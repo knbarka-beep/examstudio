@@ -211,4 +211,4 @@ General:
 
 ## Git warning
 
-`bank/inventory.json` holds the full extracted text of the case documents and of the two solution files. It was committed once by mistake in commit `d8c0bfd` and untracked in the next commit (now in `.gitignore`). Commits are local only; nothing has been pushed. I did not rewrite history (rule 9). [[KNUT: decide before the first push (Run 3 pushes) whether to remove `bank/inventory.json` from commit d8c0bfd, for example by squashing the local commits; otherwise the case texts and solution text become public with the repository history.]] Also note that `bank/questions.json` stores the materials' reference answers (for Run 2), so they are in the repository too, though not in `docs/`.
+`bank/inventory.json` was never published: commit `d8c0bfd` is not in the pushed history, which starts at the squashed `4a1b92b`.

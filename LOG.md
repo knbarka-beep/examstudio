@@ -2,7 +2,7 @@
 
 ## Active time (Knut)
 
-About 6 hours, estimated from the commit history. Commits are grouped into work sessions (a gap of more than 2 hours starts a new session), and each session gets 1 hour for reading and testing before its first commit.
+About 8 hours. The commit history supports about 6; the rest is the evening of 23.10 (Runs 1 to 3, squashed into one commit), writing the run prompts and manual testing, which left no commits. Commits are grouped into work sessions (a gap of more than 2 hours starts a new session), and each session gets 1 hour for reading and testing before its first commit.
 
 | Session | Commits (first to last) | Span | Estimate |
 |---|---|---:|---:|
@@ -10,8 +10,6 @@ About 6 hours, estimated from the commit history. Commits are grouped into work 
 | 2 | 27.10.2026 14:44 to 15:43 (Runs 4 to 6, answer check) | 59 min | 2 h |
 | 3 | 29.10.2026 12:19 to 12:28 (Run 7) | 9 min | 1 h 10 min |
 | 4 | 01.11.2026 16:29 to 17:02 (Run 7 finish, Q015 and Q108, own text) | 33 min | 1.6 h |
-
-This is below the 8 to 10 hours it felt like. The commit history misses work that left no commit: the evening of 23.10.2026 when Runs 1 to 3 ran (21:42 to 00:03 in this log, with permissions approved by hand) was squashed into one commit, and writing the run prompts, reading the materials and testing by hand happened outside the commits.
 
 ## Unattended runs
 
@@ -57,7 +55,7 @@ Done:
 - Interpretation questions: 49 (`bank/interpretation.json`): 17 predict, 16 significance, 10 coefficient, 6 dummy.
 
 Failed or open:
-- `bank/inventory.json` (full case texts and solution text) was committed in `d8c0bfd` and untracked in `a700716`. Not pushed, history not rewritten. [[KNUT: decide before Run 3 pushes whether to squash the local commits so the file is not in the public history. See MATERIALS_NOTES.md, "Git warning".]]
+- `bank/inventory.json` was never published: commit `d8c0bfd` is not in the pushed history, which starts at the squashed `4a1b92b`.
 - Two references may disagree with the data (NYC Q13, PWC Q22); left for Run 2 to check. See MATERIALS_NOTES.md, assumptions 8 and 22.
 - IntegrateCo Part 4 Q9 left out: its formula is missing from the document.
 
@@ -94,7 +92,7 @@ End: 23.10.2026 22:24:25. Duration: 15 minutes.
 Done:
 - `tests/validate.py` (re-runnable): structural checks, SQL drafts run read-only with a 30 s timeout, Excel answers computed independently with pandas, interpretation models refitted. Expected results in `bank/expected/` (179 files). Final `py tests\validate.py` exit code: 0.
 - Results, 228 items: Excel 82 (77 validated, 4 manual_check, 1 disputed, 0 excluded), SQL 97 (96 validated, 1 disputed), interpretation 49 (49 validated). Nothing excluded. All 8 models match `bank/models.json` to 4 decimals.
-- Disputed: Q015 (NYC: Brooklyn exceeds Manhattan in 2017 and in 2018, reference says 2017) and Q108 (PWC Q22: 49 is invoice and album pairs; distinct albums are 41). Evidence in `VALIDATION_REPORT.md`. [[KNUT: decide whether to raise Q015 and Q108 with the lecturer]]
+- Disputed: Q015 (NYC: Brooklyn exceeds Manhattan in 2017 and in 2018, reference says 2017) and Q108 (PWC Q22: 49 is invoice and album pairs; distinct albums are 41). Evidence in `VALIDATION_REPORT.md`. Decided not to raise Q015 and Q108 separately with the lecturer; both disputes and how they were resolved are explained in the materials paragraph of the hand-in.
 - Fixes to generated drafts: Q072, Q073 (prompt now says the files are pipe-delimited), Q124 (tie at fifth place, title tie-break added). Made in both `scripts/build_bank.py` and `bank/questions.json`.
 - Exams (`scripts/build_exams.py`, seed 2026): 304 data manipulation exams (E001 to E304) over 31 file pairs, up to 10 per pair (`ic_payroll2015_csv + pcards` gives only 4, `etl_case3 + pcards` none, because of the 8 minute limit); 30 data interpretation exams (R001 to R030), each with one predict, coefficient, significance and dummy item from four different models. Optional questions are left out of exams.
 
@@ -179,7 +177,7 @@ Release assets (`release-assets/`, not in git): `movies.zip` 39,419,579 bytes (f
 Not done: push. The push was deliberately not attempted. Commit `d8c0bfd` still contains `bank/inventory.json`, which holds the full case texts and the text of the two solution files. Pushing `main` would publish it with the history, which breaks hard rule 3, and the decision asked for under Run 1 ("Git warning" in `MATERIALS_NOTES.md`) has not been made. Rewriting history to remove it is not allowed for a run (rule 9). Also, `bank/questions.json` is tracked and holds 40 reference answers taken from the materials (`solution_source: "materials"`); they are not in `docs/`, but they would be public in the repository.
 
 What Knut still has to do:
-- [[KNUT: decide how to remove `bank/inventory.json` from commit `d8c0bfd` (for example squash all local commits into one) and whether `bank/questions.json` with the materials' reference answers may be public; then run `git push -u origin main`]]
+- `bank/inventory.json` was never published: commit `d8c0bfd` is not in the pushed history, which starts at the squashed `4a1b92b`.
 - Enable GitHub Pages: Settings, Pages, branch `main`, folder `/docs`.
 - Upload `release-assets/movies.zip` and `release-assets/pcards.zip` to a release tagged `datasets-v1` (see `README.md`).
 - Fill the `[[KNUT]]` markers in `README.md`, `MATERIALS_NOTES.md`, `LOG.md` and the home page (`docs/js/app.js`).
