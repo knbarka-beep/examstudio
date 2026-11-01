@@ -1,5 +1,5 @@
-import { initImprovement } from "./improvement.js?v=29.10.2026-3f89453";
-import { examMode } from "./examiner.js?v=29.10.2026-3f89453";
+import { initImprovement } from "./improvement.js?v=01.11.2026-d4822f5";
+import { examMode } from "./examiner.js?v=01.11.2026-d4822f5";
 
 const PAGE_SIZE = 25;
 const main = document.getElementById("main");

@@ -6,21 +6,19 @@ Written by `py tests\validate.py`. Re-run it after editing the bank; this file i
 
 | Subject | validated | manual_check | disputed | excluded | failed | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| Excel | 77 | 4 | 1 | 0 | 0 | 82 |
-| SQL | 96 | 0 | 1 | 0 | 0 | 97 |
+| Excel | 78 | 4 | 0 | 0 | 0 | 82 |
+| SQL | 97 | 0 | 0 | 0 | 0 | 97 |
 | Interpretation | 49 | 0 | 0 | 0 | 0 | 49 |
-| All | 222 | 4 | 2 | 0 | 0 | 228 |
+| All | 224 | 4 | 0 | 0 | 0 | 228 |
 
 ## Questions that are not validated
 
 | Id | Status | File | What failed and why |
 |---|---|---|---|
-| Q015 | disputed | NYC_Film_Permits.xlsx | solutions.xlsx says 2017. Shooting permits by year of StartDateTime: Brooklyn exceeds Manhattan in 2017 (1,719 vs 1,550) and also in 2018 (176 vs 138). The 2018 data stops in February, so 2017 is the only full year, but the question as set has two answers. |
 | Q026 | manual_check | Analytics_mindset_case_studies_ETL_Case1.csv | The row count is computed (3); the cause (the unquoted comma in 'Apple, Inc.') is checked by a person. |
 | Q028 | manual_check | Analytics_mindset_case_studies_ETL_Case1.csv | The value is computed; naming the two formats (parentheses and minus sign) is checked by a person. |
 | Q031 | manual_check | Analytics_mindset_case_studies_ETL_Case1.csv | The company and the cleaned ticker are computed; the formula is checked by a person, since several formulas work. |
 | Q082 | manual_check | data.xlsm | The count is computed; the reason it matters for a regression is checked by a person. |
-| Q108 | disputed | Chinook_Sqlite.sqlite | PWC answers.docx says 49. With its own assumption (all tracks of an album on one invoice) there are 49 invoice and album pairs but only 41 distinct albums, because 8 albums are downloaded complete twice. The question asks for distinct albums, so 49 looks like a count of downloads, not of albums. |
 
 ## Fixes made to generated drafts
 

@@ -97,6 +97,13 @@ def amazon(where):
                          f"FROM pcards WHERE TransactionDate LIKE '%/2014 %' AND {where}"), 2)
 
 
+def complete_albums(what):
+    return sql(CH, "WITH a AS (SELECT AlbumId, COUNT(*) AS n FROM Track GROUP BY AlbumId), p AS (SELECT il.InvoiceId, "
+                   "t.AlbumId, COUNT(DISTINCT il.TrackId) AS n FROM InvoiceLine il JOIN Track t ON t.TrackId = "
+                   f"il.TrackId GROUP BY il.InvoiceId, t.AlbumId) SELECT COUNT({what}) FROM p JOIN a "
+                   "ON a.AlbumId = p.AlbumId WHERE p.n = a.n")
+
+
 # Category names are the five kinds of "looks right, is wrong" from the course notes.
 POP, GRAIN, MIX, EDGE, DEF = ("Wrong population", "Wrong grain or key", "Average of ratios",
                               "Boundary or parsing", "Wrong definition")
@@ -219,6 +226,10 @@ TRAPS = {
               "You took the month from the first character of TransactionDate. That also catches October, "
               "November and December, because '10/', '11/' and '12/' start with 1. Take everything before the "
               "first '/' as the month.", {})],
+    "Q108": [(GRAIN, lambda: complete_albums("*"),
+              "You counted complete-album purchases, not albums. {d} albums were bought complete on two invoices, "
+              "so they appear twice. One row of your result is an invoice and album pair; count DISTINCT AlbumId.",
+              {"d": lambda: complete_albums("*") - complete_albums("DISTINCT p.AlbumId")})],
     "Q150": [(EDGE, lambda: returns_first_char(2013),
               "You took the month from the first character of TransactionDate. That also catches October, "
               "November and December. Take everything before the first '/' as the month.", {})],
@@ -231,7 +242,7 @@ TRAPS = {
 }
 
 # Disputed questions: more than one defensible answer.
-ALSO_ACCEPT = {}  # id -> ([other accepted values], note); empty: Q015 and Q108 are disputed and left off the site
+ALSO_ACCEPT = {}  # id -> ([other accepted values], note)
 
 
 def kind_of(q, value):

@@ -348,6 +348,17 @@ Resumed 01.11.2026 (reduced scope at Knut's request: no Chrome, no screenshots; 
 
 Failed: nothing.
 
+### Q015 and Q108 fixed (interactive session with Claude, 01.11.2026, ended 01.11.2026 16:52:45)
+
+Knut's decision after reading the disputes.
+- Q015 (NYC question 13): prompt now "...and count full calendar years only." Expected 2017, as in `solutions.xlsx`. `validate.py` keeps only years the data covers from the first to the last week (2018 stops in February), so the check gives 2017 alone.
+- Q108 (PWC question 22): expected answer 41, `solution_source: "generated"`, with a `solution_note` that `PWC answers.docx` gives 49 because it counts complete-album purchases. 49 is a computed trap (Wrong grain or key, tag grain). New trap probe `T-grain-album`, tied to Q108 by a `questions` field; `examiner.js` now only asks a probe with `questions` on those questions.
+- `build_site.py` strips `solution_note` from the public JSON like the other solution fields; the smoke test checks it, and that probe `questions` are on the site.
+- Full build: 228 checked, 224 validated, 4 manual_check, 0 disputed, 0 failed. 179 questions on the site (82 Excel, 97 SQL), 49 interpretation items. Answer check 105 questions, 37 with traps, 39 traps. 303 manipulation exams (was 304: the shifted random stream gives payroll 2015 + P-card 3 exams instead of 4; that pair rarely fits in 8 minutes), 246 with a trap question; 30 interpretation exams. Smoke test passed; `check_answers.mjs` all passed (105 checks).
+- README counts and `docs/improvement-evidence.md` updated. The README paragraph on the materials is unchanged; [[KNUT: update the sentences on the two disputed answers and "222 of 228 match"]].
+
+Failed: nothing.
+
 ## Cost statement
 
 [[KNUT: cost figures]]

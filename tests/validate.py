@@ -41,13 +41,6 @@ REQUIRED = ["id", "subject", "case", "source_doc", "source_task", "dataset_ids",
 # give the mismatch described), "excluded" (not checked, not used), "manual_check" (computed part checked,
 # the rest needs a person).
 DECISIONS = {
-    "Q015": ("disputed", "solutions.xlsx says 2017. Shooting permits by year of StartDateTime: Brooklyn exceeds "
-                         "Manhattan in 2017 (1,719 vs 1,550) and also in 2018 (176 vs 138). The 2018 data stops in "
-                         "February, so 2017 is the only full year, but the question as set has two answers."),
-    "Q108": ("disputed", "PWC answers.docx says 49. With its own assumption (all tracks of an album on one "
-                         "invoice) there are 49 invoice and album pairs but only 41 distinct albums, because 8 "
-                         "albums are downloaded complete twice. The question asks for distinct albums, so 49 "
-                         "looks like a count of downloads, not of albums."),
     "Q026": ("manual_check", "The row count is computed (3); the cause (the unquoted comma in 'Apple, Inc.') is "
                              "checked by a person."),
     "Q028": ("manual_check", "The value is computed; naming the two formats (parentheses and minus sign) is "
@@ -150,7 +143,6 @@ REF_CHECKS = {
     "Q105": lambda c, r: r == [[2, 256]],                                 # "256 tracks have been downloaded twice"
     "Q106": lambda c, r: abs(r[0][2] - 5) <= 0.5,                         # "Approximately 5 years"
     "Q107": lambda c, r: len(r) == 5 and all(x[1] == 2 for x in r),       # top five all downloaded twice
-    "Q108": lambda c, r: r == [[49]],                                     # "...on a single invoice: 49"
 }
 
 
@@ -400,6 +392,12 @@ def monthly15():
     return d.groupby(d.Date.dt.month).Gross.sum()
 
 
+def full_year(dates, y):
+    """The data covers calendar year y from its first week to its last week (2018 stops in February)."""
+    d = dates[dates.dt.year == y]
+    return d.min() <= pd.Timestamp(y, 1, 7) and d.max() >= pd.Timestamp(y, 12, 24)
+
+
 EXCEL = {
     "Q001": lambda: one("records", len(nyc())),
     "Q002": lambda: one("columns", nyc().shape[1]),
@@ -416,7 +414,8 @@ EXCEL = {
     "Q013": lambda: one("count", int((sp().Category == "Music Video").sum())),
     "Q014": lambda: one("share", round(sp()["CommunityBoard(s)"].astype(str).str.contains(",").mean(), 4)),
     "Q015": lambda: (["year"], [[y] for y, r in sp().groupby([sp().StartDateTime.dt.year, "Borough"]).size()
-                                .unstack().iterrows() if r.get("Brooklyn", 0) > r.get("Manhattan", 0)]),
+                                .unstack().iterrows() if r.get("Brooklyn", 0) > r.get("Manhattan", 0)
+                                and full_year(sp().StartDateTime, y)]),
     "Q016": lambda: one("share", round(sp()[sp().Borough == "Manhattan"].ParkingHeld.str.contains(
         "BROADWAY", case=False).mean(), 2)),
     "Q017": lambda: one("share", round(sp()[sp().Borough == "Brooklyn"].ParkingHeld.str.contains(

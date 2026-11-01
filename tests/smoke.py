@@ -73,6 +73,7 @@ def main():
         check(p.get("tag") is None or p["tag"] in tags, f"probe {p['id']}: unknown tag {p.get('tag')}")
         check(not set(p.get("skills", [])) - skills, f"probe {p['id']}: unknown skill")
         check(not set(p.get("kinds", [])) - kinds, f"probe {p['id']}: unknown interpretation kind")
+        check(not set(p.get("questions", [])) - set(questions) - set(items), f"probe {p['id']}: question not on the site")
         for rx in p.get("triggers", []):
             try:
                 re.compile(rx)
@@ -104,7 +105,7 @@ def main():
         for p, t in texts.items():
             for field in SOLUTION_FIELDS:
                 check(field not in t, f"{p.relative_to(ROOT)} contains {field}")
-        check(not any("reference" in q for q in questions.values()), "questions.json has reference solutions")
+        check(not any("reference" in q or "solution_note" in q for q in questions.values()), "questions.json has reference solutions")
     for p, t in texts.items():
         check(EM_DASH not in t, f"{p.relative_to(ROOT)} contains an em dash")
 

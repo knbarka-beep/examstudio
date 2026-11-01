@@ -1,5 +1,5 @@
 {
- "version": "29.10.2026-3f89453",
+ "version": "01.11.2026-d4822f5",
  "questions": [
   {
    "id": "Q001",
@@ -434,6 +434,37 @@
    "estimated_minutes": 2,
    "is_variant_of": null,
    "expected_answer_hint": "A percentage.",
+   "source_file": "Assignment_01_Excel-SQL.xlsx"
+  },
+  {
+   "id": "Q015",
+   "subject": "Excel",
+   "case": "Excel Part 1",
+   "source_doc": "1. Excel Part 1/PWC Excel Assignment/Assignment_01_Excel-SQL.xlsx",
+   "source_task": "Question 13",
+   "dataset_ids": [
+    "nyc_film_permits_xlsx"
+   ],
+   "required_objects": {
+    "sheets": [
+     "NYC_Film_Permits"
+    ],
+    "headers": [
+     "EventType",
+     "StartDateTime",
+     "Borough"
+    ],
+    "tables": [],
+    "columns": []
+   },
+   "prompt": "Consider only rows with EventType 'Shooting Permit' and count full calendar years only. In which year did the number of shoots in Brooklyn exceed the number in Manhattan? Use the year of StartDateTime.",
+   "skills": [
+    "pivot",
+    "date arithmetic"
+   ],
+   "estimated_minutes": 2,
+   "is_variant_of": null,
+   "expected_answer_hint": "A year.",
    "source_file": "Assignment_01_Excel-SQL.xlsx"
   },
   {
@@ -3623,6 +3654,39 @@
    "estimated_minutes": 2.5,
    "is_variant_of": null,
    "expected_answer_hint": "Five rows: track name and count.",
+   "source_file": "PWC SQL.docx"
+  },
+  {
+   "id": "Q108",
+   "subject": "SQL",
+   "case": "SQL Part 1 PWC",
+   "source_doc": "2. SQL part 1/Assignments/pwc assignment/PWC SQL.docx",
+   "source_task": "Question 22 (PWC.pptx exercise 5)",
+   "dataset_ids": [
+    "chinook"
+   ],
+   "required_objects": {
+    "sheets": [],
+    "headers": [],
+    "tables": [
+     "InvoiceLine",
+     "Track"
+    ],
+    "columns": [
+     "InvoiceLine.InvoiceId",
+     "InvoiceLine.TrackId",
+     "Track.AlbumId"
+    ]
+   },
+   "prompt": "Count an album as downloaded when all of its tracks appear on one invoice. How many distinct albums have been downloaded?",
+   "skills": [
+    "join",
+    "group by",
+    "subquery"
+   ],
+   "estimated_minutes": 3,
+   "is_variant_of": null,
+   "expected_answer_hint": "A whole number.",
    "source_file": "PWC SQL.docx"
   },
   {

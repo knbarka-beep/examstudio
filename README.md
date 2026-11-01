@@ -44,16 +44,16 @@ py tests\smoke.py
 
 ## Validation status
 
-From `VALIDATION_REPORT.md` (23.10.2026):
+From `VALIDATION_REPORT.md` (01.11.2026):
 
 | Subject | validated | manual_check | disputed | excluded | Total |
 |---|---:|---:|---:|---:|---:|
-| Excel | 77 | 4 | 1 | 0 | 82 |
-| SQL | 96 | 0 | 1 | 0 | 97 |
+| Excel | 78 | 4 | 0 | 0 | 82 |
+| SQL | 97 | 0 | 0 | 0 | 97 |
 | Interpretation | 49 | 0 | 0 | 0 | 49 |
-| All | 222 | 4 | 2 | 0 | 228 |
+| All | 224 | 4 | 0 | 0 | 228 |
 
-Only validated and manual_check questions are on the site. The two disputed questions (Q015 and Q108) are left out because the reference answer in the materials does not match the data; the evidence is in the report. There are 304 data manipulation exams and 30 data interpretation exams.
+Only validated and manual_check questions are on the site. Two questions were disputed until 01.11.2026 and are now back on the site. Q015 (NYC question 13) had two valid years, 2017 and 2018; the prompt now says to count full calendar years only (the data stops in February 2018), so 2017 is the one answer, as in `solutions.xlsx`. Q108 (PWC question 22): `PWC answers.docx` gives 49, which counts complete-album purchases (8 albums were bought complete twice), while the question asks for distinct albums; the expected answer is now 41 (`solution_source: "generated"`), and 49 is a computed trap. There are 303 data manipulation exams and 30 data interpretation exams.
 
 ## Manual step: upload release assets
 
@@ -68,7 +68,7 @@ Two databases are over 50 MB, so they are not in git. `py scripts\build_site.py`
 
 Every single-value question (in the bank and in exams) gets a box under the prompt. The typed answer is compared with the answer computed from the data, accepting European and US number formats, percentages as 8%, 8 or 0.08, and dates as 07.12.2011 16:38 or 2011-12-07 16:38. If it matches a computed trap answer, the site names the trap and explains it. Data: `docs/data/checks.json`, built by `py scripts\build_checks.py` (after `py tests\validate.py`). Overview of all traps: `TRAPS.md`. Test: `node tests/check_answers.mjs`. The code is `docs/js/improvement.js` and `docs/css/improvement.css`; it is switched on by `"improvementEnabled": true` in `docs/data/config.json`. Expected answers are readable in `checks.json`. That is deliberate: this is a practice site whose questions are meant to be the exam questions.
 
-My added functionality is an answer check that recognises trap answers. Your website lets students practise the exams and ask the AI tutor for help, but it never tells them whether the number they got is right. In Data Analytics in Accounting the hard part was rarely finding a number. It was getting one that looks right but is wrong: averaging menu-item rows instead of days, looking up PreparerID 102 without BusinessUnitID, comparing 2016 Gross_Wages with 2015 Reg_Pay only, or using > where the question says "or more". A student who makes one of these mistakes feels finished and brings the wrong method to the exam. On my site the student types the result, and it is compared with the answer computed from the data. If it matches a known wrong method, the site names the trap and explains why the method fails. The traps are not guessed. Each one is computed from the raw data with the wrong method (`scripts/build_checks.py`) and kept only if it differs from the right answer. 103 of the 177 questions get a check, 36 of them have at least one computed trap, and 240 of the 304 manipulation exams contain at least one trap question. An AI tutor cannot do this reliably, because it never ran the query on the 489,178 P-card rows, and none of the 70 AI suggestions mentions checking the student's result.
+My added functionality is an answer check that recognises trap answers. Your website lets students practise the exams and ask the AI tutor for help, but it never tells them whether the number they got is right. In Data Analytics in Accounting the hard part was rarely finding a number. It was getting one that looks right but is wrong: averaging menu-item rows instead of days, looking up PreparerID 102 without BusinessUnitID, comparing 2016 Gross_Wages with 2015 Reg_Pay only, or using > where the question says "or more". A student who makes one of these mistakes feels finished and brings the wrong method to the exam. On my site the student types the result, and it is compared with the answer computed from the data. If it matches a known wrong method, the site names the trap and explains why the method fails. The traps are not guessed. Each one is computed from the raw data with the wrong method (`scripts/build_checks.py`) and kept only if it differs from the right answer. 105 of the 179 questions get a check, 37 of them have at least one computed trap, and 246 of the 303 manipulation exams contain at least one trap question. An AI tutor cannot do this reliably, because it never ran the query on the 489,178 P-card rows, and none of the 70 AI suggestions mentions checking the student's result.
 
 ## Exam mode
 

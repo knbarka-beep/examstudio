@@ -1,12 +1,12 @@
 {
  "meta": {
-  "checked": 103,
-  "with_traps": 36,
-  "traps": 38,
+  "checked": 105,
+  "with_traps": 37,
+  "traps": 39,
   "categories": {
    "Wrong definition": 11,
    "Wrong population": 7,
-   "Wrong grain or key": 9,
+   "Wrong grain or key": 10,
    "Boundary or parsing": 9,
    "Average of ratios": 2
   }
@@ -122,6 +122,12 @@
    "kind": "percent",
    "answer": 0.08,
    "tol": 0.0055,
+   "traps": []
+  },
+  "Q015": {
+   "kind": "number",
+   "answer": 2017,
+   "tol": 0,
    "traps": []
   },
   "Q016": {
@@ -735,6 +741,19 @@
    "answer": 2,
    "tol": 0,
    "traps": []
+  },
+  "Q108": {
+   "kind": "number",
+   "answer": 41,
+   "tol": 0,
+   "traps": [
+    {
+     "category": "Wrong grain or key",
+     "tag": "grain",
+     "value": 49,
+     "why": "You counted complete-album purchases, not albums. 8 albums were bought complete on two invoices, so they appear twice. One row of your result is an invoice and album pair; count DISTINCT AlbumId."
+    }
+   ]
   },
   "Q112": {
    "kind": "number",

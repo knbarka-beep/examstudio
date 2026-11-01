@@ -511,7 +511,7 @@
    "tables": [],
    "columns": []
   },
-  "prompt": "Consider only rows with EventType 'Shooting Permit'. In which year did the number of shoots in Brooklyn exceed the number in Manhattan? Use the year of StartDateTime.",
+  "prompt": "Consider only rows with EventType 'Shooting Permit' and count full calendar years only. In which year did the number of shoots in Brooklyn exceed the number in Manhattan? Use the year of StartDateTime.",
   "skills": [
    "pivot",
    "date arithmetic"
@@ -521,9 +521,9 @@
   "reference_solution": 2017,
   "solution_source": "materials",
   "solution_file": "1. Excel Part 1/PWC Excel Assignment/solutions.xlsx",
-  "draft_solution": "Add a column =YEAR(C2). Pivot: year in rows, Borough in columns, count in values, filtered on Shooting Permit. Compare the Brooklyn and Manhattan columns.",
+  "draft_solution": "Add a column =YEAR(C2). Pivot: year in rows, Borough in columns, count in values, filtered on Shooting Permit. Compare the Brooklyn and Manhattan columns. Leave out 2018: the data stops in February 2018.",
   "expected_answer_hint": "A year.",
-  "status": "disputed"
+  "status": "validated"
  },
  {
   "id": "Q016",
@@ -4112,12 +4112,13 @@
   ],
   "estimated_minutes": 3,
   "is_variant_of": null,
-  "reference_solution": "Assuming an album is downloaded when all of its tracks were present on a single invoice: 49",
-  "solution_source": "materials",
-  "solution_file": "2. SQL part 1/Assignments/pwc assignment/PWC answers.docx",
+  "reference_solution": null,
+  "solution_source": "generated",
+  "solution_file": null,
   "draft_solution": "WITH album_size AS (SELECT AlbumId, COUNT(*) AS n FROM Track GROUP BY AlbumId), per_invoice AS (SELECT il.InvoiceId, t.AlbumId, COUNT(DISTINCT il.TrackId) AS n FROM InvoiceLine il JOIN Track t ON t.TrackId = il.TrackId GROUP BY il.InvoiceId, t.AlbumId) SELECT COUNT(DISTINCT p.AlbumId) FROM per_invoice p JOIN album_size a ON a.AlbumId = p.AlbumId WHERE p.n = a.n;",
   "expected_answer_hint": "A whole number.",
-  "status": "disputed"
+  "status": "validated",
+  "solution_note": "PWC answers.docx gives 49 ('Assuming an album is downloaded when all of its tracks were present on a single invoice: 49'). That counts invoice and album pairs, so the 8 albums bought complete twice are counted twice; the distinct albums are 41."
  },
  {
   "id": "Q109",

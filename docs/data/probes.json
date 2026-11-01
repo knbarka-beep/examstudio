@@ -11,6 +11,7 @@
   "boundary": { "label": "Boundary or parsing", "hint": "Check the edges: values exactly on a limit, codes written in more than one way, and how dates and text are parsed." }
  },
  "probes": [
+  { "id": "T-grain-album", "kind": "trap", "tag": "grain", "topic": "SQL", "questions": ["Q108"], "text": "Does your count include the same album twice? What does one row in your result represent?", "pushback": "Say what one row is before the count, and what it should be." },
   { "id": "T-grain", "kind": "trap", "tag": "grain", "topic": "any", "text": "What does one row in the data you used represent? Is that the level the question asks about?", "pushback": "Be specific. One row is one what? And one row of your answer is one what?" },
   { "id": "T-grain-2", "kind": "trap", "tag": "grain", "topic": "any", "text": "If you summed or averaged directly over the rows, would a day with many rows count more than a day with few?", "pushback": "Walk me through how the rows add up to the number you gave." },
   { "id": "T-key", "kind": "trap", "tag": "key", "topic": "any", "text": "Is the value you looked up or counted by unique in that column? How do you know?", "pushback": "How would you check that in the file, right now?" },

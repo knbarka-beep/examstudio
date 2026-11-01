@@ -107,11 +107,13 @@ nyc("nyc12", 12, SP + "What percentage of shooting permits needed approval by mo
     ["conditional count", "text functions"], 2,
     '=COUNTIFS(B:B,"Shooting Permit",I:I,"*,*")/COUNTIF(B:B,"Shooting Permit")', ["EventType", "CommunityBoard(s)"],
     0.0784, "A percentage.")
-nyc("nyc13", 13, SP + "In which year did the number of shoots in Brooklyn exceed the number in Manhattan? Use the "
-                      "year of StartDateTime.",
+nyc("nyc13", 13, "Consider only rows with EventType 'Shooting Permit' and count full calendar years only. In which "
+                  "year did the number of shoots in Brooklyn exceed the number in Manhattan? Use the year of "
+                  "StartDateTime.",
     ["pivot", "date arithmetic"], 2,
     "Add a column =YEAR(C2). Pivot: year in rows, Borough in columns, count in values, filtered on Shooting Permit. "
-    "Compare the Brooklyn and Manhattan columns.", ["EventType", "StartDateTime", "Borough"], 2017, "A year.")
+    "Compare the Brooklyn and Manhattan columns. Leave out 2018: the data stops in February 2018.",
+    ["EventType", "StartDateTime", "Borough"], 2017, "A year.")
 nyc("nyc14", 14, SP + "What percentage of shoots in Manhattan take place on or near Broadway (ParkingHeld mentions "
                       "BROADWAY)? Round to the nearest percent.",
     ["conditional count", "text functions"], 2,
@@ -569,8 +571,11 @@ pwc("p22", 22, "Count an album as downloaded when all of its tracks appear on on
     "JOIN Track t ON t.TrackId = il.TrackId GROUP BY il.InvoiceId, t.AlbumId) "
     "SELECT COUNT(DISTINCT p.AlbumId) FROM per_invoice p JOIN album_size a ON a.AlbumId = p.AlbumId WHERE p.n = a.n;",
     ["InvoiceLine", "Track"], ["InvoiceLine.InvoiceId", "InvoiceLine.TrackId", "Track.AlbumId"],
-    "Assuming an album is downloaded when all of its tracks were present on a single invoice: 49", "A whole number.",
-    slide=5)
+    None, "A whole number.", slide=5)
+# The materials' answer (49) counts complete-album purchases, not distinct albums: 8 albums were bought complete twice.
+QUESTIONS[-1]["solution_note"] = ("PWC answers.docx gives 49 ('Assuming an album is downloaded when all of its tracks "
+                                  "were present on a single invoice: 49'). That counts invoice and album pairs, so "
+                                  "the 8 albums bought complete twice are counted twice; the distinct albums are 41.")
 pwc("p23", 23, "What is the most popular genre, measured by number of invoice lines (downloads)?",
     ["join", "group by", "sort"], 2,
     "SELECT g.Name, COUNT(*) AS Downloads FROM InvoiceLine il JOIN Track t ON t.TrackId = il.TrackId "

@@ -4,7 +4,7 @@
 // marking the answer wrong. Speech uses the browser's Web Speech API when it is there; the text box always works.
 // app.js only calls examMode when config.improvementEnabled is true.
 
-import { grade, loadChecks, addStyles, show, answerBlock } from "./improvement.js?v=29.10.2026-3f89453";
+import { grade, loadChecks, addStyles, show, answerBlock } from "./improvement.js?v=01.11.2026-d4822f5";
 
 // Strictness presets. Times in milliseconds.
 //   probes: [fewest, most] follow-up questions per task (pushbacks are not counted)
@@ -294,7 +294,8 @@ function runTask(main, ui, B, setStop, q, media) {
     T.queue.push({ at: Date.now(), ...item });
     T.queue.sort((a, b) => PRIORITY[a.kind] - PRIORITY[b.kind] || a.at - b.at);
   };
-  const unasked = (filter) => B.probes.find((p) => filter(p) && topicFits(p, subject) && !T.askedIds.has(p.id));
+  const unasked = (filter) => B.probes.find((p) => filter(p) && topicFits(p, subject) && !T.askedIds.has(p.id) &&
+    (!p.questions || p.questions.includes(q.id)));
 
   function scanTriggers(text) {
     for (const p of B.probes) {

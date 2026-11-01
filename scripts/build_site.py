@@ -28,7 +28,7 @@ RELEASE_URL = "https://github.com/knbarka-beep/examstudio/releases/download/data
 LARGE = 50 * 1024 * 1024
 CONFIG_DEFAULTS = {"showReferenceSolutions": False, "improvementEnabled": False,
                    "repoUrl": "https://github.com/knbarka-beep/examstudio"}
-SOLUTION_FIELDS = ("reference_solution", "draft_solution", "solution_file", "solution_source")
+SOLUTION_FIELDS = ("reference_solution", "draft_solution", "solution_file", "solution_source", "solution_note")
 
 
 def load(path):
@@ -59,7 +59,7 @@ def public_question(q, show):
     if show:
         out["reference"] = {"solution": q.get("reference_solution"), "source": q.get("solution_source"),
                             "file": Path(q["solution_file"]).name if q.get("solution_file") else None,
-                            "draft": q.get("draft_solution")}
+                            "draft": q.get("draft_solution"), "note": q.get("solution_note")}
     return out
 
 
