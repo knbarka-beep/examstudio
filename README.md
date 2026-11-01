@@ -16,13 +16,13 @@ Then open http://localhost:8000. The site loads its data with `fetch`, so openin
 
 | Path | What it holds |
 |---|---|
-| `docs/` | The published site (GitHub Pages serves `main` /docs): `index.html`, `css/style.css`, `js/app.js`, `js/improvement.js` |
-| `docs/data/` | Public JSON built by `scripts/build_site.py`: `questions.json`, `exams.json`, `interpretation.json`, `datasets.json`, `config.json` |
+| `docs/` | The published site (GitHub Pages serves `main` /docs): `index.html`, `css/`, `js/app.js`, `js/improvement.js` (answer check), `js/examiner.js` (exam mode), `improvement-evidence.md` |
+| `docs/data/` | Public JSON built by `scripts/build_site.py`: `questions.json`, `exams.json`, `interpretation.json`, `datasets.json`, `checks.json`, `probes.json`, `config.json` |
 | `docs/files/` | The student data files under 50 MB, copied unchanged from the course materials |
 | `bank/` | The full question bank, exams, regression models and expected results (`bank/expected/`), used to build and validate the site |
 | `scripts/` | Build scripts |
 | `tests/` | `validate.py` (checks every question against the data) and `smoke.py` (checks the published site) |
-| `prompts/` | The prompts for the three unattended Claude Code runs |
+| `prompts/` | The prompts for the Claude Code runs |
 | `LOG.md`, `MATERIALS_NOTES.md`, `VALIDATION_REPORT.md` | Run log, notes on the course materials, validation results |
 
 `materials/` (the local copy of the course materials) and `release-assets/` are not in git.
@@ -69,6 +69,17 @@ Two databases are over 50 MB, so they are not in git. `py scripts\build_site.py`
 Every single-value question (in the bank and in exams) gets a box under the prompt. The typed answer is compared with the answer computed from the data, accepting European and US number formats, percentages as 8%, 8 or 0.08, and dates as 07.12.2011 16:38 or 2011-12-07 16:38. If it matches a computed trap answer, the site names the trap and explains it. Data: `docs/data/checks.json`, built by `py scripts\build_checks.py` (after `py tests\validate.py`). Overview of all traps: `TRAPS.md`. Test: `node tests/check_answers.mjs`. The code is `docs/js/improvement.js` and `docs/css/improvement.css`; it is switched on by `"improvementEnabled": true` in `docs/data/config.json`. Expected answers are readable in `checks.json`. That is deliberate: this is a practice site whose questions are meant to be the exam questions.
 
 My added functionality is an answer check that recognises trap answers. Your website lets students practise the exams and ask the AI tutor for help, but it never tells them whether the number they got is right. In Data Analytics in Accounting the hard part was rarely finding a number. It was getting one that looks right but is wrong: averaging menu-item rows instead of days, looking up PreparerID 102 without BusinessUnitID, comparing 2016 Gross_Wages with 2015 Reg_Pay only, or using > where the question says "or more". A student who makes one of these mistakes feels finished and brings the wrong method to the exam. On my site the student types the result, and it is compared with the answer computed from the data. If it matches a known wrong method, the site names the trap and explains why the method fails. The traps are not guessed. Each one is computed from the raw data with the wrong method (`scripts/build_checks.py`) and kept only if it differs from the right answer. 103 of the 177 questions get a check, 36 of them have at least one computed trap, and 240 of the 304 manipulation exams contain at least one trap question. An AI tutor cannot do this reliably, because it never ran the query on the 489,178 P-card rows, and none of the 70 AI suggestions mentions checking the student's result.
+
+## Exam mode
+
+Exam mode (nav: Exam mode) gives one task at a time from Excel, SQL, regression interpretation or a mix, with a timer of 8 or 10 minutes and a rules-based examiner that asks follow-up questions while you work. There is no AI model behind it. The examiner picks its questions from `docs/data/probes.json`: a trap probe when the answer box, or a number said in the transcript, matches a computed trap answer from the answer check; a question probe tied to the task's skills; a trigger probe when you say or type a term such as JOIN, VLOOKUP, GROUP BY or "causes"; and a generic "why" probe when nothing else applies. Answers under 15 words or without a reasoning word (because, so, since, otherwise, which means, the reason) count as thin and get a pushback. Three strictness presets (Supportive, Standard, Strict) set how often and how soon it cuts in, with at least 20 seconds between interruptions. After each task the debrief shows the transcript with time stamps, the probes asked, thin answers, trap tags, the expected answer, a self-assessment (practice, not a grade) and "Practise my weak spots", which starts a task tied to the most flagged tag. Counts from the data are in `docs/improvement-evidence.md`. The code is `docs/js/examiner.js`; it is switched on and off together with the answer check by `"improvementEnabled"` in `docs/data/config.json`.
+
+Voice: the examiner speaks with the browser's speech synthesis, and you answer by microphone with the Web Speech API. Speech recognition works in Chrome and Edge on desktop and in recent Safari; Firefox has none, and the site then falls back to the text box, which is always available.
+
+Privacy: nothing is stored or sent by the site (no localStorage, no server, no accounts, no analytics), but in Chrome and Edge the browser itself sends microphone audio to its vendor's speech service (Google or Microsoft), so do not say anything confidential.
+
+<!-- KNUT: write this yourself -->
+[KNUT: your text here] [[KNUT: why I built exam mode and how it relates to my own exam preparation]]
 
 ## The starting materials
 

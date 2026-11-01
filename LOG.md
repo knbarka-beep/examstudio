@@ -325,10 +325,10 @@ Start: 29.10.2026 12:14:50 (Python `datetime`, Europe/Copenhagen). Prompt: `prom
 - [x] 1 redesign
 - [x] 2 trap tags and probe bank
 - [x] 3 exam mode
-- [ ] 4 debrief
-- [ ] 5 evidence table
-- [ ] 6 tests in Chrome, 390px, secret scan
-- [ ] 7 docs, commit, push, log
+- [x] 4 debrief (built in step 3; looks and self-assessment left for Knut's manual test)
+- [x] 5 evidence table
+- [x] 6 390px (by reading the CSS) and secret scan; Chrome tests handed to Knut
+- [x] 7 docs, commit, push, log
 
 Paused 29.10.2026 12:28:06 (usage limit). State for resuming:
 - Done and committed: redesign (white, system fonts, nav Practice, Exam mode, About; dark theme and workbook chrome removed), trap tags in `checks.json` (from `scripts/build_checks.py`; output unchanged apart from the tags), `docs/data/probes.json`, smoke test checks for probes, exam mode in `docs/js/examiner.js`.
@@ -336,6 +336,17 @@ Paused 29.10.2026 12:28:06 (usage limit). State for resuming:
 - Tested in Chrome, text only, Strict, Q080: a trigger term gives a probe after about 2 s; the trap answer 310,08 gives the grain trap probe; a thin answer gets its pushback exactly 20 s after the previous question.
 - Debrief checked through the DOM: it renders time used, probes with reasons and tags, the thin answer, the trap answer (310.08, wrong grain) and the transcript. The Chrome screenshot tool timed out on that page; the page itself did not freeze. Still to check: how it looks, self-assessment, "Practise my weak spots".
 - Next: steps 5 to 7: `docs/improvement-evidence.md` (count from data), test Supportive and Standard, an SQL and a Regression task, voice on, 390px, secret scan, README and push.
+
+Resumed 01.11.2026 (reduced scope at Knut's request: no Chrome, no screenshots; start time not recorded). Ended 01.11.2026 16:28:47.
+- `docs/improvement-evidence.md`: counts computed from `checks.json`, `probes.json`, `questions.json` and `interpretation.json` with the matching rules from `examiner.js`. 226 questions; 103 with an answer check, 36 with a computed trap (38 traps); 201 with a tied question probe; 35 probes (7 trap, 11 question, 13 trigger, 4 generic). Join and confounding have probes but no computed trap.
+- 390px, by reading `style.css` and `improvement.css`: all tables sit in `.table-wrap` (overflow-x auto), the question tabs scroll inside themselves, segmented choices and button rows wrap, the exam layout drops to one column under 900px, the answer input shrinks (`min-width: 0`), `pre` wraps, and `body` has `overflow-wrap: break-word`. The header (ExamStudio plus three links) needs about 310px of the 358px available. Nothing found that would cause horizontal scroll, so no CSS change. Not checked visually.
+- Secret scan: `git grep -i` for sk-ant, api_key, apikey, token, secret, password, x-api-key, and a regex over `git log --all -p` for key-shaped strings. Hits are only rule and prompt text (CLAUDE.md, `prompts/RUN7_examiner.md`), design tokens in CSS and LOG, a loop variable in `examiner.js`, a film title in `bank/expected/Q117.json` and words inside two course databases. No key, token or password. The smoke test's key scan (243 files) also passed.
+- README: exam mode section, voice browser support, privacy line, KNUT markers; structure table updated for `checks.json`, `probes.json`, `examiner.js` and the evidence file.
+- Tests: `py tests/smoke.py` passed; `node tests/check_answers.mjs` all passed (103 checks).
+- Not done in this run: the Chrome and Edge tests (voice, Supportive and Standard, an SQL and a Regression task, the debrief's looks, self-assessment, "Practise my weak spots"). Knut tests these by hand.
+- Skipped from the prompt by Knut's decision: the AI examiner (2.5), saved sessions and the Progress page.
+
+Failed: nothing.
 
 ## Cost statement
 
